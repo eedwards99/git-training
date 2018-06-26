@@ -1,0 +1,5 @@
+Maps/Jobs/EX6_xml2flatfile_DI/tHMap_1.xml,com.oaklandsw.base,references.0,Structures/Input.xml
+Maps/Jobs/EX6_xml2flatfile_DI/tHMap_1.xml,com.oaklandsw.base,references.1,Structures/Jobs/EX6_xml2flatfile_DI/tHMap_1_output.xml
+Maps/xml2flatfile.xml,com.oaklandsw.base,references.0,Structures/Input.xml
+Maps/xml2flatfile.xml,com.oaklandsw.base,references.1,Structures/flatfile_output.xml
+Structures/Input.xml,com.oaklandsw.base,references.0,Namespace Containers/Input.xml

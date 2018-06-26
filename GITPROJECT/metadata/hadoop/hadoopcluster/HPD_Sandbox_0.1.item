@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><TalendHadoopCluster:HadoopClusterConnection xmlns:TalendHadoopCluster="http://www.talend.org/hadoopcluster" xmlns:xmi="http://www.omg.org/XMI" dfVersion="HDP_2_6" distribution="HORTONWORKS" group="" jobTrackerURI="sandbox:50300" label="HPD_Sandbox" name="HPD_Sandbox" nameNodeURI="hdfs://sandbox:8020" userName="sandbox" xmi:id="_3amGIA_sEeOFLZHF8lFKdw" xmi:version="2.0">
+  <connectionList>_n-QYUBAKEeOOetIfLozI9A</connectionList>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_c7105123-321c-4e13-bef2-089c84cfce24"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>seQVzFrdQkvvgPsz2nDBSjEgfHZiggHgQ4yLeR4UtDN7nBOBEIHr8TXA9IQuJeL2DlBqLK85zTMv
+JjS8EG4Agw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c710ef17-02cd-4aa1-8614-2444d4cefa1e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Lu6V/V+MpveMPO03pdq25bTzAkX0H8AK0a53QA1BjlJvvhDkXT3eAZmkRjNoeQsPgGQI3ITOiDAL
+Cpwoy1qLtQ==</DigestValue></Reference></SignedInfo><SignatureValue>txv8ULlVx3QuWl59mNwiNnX3RCEH9XqeH0uyNSqclKw+zZbHYd87qzoEff86A12dKdqlb1B0j8RV
+9282CT+dTO9r3GjGHu4CB2oqMv34lA2uhF/QDrhAJ4Xidt6ZxyYXtokJRmeiQ0wBAKTUH2mwwgDu
+dJIIAiOb+U56Q11iHzlHgIzVKb/06zO4uZMsIArKGh2fwYE/OWC1PsxuwcbumkB2ZqK2WcBKRuaT
+lh8d6eEd/Gq+IGuwC8/wgbeoQXSZ/F0ysgQx2ASxzHb0QIFIgYKXmK4tz6A4f5MVwAJ7RtyMK9JE
+2uLXE/yaS6EFmiIBO29JZ/bjU1S4PBkALb3MYQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
+RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
+LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
+VQQIDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1ImRDEpMCcGA1UEAwwg
+RGVmYXVsdCBjb2RlLXNpZ25pbmcgY2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw
+ggEKAoIBAQDiCz1II/o6hDUWu/ygxTCT2o/fYxVzPW23AoONQC/Vuiqh0COyLIgaMTjBPmQdTQFq
+rmM5tD64gi4TEQF+Z3iYt3daLdQUfaW9SzaMlY+XVNz5xnMBVDuiSHJSFE9lKnhgbKAHvOeoJo46
+UgWwb1za0WpRckDtjKcntwEK1orZCgrcIo1nDvFXyB5n0KfpLyktEOa0bSHde50MPbvQeB66XlEb
+lhjfs5S9WnAUja9RgqdwqZoI0ss+x/pjkQygDT8f17MktM21HOtg09lJlhMGJckhgD7jUF5tfYGM
+sv/O27g5CToFhxOnutDtsrDw7AkEQIml8KJp97bQLAFlLnh1AgMBAAGjge0wgeowHQYDVR0OBBYE
+FFzdy6ZfpUX8JwkM/SUrqkwLNqWAMB8GA1UdIwQYMBaAFOd9C3L8tYGZxoAr2SzsgnMytaj3MAsG
+A1UdDwQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzAJBgNVHRMEAjAAMHsGCWCGSAGG+EIBDQRu
+FmxEZWZhdWx0IHRoaXJkIHBhcnR5IGNvZGUtc2lnbmluZyBjZXJ0aWZpY2F0ZS4gTm8gY29tbWl0
+bWVudCBpcyBtYWRlIG9uIHRoZSBjb250ZW50IHNpZ25lZCBieSB0aGUgdGhpcmQgcGFydHkwDQYJ
+KoZIhvcNAQELBQADggIBAKzYdnzoFgrRtDLSSzWtwuOrGo5+1RPoDHm/1dlbVnB7oZzUwfRGwZT5
+ser0V7OZyt9wWR8iQ2ka30fHWrNAosNtlIkF88s5YZw7OOIMxR+qYA99BnWLa79DZVIuukI2f5qJ
+Cr9nw6Oygo8CWeNMWhtXcvV4gqROhb2QMBrvWBw9QvNK1XMdtPShfWiXwyPzzRKgwqrN2meXtOY3
+S+MXu6u+RUD9EYeElp9M+9Yp+zRySl5/s+0sbvo7qz369dlsw8XhKXT+s4YQQe3Sx14Kg3SDFXKn
+QcVgycaZMOw4YUxOeP2hKOHnNuOMORfu3qlYkN/0RMGjn6r4PU4+yL276TiWI5b8J06y4leng2as
+r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
+EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
+BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
+6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c710ef17-02cd-4aa1-8614-2444d4cefa1e" Target="#_c7105123-321c-4e13-bef2-089c84cfce24"><Timestamp>2018-06-26 20:20:47</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></TalendHadoopCluster:HadoopClusterConnection>

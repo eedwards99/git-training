@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default"/>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;F:/TalendPD/Talend-Studio-r110187-V5.4.1NB/workspace/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_10"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_iHHLIPuUEeeUkd5Ff1i0Lw" name="DQTechnical"/>
+    <routinesParameter id="_iGdq4PuUEeeUkd5Ff1i0Lw" name="DataMasking"/>
+    <routinesParameter id="_iFD8sPuUEeeUkd5Ff1i0Lw" name="DataOperation"/>
+    <routinesParameter id="_iGzCEPuUEeeUkd5Ff1i0Lw" name="DataQualityDependencies"/>
+    <routinesParameter id="_iGoqAPuUEeeUkd5Ff1i0Lw" name="DataQuality"/>
+    <routinesParameter id="_iG-BMPuUEeeUkd5Ff1i0Lw" name="DqStringHandling"/>
+    <routinesParameter id="_h_AYAPuUEeeUkd5Ff1i0Lw" name="MDM"/>
+    <routinesParameter id="_iFNtsPuUEeeUkd5Ff1i0Lw" name="Mathematical"/>
+    <routinesParameter id="_iFhPsPuUEeeUkd5Ff1i0Lw" name="Numeric"/>
+    <routinesParameter id="_iFokcPuUEeeUkd5Ff1i0Lw" name="Relational"/>
+    <routinesParameter id="_iE7Z0PuUEeeUkd5Ff1i0Lw" name="SQLike"/>
+    <routinesParameter id="_iFvSIPuUEeeUkd5Ff1i0Lw" name="StringHandling"/>
+    <routinesParameter id="_iF5DIPuUEeeUkd5Ff1i0Lw" name="TalendDataGenerator"/>
+    <routinesParameter id="_iGBmAPuUEeeUkd5Ff1i0Lw" name="TalendDate"/>
+    <routinesParameter id="_iGVvEPuUEeeUkd5Ff1i0Lw" name="TalendStringUtil"/>
+    <routinesParameter id="_iGNzQPuUEeeUkd5Ff1i0Lw" name="TalendString"/>
+  </parameters>
+  <node componentName="tDBFInput" componentVersion="1.0" offsetLabelX="0" offsetLabelY="0" posX="96" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBFInput_1"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;eedwards/cpv2010_ageb_urb_viviendas.dbf&quot;"/>
+    <elementParameter field="CHECK" name="DEBUG" value="false"/>
+    <elementParameter field="FILE" name="SCHEMANAME" show="false" value="&quot;D:/Talend/Pre Sales/POC/Deloitte/DataInput/dbf_schema.xml&quot;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBFInput_1">
+      <column comment="" key="false" length="13" name="CVEGEO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV0" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV1" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV2_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV3" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV3_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV4_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV5_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="VIV6" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV6_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV7" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV7_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV8" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV8_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV9" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV9_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV10" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV10_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV11" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV11_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV12" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV12_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="VIV13" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV13_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV14" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV14_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="VIV15" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV15_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV16" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV16_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV17" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV17_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV18" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV18_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV19" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV19_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="VIV20" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV20_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV21" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV21_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV22" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV22_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="VIV23" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV23_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV24" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV24_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="VIV25" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV25_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV26" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV26_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV27" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV27_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV28" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV28_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV29" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV29_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV30" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV30_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV31" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV31_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV32" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV32_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV33" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV33_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV34" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV34_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV35" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV35_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV36" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV36_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="VIV37" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV37_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV38" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV38_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV39" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV39_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="VIV40" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV40_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="VIV41" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV41_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="384" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_9qBbkBwXEeiZgozHZTDysw-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="out1">
+      <column comment="" key="false" length="13" name="CVEGEO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CVE_ENT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CVE_MUN" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CVE_AGEB" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CVE_LOC" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV0" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV1" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV2_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV3" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV3_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV4_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV5_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="VIV6" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV6_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV7" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV7_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV8" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV8_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV9" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV9_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV10" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV10_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV11" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV11_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV12" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV12_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="VIV13" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV13_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV14" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV14_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="VIV15" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV15_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV16" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV16_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV17" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV17_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV18" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV18_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV19" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV19_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="VIV20" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV20_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV21" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV21_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV22" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV22_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="VIV23" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV23_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV24" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV24_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="VIV25" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV25_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV26" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV26_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV27" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV27_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV28" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV28_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV29" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV29_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV30" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV30_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV31" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV31_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV32" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV32_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV33" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV33_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV34" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV34_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV35" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV35_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV36" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV36_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="VIV37" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV37_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV38" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV38_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV39" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV39_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="VIV40" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV40_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="VIV41" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV41_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="out1" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row1.CVEGEO " name="CVEGEO" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.CVEGEO.substring(0,2) " name="CVE_ENT" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.CVEGEO.substring(2,5) " name="CVE_MUN" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.CVEGEO.substring(5,9) " name="CVE_AGEB" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.CVEGEO.substring(9,13) " name="CVE_LOC" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.VIV0 " name="VIV0" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV1 " name="VIV1" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV2 " name="VIV2" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV2_R " name="VIV2_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV3 " name="VIV3" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV3_R " name="VIV3_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV4_R " name="VIV4_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV5_R " name="VIV5_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV6 " name="VIV6" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV6_R " name="VIV6_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV7 " name="VIV7" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV7_R " name="VIV7_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV8 " name="VIV8" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV8_R " name="VIV8_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV9 " name="VIV9" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV9_R " name="VIV9_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV10 " name="VIV10" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV10_R " name="VIV10_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV11 " name="VIV11" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV11_R " name="VIV11_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV12 " name="VIV12" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV12_R " name="VIV12_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV13 " name="VIV13" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV13_R " name="VIV13_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV14 " name="VIV14" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV14_R " name="VIV14_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV15 " name="VIV15" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV15_R " name="VIV15_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV16 " name="VIV16" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV16_R " name="VIV16_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV17 " name="VIV17" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV17_R " name="VIV17_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV18 " name="VIV18" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV18_R " name="VIV18_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV19 " name="VIV19" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV19_R " name="VIV19_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV20 " name="VIV20" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV20_R " name="VIV20_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV21 " name="VIV21" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV21_R " name="VIV21_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV22 " name="VIV22" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV22_R " name="VIV22_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV23 " name="VIV23" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV23_R " name="VIV23_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV24 " name="VIV24" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV24_R " name="VIV24_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV25 " name="VIV25" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV25_R " name="VIV25_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV26 " name="VIV26" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV26_R " name="VIV26_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV27 " name="VIV27" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV27_R " name="VIV27_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV28 " name="VIV28" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV28_R " name="VIV28_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV29 " name="VIV29" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV29_R " name="VIV29_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV30 " name="VIV30" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV30_R " name="VIV30_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV31 " name="VIV31" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV31_R " name="VIV31_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV32 " name="VIV32" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV32_R " name="VIV32_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV33 " name="VIV33" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV33_R " name="VIV33_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV34 " name="VIV34" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV34_R " name="VIV34_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV35 " name="VIV35" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV35_R " name="VIV35_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV36 " name="VIV36" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV36_R " name="VIV36_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV37 " name="VIV37" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV37_R " name="VIV37_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV38 " name="VIV38" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV38_R " name="VIV38_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV39 " name="VIV39" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV39_R " name="VIV39_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV40 " name="VIV40" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV40_R " name="VIV40_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV41 " name="VIV41" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.VIV41_R " name="VIV41_R" nullable="true" type="id_Long"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="CVEGEO" nullable="true" type="id_String"/>
+        <mapperTableEntries name="VIV0" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV1" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV2" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV2_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV3" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV3_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV4_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV5_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV6" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV6_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV7" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV7_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV8" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV8_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV9" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV9_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV10" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV10_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV11" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV11_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV12" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV12_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV13" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV13_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV14" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV14_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV15" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV15_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV16" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV16_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV17" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV17_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV18" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV18_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV19" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV19_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV20" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV20_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV21" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV21_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV22" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV22_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV23" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV23_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV24" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV24_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV25" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV25_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV26" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV26_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV27" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV27_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV28" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV28_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV29" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV29_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV30" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV30_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV31" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV31_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV32" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV32_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV33" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV33_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV34" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV34_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV35" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV35_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV36" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV36_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV37" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV37_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV38" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV38_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV39" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV39_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV40" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV40_R" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV41" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="VIV41_R" nullable="true" type="id_Long"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tHDFSOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="672" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHDFSOutput_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_du0fkBstEeiiu9iE6xrw8Q"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="DESTINATION" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="EMR_5_0_0"/>
+    <elementParameter field="HADOOP_DISTRIBUTION" name="HDFS" value=""/>
+    <elementParameter field="HADOOP_JARS_DIALOG" name="HADOOP_CUSTOM_JARS" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="AUTHENTICATION_MODE" show="false" value="USERNAME"/>
+    <elementParameter field="TEXT" name="FS_DEFAULT_NAME" value="&quot;hdfs://ec2-54-156-53-163.compute-1.amazonaws.com:8020&quot;"/>
+    <elementParameter field="CHECK" name="USE_DATANODE_HOSTNAME" value="true"/>
+    <elementParameter field="CHECK" name="USE_KRB" show="false" value="false"/>
+    <elementParameter field="TEXT" name="NAMENODE_PRINCIPAL" show="false" value="&quot;nn/_HOST@EXAMPLE.COM&quot;"/>
+    <elementParameter field="CHECK" name="USE_KEYTAB" show="false" value="false"/>
+    <elementParameter field="TEXT" name="PRINCIPAL" show="false" value="&quot;hdfs&quot;"/>
+    <elementParameter field="FILE" name="KEYTAB_PATH" show="false" value="&quot;/tmp/hdfs.headless.keytab&quot;"/>
+    <elementParameter field="CHECK" name="USE_MAPRTICKET" show="false" value="false"/>
+    <elementParameter field="TEXT" name="USERNAME" value="&quot;hadoop&quot;"/>
+    <elementParameter field="TEXT" name="GROUP" show="false" value="&quot;supergroup&quot;"/>
+    <elementParameter field="PASSWORD" name="MAPRTICKET_PASSWORD" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="TEXT" name="MAPRTICKET_CLUSTER" show="false" value="&quot;demo.mapr.com&quot;"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_DURATION" show="false" value="86400L"/>
+    <elementParameter field="BOTH_HADOOP" name="FILENAME" value="&quot;/user/hadoop/edwards/dbf_results&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TYPEFILE" value="TEXT"/>
+    <elementParameter field="CLOSED_LIST" name="FILE_ACTION" value="CREATE"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="CUSTOM_ENCODING" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="COLUMN_LIST" name="KEYCOLUMN" show="false" value="CVEGEO"/>
+    <elementParameter field="COLUMN_LIST" name="VALUECOLUMN" show="false" value="CVEGEO"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="NOTE : Only boolean, byte, byte[], double, float, integer,&#10;&#9;&#9;&#9;&#9;long, short, string are currently supported for key class and value&#10;&#9;&#9;&#9;&#9;columns fields&#10;&#9;&#9;&#9;"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="COMPRESSION" show="false" value="GZIP"/>
+    <elementParameter field="LABEL" name="COMPRESS_NOTE" show="false" value="NOTE : Only support Linux client and hadoop native code is&#10;&#9;&#9;&#9;&#9;necessary, also need to add the native code path to&#10;&#9;&#9;&#9;&#9;$java.library.path&#10;&#9;&#9;&#9;"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
+    <elementParameter field="TABLE" name="HADOOP_ADVANCED_PROPERTIES"/>
+    <elementParameter field="CHECK" name="SET_MAPR_HOME_DIR" show="false" value="false"/>
+    <elementParameter field="TEXT" name="MAPR_HOME_DIR" show="false" value="&quot;/opt/mapr&quot;"/>
+    <elementParameter field="CHECK" name="SET_HADOOP_LOGIN" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HADOOP_LOGIN" show="false" value="&quot;kerberos&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tHDFSOutput_1">
+      <column comment="" key="false" length="13" name="CVEGEO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CVE_ENT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CVE_MUN" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CVE_AGEB" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CVE_LOC" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV0" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV1" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV2_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV3" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV3_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV4_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV5_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="VIV6" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV6_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV7" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV7_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV8" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV8_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV9" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV9_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV10" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV10_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV11" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV11_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV12" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV12_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="VIV13" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV13_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV14" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV14_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="VIV15" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV15_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV16" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV16_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV17" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV17_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV18" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV18_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV19" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV19_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="VIV20" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV20_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV21" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV21_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV22" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV22_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="VIV23" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV23_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV24" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV24_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="VIV25" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV25_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV26" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV26_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV27" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV27_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV28" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV28_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV29" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV29_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV30" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV30_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV31" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV31_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV32" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV32_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV33" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV33_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV34" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV34_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV35" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV35_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV36" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV36_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="VIV37" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV37_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV38" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV38_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="VIV39" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV39_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="VIV40" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV40_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="VIV41" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="VIV41_R" nullable="true" originalLength="-1" pattern="" precision="1" sourceType="" type="id_Long" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tDropboxGet" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDropboxGet_1"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="ACCESS_TOKEN" value="&quot;kf-BUnGFWggAAAAAAAAAL9Fhv1fNebeta8x8RNTr5Ed08gw6eGlhfXbO7oOoSjyg&quot;"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;127.0.0.1&quot;"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="8087"/>
+    <elementParameter field="TEXT" name="PATH" value="&quot;/Data/cpv2010_ageb_urb_viviendas.dbf&quot;"/>
+    <elementParameter field="CHECK" name="STORE_TO_LOCAL" value="true"/>
+    <elementParameter field="FILE" name="OUTPUT" value="&quot;eedwards/cpv2010_ageb_urb_viviendas.dbf&quot;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDropboxGet_1">
+      <column defaultValue="" key="false" length="0" name="fileName" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="content" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Object" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBFInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBFInput_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tHDFSOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out1"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDropboxGet_1" offsetLabelX="0" offsetLabelY="0" source="tDropboxGet_1" target="tDBFInput_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBFInput_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDropboxGet_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_50f16ca3-601c-47b9-b79d-d4fa8a9faf74"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>9OLKg1fPnIFqEOBQeYFNX6uXgObFtoPbD8UXgVk7wti3sk051c+s8J3seDFsXz33wJxmLWIHCLt+
+yewLbsJJVw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_760602ae-6872-443d-a33e-6f17d5d4b342"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>JVIIA9T2Y3nOku23z/2mUIo4p3NvTdgrlyRYi87zv3UmHuraIBUQ27E9lq0InhE0bw/bOdQFHgPd
+OGFDTEpOKA==</DigestValue></Reference></SignedInfo><SignatureValue>fW0FVLgqt4dmcMSj5x7tc6eG6CfgAYjHOZTOKzGbVp2wiy69LhyIjFjUg1IVgF16gBYVwYirNclO
+U3re2RBwirl/EN9++RXDPuK3CwKONtB2VjYjIkwrPdanet7vV0ER0q3ZF7MDBL7IDcvzju3e2K+J
+KBTAUmF/Hl3EYJ8+oZLMu1VGXn6CnJ0TAy8UQ2sopZSxJqwNxvX1F7SR0vYXCaCBRqejy7p208EI
+3STTDBWcQR5yqJsRcls80/eqYw2cIw/7n4IT/MdT7wIf0Qu284E5tOxyNolHpgAtaDRZmHwLICcB
+gCviy/RH7QFRYtYX7CppyZaULWO+jVGtjOuWxQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
+RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
+LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
+VQQIDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1ImRDEpMCcGA1UEAwwg
+RGVmYXVsdCBjb2RlLXNpZ25pbmcgY2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw
+ggEKAoIBAQDiCz1II/o6hDUWu/ygxTCT2o/fYxVzPW23AoONQC/Vuiqh0COyLIgaMTjBPmQdTQFq
+rmM5tD64gi4TEQF+Z3iYt3daLdQUfaW9SzaMlY+XVNz5xnMBVDuiSHJSFE9lKnhgbKAHvOeoJo46
+UgWwb1za0WpRckDtjKcntwEK1orZCgrcIo1nDvFXyB5n0KfpLyktEOa0bSHde50MPbvQeB66XlEb
+lhjfs5S9WnAUja9RgqdwqZoI0ss+x/pjkQygDT8f17MktM21HOtg09lJlhMGJckhgD7jUF5tfYGM
+sv/O27g5CToFhxOnutDtsrDw7AkEQIml8KJp97bQLAFlLnh1AgMBAAGjge0wgeowHQYDVR0OBBYE
+FFzdy6ZfpUX8JwkM/SUrqkwLNqWAMB8GA1UdIwQYMBaAFOd9C3L8tYGZxoAr2SzsgnMytaj3MAsG
+A1UdDwQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzAJBgNVHRMEAjAAMHsGCWCGSAGG+EIBDQRu
+FmxEZWZhdWx0IHRoaXJkIHBhcnR5IGNvZGUtc2lnbmluZyBjZXJ0aWZpY2F0ZS4gTm8gY29tbWl0
+bWVudCBpcyBtYWRlIG9uIHRoZSBjb250ZW50IHNpZ25lZCBieSB0aGUgdGhpcmQgcGFydHkwDQYJ
+KoZIhvcNAQELBQADggIBAKzYdnzoFgrRtDLSSzWtwuOrGo5+1RPoDHm/1dlbVnB7oZzUwfRGwZT5
+ser0V7OZyt9wWR8iQ2ka30fHWrNAosNtlIkF88s5YZw7OOIMxR+qYA99BnWLa79DZVIuukI2f5qJ
+Cr9nw6Oygo8CWeNMWhtXcvV4gqROhb2QMBrvWBw9QvNK1XMdtPShfWiXwyPzzRKgwqrN2meXtOY3
+S+MXu6u+RUD9EYeElp9M+9Yp+zRySl5/s+0sbvo7qz369dlsw8XhKXT+s4YQQe3Sx14Kg3SDFXKn
+QcVgycaZMOw4YUxOeP2hKOHnNuOMORfu3qlYkN/0RMGjn6r4PU4+yL276TiWI5b8J06y4leng2as
+r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
+EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
+BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
+6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_760602ae-6872-443d-a33e-6f17d5d4b342" Target="#_50f16ca3-601c-47b9-b79d-d4fa8a9faf74"><Timestamp>2018-06-26 20:20:56</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

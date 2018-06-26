@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="parameter_source_jdbc_url" prompt="parameter_source_jdbc_url?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="parameter_source_jdbc_username" prompt="parameter_source_jdbc_username?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="parameter_source_jdbc_password" prompt="parameter_source_jdbc_password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter comment="" name="parameter_source_tablename" prompt="parameter_source_tablename?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="parameter_source_where_condition" prompt="parameter_source_where_condition?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="parameter_source_system" prompt="parameter_source_system?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="parameter_targer_dir" prompt="parameter_targer_dir?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="parameter_target_database" prompt="parameter_target_database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="parameter_target_system" prompt="parameter_target_system?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="parameter_mappers" prompt="parameter_mappers?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="parameter_split_by" prompt="parameter_split_by?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="parameter_delimiter" prompt="parameter_delimiter?" promptNeeded="false" type="id_String" value=""/>
+  </context>
+  <parameters>
+    <elementParameter field="CHECK" name="LOG4J_RUN_ACTIVATE" show="false" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/TalendSoftware/6.4.1/studio/workspace/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_-ZqbcJjTEeeFrMQZbaBjgg" name="DQTechnical"/>
+    <routinesParameter id="_-ZHB0JjTEeeFrMQZbaBjgg" name="DataMasking"/>
+    <routinesParameter id="_-WzUsJjTEeeFrMQZbaBjgg" name="DataOperation"/>
+    <routinesParameter id="_-ZYuoJjTEeeFrMQZbaBjgg" name="DataQualityDependencies"/>
+    <routinesParameter id="_-ZQy0JjTEeeFrMQZbaBjgg" name="DataQuality"/>
+    <routinesParameter id="_-Zh4kJjTEeeFrMQZbaBjgg" name="DqStringHandling"/>
+    <routinesParameter id="_-Pfy0JjTEeeFrMQZbaBjgg" name="MDM"/>
+    <routinesParameter id="_-W6CYJjTEeeFrMQZbaBjgg" name="Mathematical"/>
+    <routinesParameter id="_-XDzYJjTEeeFrMQZbaBjgg" name="Numeric"/>
+    <routinesParameter id="_-XLvMJjTEeeFrMQZbaBjgg" name="Relational"/>
+    <routinesParameter id="_-WqKwJjTEeeFrMQZbaBjgg" name="SQLike"/>
+    <routinesParameter id="_-XSc4JjTEeeFrMQZbaBjgg" name="StringHandling"/>
+    <routinesParameter id="_-XcN4JjTEeeFrMQZbaBjgg" name="TalendDataGenerator"/>
+    <routinesParameter id="_-YsyIJjTEeeFrMQZbaBjgg" name="TalendDate"/>
+    <routinesParameter id="_-Y_tEJjTEeeFrMQZbaBjgg" name="TalendStringUtil"/>
+    <routinesParameter id="_-Y3KMJjTEeeFrMQZbaBjgg" name="TalendString"/>
+    <routinesParameter id="_dnpOQD3HEeO7UMG_YqAtyA" name="DQ_METHODS"/>
+  </parameters>
+  <node componentName="tHiveInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="480">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHiveInput_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_V-Ps0PqMEeeiD90w7HnRYQ"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DISTRIBUTION" value="CLOUDERA"/>
+    <elementParameter field="CLOSED_LIST" name="HIVE_VERSION" value="Cloudera_CDH5_10"/>
+    <elementParameter field="HADOOP_DISTRIBUTION" name="HIVE" value=""/>
+    <elementParameter field="HADOOP_JARS_DIALOG" name="HADOOP_CUSTOM_JARS" show="false" value=""/>
+    <elementParameter field="CHECK" name="USE_YARN" show="false" value="false"/>
+    <elementParameter field="CHECK" name="CROSS_PLATFORM_SUBMISSION" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_MODE" value="STANDALONE"/>
+    <elementParameter field="CLOSED_LIST" name="HIVE_SERVER" value="HIVE2"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;ip-172-30-0-40.us-west-2.compute.internal&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;10000&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;default&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="HIVE"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE="/>
+    <elementParameter field="TEXT" name="HIVE_ADDITIONAL_JDBC" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_KRB" value="true"/>
+    <elementParameter field="TEXT" name="HIVE_PRINCIPAL" value="&quot;hive/_HOST@PRESALES.TALEND.US&quot;"/>
+    <elementParameter field="TEXT" name="HIVESERVER2_LOCAL_PRINCIPAL" show="false" value="&quot;hiveServer2User@EXAMPLE.COM&quot;"/>
+    <elementParameter field="FILE" name="HIVESERVER2_LOCAL_KEYTAB" show="false" value="&quot;/tmp/hiveServer2User.keytab&quot;"/>
+    <elementParameter field="TEXT" name="NAMENODE_PRINCIPAL" value="&quot;hdfs/_HOST@PRESALES.TALEND.US&quot;"/>
+    <elementParameter field="TEXT" name="JOBTRACKER_PRINCIPAL" show="false" value="&quot;jt/_HOST@EXAMPLE.COM&quot;"/>
+    <elementParameter field="TEXT" name="RESOURCEMANAGER_PRINCIPAL" value="&quot;yarn/_HOST@PRESALES.TALEND.US&quot;"/>
+    <elementParameter field="TEXT" name="METASTORE_JDBC_URL" show="false" value="&quot;jdbc:mysql://&quot;"/>
+    <elementParameter field="TEXT" name="METASTORE_CLASSNAME" show="false" value="&quot;com.mysql.jdbc.Driver&quot;"/>
+    <elementParameter field="TEXT" name="METASTORE_USERNAME" show="false" value="&quot;hive&quot;"/>
+    <elementParameter field="PASSWORD" name="METASTORE_PASSWORD" show="false" value="SsYyuEyMCHg="/>
+    <elementParameter field="CHECK" name="USE_KEYTAB" value="true"/>
+    <elementParameter field="TEXT" name="PRINCIPAL" value="&quot;uzubair&quot;"/>
+    <elementParameter field="FILE" name="KEYTAB_PATH" value="&quot;/home/uzubair/uzubair.keytab&quot;"/>
+    <elementParameter field="CHECK" name="USE_MAPRTICKET" show="false" value="false"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_USERNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="MAPRTICKET_PASSWORD" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="TEXT" name="MAPRTICKET_CLUSTER" show="false" value="&quot;demo.mapr.com&quot;"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_DURATION" show="false" value="86400L"/>
+    <elementParameter field="CHECK" name="USE_SSL" value="false"/>
+    <elementParameter field="FILE" name="SSL_TRUST_STORE" show="false" value="&quot;/home/usr1/ssl/trust_store.jks&quot;"/>
+    <elementParameter field="PASSWORD" name="SSL_TRUST_STORE_PASSWORD" show="false" value="crKjNM+/KPoSQfCGt+RqAg=="/>
+    <elementParameter field="CHECK" name="SET_MAPRED_JT" show="false" value="false"/>
+    <elementParameter field="TEXT" name="MAPRED_JT" show="false" value="&quot;localhost:50300&quot;"/>
+    <elementParameter field="CHECK" name="SET_RESOURCE_MANAGER" value="false"/>
+    <elementParameter field="TEXT" name="RESOURCE_MANAGER" show="false" value="&quot;localhost:8032&quot;"/>
+    <elementParameter field="CHECK" name="SET_FS_DEFAULT_NAME" value="false"/>
+    <elementParameter field="TEXT" name="FS_DEFAULT_NAME" show="false" value="&quot;hdfs://localhost:8020&quot;"/>
+    <elementParameter field="CHECK" name="SET_SCHEDULER_ADDRESS" value="false"/>
+    <elementParameter field="TEXT" name="RESOURCEMANAGER_SCHEDULER_ADDRESS" show="false" value="&quot;localhost:8030&quot;"/>
+    <elementParameter field="CHECK" name="SET_JOBHISTORY_ADDRESS" value="false"/>
+    <elementParameter field="TEXT" name="JOBHISTORY_ADDRESS" show="false" value="&quot;localhost:10020&quot;"/>
+    <elementParameter field="CHECK" name="SET_HADOOP_USER" value="false"/>
+    <elementParameter field="TEXT" name="HADOOP_USER" show="false" value="&quot;hadoop&quot;"/>
+    <elementParameter field="CHECK" name="USE_DATANODE_HOSTNAME" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="EXECUTION_ENGINE" show="false" value="mr"/>
+    <elementParameter field="TEXT" name="WEBHCAT_HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="WEBHCAT_PORT" show="false" value="&quot;443&quot;"/>
+    <elementParameter field="TEXT" name="WEBHCAT_USERNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="STATUSDIR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HDINSIGHT_USERNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="HDINSIGHT_PASSWORD" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="TEXT" name="WASB_HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="WASB_CONTAINER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="WASB_USERNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="WASB_PASSWORD" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="TEXT" name="REMOTE_FOLDER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="GOOGLE_PROJECT_ID" show="false" value="&quot;my-google-project&quot;"/>
+    <elementParameter field="TEXT" name="GOOGLE_CLUSTER_ID" show="false" value="&quot;my-cluster-id&quot;"/>
+    <elementParameter field="TEXT" name="GOOGLE_REGION" show="false" value="&quot;global&quot;"/>
+    <elementParameter field="TEXT" name="GOOGLE_JARS_BUCKET" show="false" value="&quot;gs://my-bucket/talend/jars&quot;"/>
+    <elementParameter field="TEXT" name="ACCESS_KEY" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="SECRET_KEY" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="CHECK" name="DEFINE_PATH_TO_GOOGLE_CREDENTIALS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="PATH_TO_GOOGLE_CREDENTIALS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="LABEL" name="PARQUET_NOTE" show="false" value="Parquet is only supported if the distribution uses embedded&#10;&#9;&#9;&#9;&#9;Hive version 0.10 or later.&#10;&#9;&#9;&#9;"/>
+    <elementParameter field="CHECK" name="USE_PARQUET" value="false"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select count(*) from &quot; + context.parameter_target_database + &quot;.&quot; +  context.parameter_source_tablename"/>
+    <elementParameter field="CHECK" name="STORE_BY_HBASE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ZOOKEEPER_QUORUM" show="false" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="ZOOKEEPER_CLIENT_PORT" show="false" value="&quot;2181&quot;"/>
+    <elementParameter field="CHECK" name="SET_ZNODE_PARENT" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ZNODE_PARENT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HBASE_MASTER_PRINCIPAL" show="false" value="&quot;hbase/_HOST@EXAMPLE.COM&quot;"/>
+    <elementParameter field="TEXT" name="HBASE_REIGONSERVER_PRINCIPAL" show="false" value="&quot;hbase/_HOST@EXAMPLE.COM&quot;"/>
+    <elementParameter field="CHECK" name="DEFINE_REGISTER_JAR" show="false" value="false"/>
+    <elementParameter field="LABEL" name="REGISTER_JAR_NOTE" show="false" value="When filling in the Jar path information below, make sure that the JAR files are available on the server."/>
+    <elementParameter field="TABLE" name="REGISTER_JAR" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="TEZ_LIB" show="false" value="INSTALL"/>
+    <elementParameter field="DIRECTORY_HADOOP" name="TEZ_LIB_FOLDER" show="false" value="&quot;/tmp/{USERNAME}/talend_tez_libs/{custom|HIVE_VERSION}&quot;"/>
+    <elementParameter field="TEXT" name="GROUP" show="false" value="&quot;supergroup&quot;"/>
+    <elementParameter field="TEXT" name="TEZ_JARS_NAME" show="false" value="avro-1.5.4.jar,commons-cli-1.2.jar,commons-collections4-4.0.jar,guava-11.0.2.jar,guice-3.0.jar,hadoop-mapreduce-client-common-2.4.0.2.1.1.0-385.jar,hadoop-mapreduce-client-core-2.4.0.2.1.1.0-385.jar,hadoop-mapreduce-client-shuffle-2.4.0.2.1.1.0-385.jar,jettison-1.3.4.jar,protobuf-java-2.5.0.jar,snappy-java-1.0.4.1.jar,tez-api-0.4.0.2.1.1.0-385.jar,tez-common-0.4.0.2.1.1.0-385.jar,tez-dag-0.4.0.2.1.1.0-385.jar,tez-mapreduce-0.4.0.2.1.1.0-385.jar,tez-mapreduce-examples-0.4.0.2.1.1.0-385.jar,tez-runtime-internals-0.4.0.2.1.1.0-385.jar,tez-runtime-library-0.4.0.2.1.1.0-385.jar,tez-tests-0.4.0.2.1.1.0-385.jar,commons-lang3-3.0.jar"/>
+    <elementParameter field="BOTH_HADOOP" name="TEZ_LIB_PATH" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="TEZ_LIB_NAME" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="If you are on Windows, add a '/' in front of the path you type in."/>
+    <elementParameter field="CHECK" name="SET_TEMP_PATH" value="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_PATH" show="false" value="&quot;&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="target_count"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="HADOOP_ADVANCED_PROPERTIES"/>
+    <elementParameter field="TABLE" name="ADVANCED_PROPERTIES"/>
+    <elementParameter field="TEXT" name="MAPRED_JOB_MAP_MEMORY_MB" show="false" value="&quot;1000&quot;"/>
+    <elementParameter field="TEXT" name="MAPRED_JOB_REDUCE_MEMORY_MB" show="false" value="&quot;1000&quot;"/>
+    <elementParameter field="CHECK" name="SET_MEMORY" value="false"/>
+    <elementParameter field="TEXT" name="MAPREDUCE_MAP_MEMORY_MB" show="false" value="&quot;1024&quot;"/>
+    <elementParameter field="TEXT" name="MAPREDUCE_REDUCE_MEMORY_MB" show="false" value="&quot;1024&quot;"/>
+    <elementParameter field="TEXT" name="YARN_APP_MAPREDUCE_AM_RESOURCE_MB" show="false" value="&quot;1024&quot;"/>
+    <elementParameter field="TEXT" name="CLASSPATH_SEPARATOR" value="&quot;:&quot;"/>
+    <elementParameter field="CHECK" name="IS_VIRTUAL_COMPONENT" show="false" value="true"/>
+    <elementParameter field="TEXT" name="INPUT_STREAM_NAME" show="false" value="tHiveInputInTotFileInputDelimitedStream"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;\t&quot;"/>
+    <elementParameter field="CHECK" name="SET_MAPR_HOME_DIR" show="false" value="false"/>
+    <elementParameter field="TEXT" name="MAPR_HOME_DIR" show="false" value="&quot;/opt/mapr&quot;"/>
+    <elementParameter field="CHECK" name="SET_HADOOP_LOGIN" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HADOOP_LOGIN" show="false" value="&quot;kerberos&quot;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Get Target Table Count"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tHiveInput_1">
+      <column comment="" key="false" length="-1" name="target_count" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="480">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFlowToIterate_2"/>
+    <elementParameter field="CHECK" name="DEFAULT_MAP" value="true"/>
+    <elementParameter field="TABLE" name="MAP" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFlowToIterate_2"/>
+  </node>
+  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="480">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSetGlobalVar_2"/>
+    <elementParameter field="TABLE" name="VARIABLES">
+      <elementValue elementRef="KEY" value="&quot;target_record_count&quot;"/>
+      <elementValue elementRef="VALUE" value="((Integer)globalMap.get(&quot;row2.target_count&quot;))"/>
+      <elementValue elementRef="KEY" value="&quot;job_status&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;1&quot;"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="Set Target Count"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSetGlobalVar_2"/>
+  </node>
+  <node componentName="tDie" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_1"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;Error:  Sqoop command for table &quot; + context.parameter_source_tablename + &quot; FAILED&quot;"/>
+    <elementParameter field="TEXT" name="CODE" value="4"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+    <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Log Error"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDie_1"/>
+  </node>
+  <node componentName="tSqoopImport" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSqoopImport_1"/>
+    <elementParameter field="LABEL" name="NOTE_COMMANDINE" value="The available options are based on Sqoop 1.4.4. If you use&#10;&#9;&#9;&#9;&#9;an earlier version, read the Sqoop documentation in order to find&#10;&#9;&#9;&#9;&#9;those which are not available.&#10;&#9;&#9;&#9;"/>
+    <elementParameter field="RADIO" name="USE_COMMANDLINE" value="true"/>
+    <elementParameter field="RADIO" name="USE_JAVAAPI" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DISTRIBUTION" show="false" value="CLOUDERA"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="Cloudera_CDH5_10"/>
+    <elementParameter field="HADOOP_DISTRIBUTION" name="SQOOP" show="false" value=""/>
+    <elementParameter field="HADOOP_JARS_DIALOG" name="HADOOP_CUSTOM_JARS" show="false" value=""/>
+    <elementParameter field="CHECK" name="USE_YARN" show="false" value="false"/>
+    <elementParameter field="CHECK" name="CROSS_PLATFORM_SUBMISSION" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FS_DEFAULT_NAME" show="false" value="&quot;hdfs://ip-172-30-0-40.us-west-2.compute.internal:8020&quot;"/>
+    <elementParameter field="TEXT" name="MAPRED_JOB_TRACKER" show="false" value="&quot;localhost:8021&quot;"/>
+    <elementParameter field="TEXT" name="RESOURCE_MANAGER" show="false" value="&quot;ip-172-30-0-40.us-west-2.compute.internal:8032&quot;"/>
+    <elementParameter field="CHECK" name="SET_SCHEDULER_ADDRESS" show="false" value="true"/>
+    <elementParameter field="TEXT" name="RESOURCEMANAGER_SCHEDULER_ADDRESS" show="false" value="&quot;ip-172-30-0-40.us-west-2.compute.internal:8030&quot;"/>
+    <elementParameter field="CHECK" name="SET_JOBHISTORY_ADDRESS" show="false" value="true"/>
+    <elementParameter field="TEXT" name="JOBHISTORY_ADDRESS" show="false" value="&quot;ip-172-30-0-40.us-west-2.compute.internal:10020&quot;"/>
+    <elementParameter field="CHECK" name="SET_STAGING_DIRECTORY" show="false" value="true"/>
+    <elementParameter field="TEXT" name="STAGING_DIRECTORY" show="false" value="&quot;/user&quot;"/>
+    <elementParameter field="CHECK" name="USE_DATANODE_HOSTNAME" show="false" value="true"/>
+    <elementParameter field="CHECK" name="USE_KRB" show="false" value="true"/>
+    <elementParameter field="TEXT" name="NAMENODE_PRINCIPAL" show="false" value="&quot;hdfs/_HOST@PRESALES.TALEND.US&quot;"/>
+    <elementParameter field="TEXT" name="JOBTRACKER_PRINCIPAL" show="false" value="&quot;jt/_HOST@EXAMPLE.COM&quot;"/>
+    <elementParameter field="TEXT" name="RESOURCEMANAGER_PRINCIPAL" show="false" value="&quot;yarn/_HOST@PRESALES.TALEND.US&quot;"/>
+    <elementParameter field="TEXT" name="JOBHISTORY_PRINCIPAL" show="false" value="&quot;mapred/_HOST@PRESALES.TALEND.US&quot;"/>
+    <elementParameter field="CHECK" name="USE_KEYTAB" show="false" value="true"/>
+    <elementParameter field="TEXT" name="PRINCIPAL" show="false" value="&quot;uzubair&quot;"/>
+    <elementParameter field="FILE" name="KEYTAB_PATH" show="false" value="&quot;/home/uzubair/uzubair.keytab&quot;"/>
+    <elementParameter field="CHECK" name="USE_MAPRTICKET" show="false" value="false"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_USERNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="MAPRTICKET_PASSWORD" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="TEXT" name="MAPRTICKET_CLUSTER" show="false" value="&quot;demo.mapr.com&quot;"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_DURATION" show="false" value="86400L"/>
+    <elementParameter field="TEXT" name="HADOOP_USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="CONNECTION" value="context.parameter_source_jdbc_url"/>
+    <elementParameter field="TEXT" name="USERNAME" value="context.parameter_source_jdbc_username"/>
+    <elementParameter field="CHECK" name="PASSWORD_STORED_IN_FILE" value="false"/>
+    <elementParameter field="TEXT" name="PASSWORD_FILE" show="false" value="&quot;file:///&quot;"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="8pW6Nmy2kuf2zP4MbD5/0jNvCJlnW6V4Lt8HRnp9o3sSJxOLYFspFQ=="/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false">
+      <elementValue elementRef="JAR_NAME" value="mysql-connector-java-5.1.30-bin.jar"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;com.mysql.jdbc.Driver&quot;"/>
+    <elementParameter field="TEXT" name="TABLE" value="context.parameter_source_tablename"/>
+    <elementParameter field="CLOSED_LIST" name="FILE_FORMAT" value="textfile"/>
+    <elementParameter field="CHECK" name="DELETE_TARGET_DIR" value="true"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DEFINE_HADOOP_CODEC" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HADOOP_CODEC" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIRECT" value="false"/>
+    <elementParameter field="CHECK" name="DEFINE_DIRECT_SPLIT_SIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DIRECT_SPLIT_SIZE" show="false" value="&quot;1024&quot;"/>
+    <elementParameter field="CHECK" name="USE_COLUMNS" value="false"/>
+    <elementParameter field="TABLE" name="COLUMNS" show="false"/>
+    <elementParameter field="CHECK" name="USE_WHERE" value="true"/>
+    <elementParameter field="TEXT" name="WHERE" value="&quot;1=1&quot;  + context.parameter_source_where_condition +  &quot; &quot;"/>
+    <elementParameter field="CHECK" name="USE_QUERY" value="false"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" show="false" value="&quot;select id, name from employee where $CONDITIONS&quot;"/>
+    <elementParameter field="LABEL" name="QUERY_LABEL" show="false" value="When importing a free-form query, you must specify a&#10;&#9;&#9;&#9;&#9;destination directory. If you want to import the results of a query&#10;&#9;&#9;&#9;&#9;in parallel, you must select a splitting column with --split-by&#10;&#9;&#9;&#9;"/>
+    <elementParameter field="CHECK" name="USE_TARGET" value="true"/>
+    <elementParameter field="TEXT" name="TARGET" value="context.parameter_targer_dir + context.parameter_source_tablename"/>
+    <elementParameter field="CHECK" name="USE_SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT" show="false" value="((String)globalMap.get(&quot;row2.split_by&quot;))"/>
+    <elementParameter field="CHECK" name="USE_MAPPERS" value="true"/>
+    <elementParameter field="TEXT" name="MAPPERS" value="context.parameter_mappers"/>
+    <elementParameter field="CHECK" name="PRINT_LOG" value="false"/>
+    <elementParameter field="CHECK" name="VERBOSE" show="false" value="true"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="MYSQL_DELIMITERS" value="false"/>
+    <elementParameter field="CHECK" name="DEFINE_JAVA_MAPPING" value="false"/>
+    <elementParameter field="TABLE" name="JAVA_TYPE_MAPPING" show="false"/>
+    <elementParameter field="CHECK" name="DEFINE_HIVE_MAPPING" value="false"/>
+    <elementParameter field="TABLE" name="HIVE_TYPE_MAPPING" show="false"/>
+    <elementParameter field="TABLE" name="ADDITIONAL_ARGUMENTS">
+      <elementValue elementRef="ADDITIONAL_ARGUMENT" value="--hive-import"/>
+      <elementValue elementRef="ADDITIONAL_VALUE" value=""/>
+      <elementValue elementRef="ADDITIONAL_ARGUMENT" value="--hive-overwrite"/>
+      <elementValue elementRef="ADDITIONAL_VALUE" value=""/>
+      <elementValue elementRef="ADDITIONAL_ARGUMENT" value="--hive-drop-import-delims"/>
+      <elementValue elementRef="ADDITIONAL_VALUE" value=""/>
+      <elementValue elementRef="ADDITIONAL_ARGUMENT" value="--hive-table"/>
+      <elementValue elementRef="ADDITIONAL_VALUE" value="context.parameter_target_database + &quot;.&quot; + context.parameter_source_tablename"/>
+      <elementValue elementRef="ADDITIONAL_ARGUMENT" value="--fields-terminated-by"/>
+      <elementValue elementRef="ADDITIONAL_VALUE" value="context.parameter_delimiter"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="ADDITIONAL_COMMANDLINE_ARGUMENTS" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="ADDITIONAL_JAVA" show="false">
+      <elementValue elementRef="ADDITIONAL_ARGUMENT" value="&quot;codegen.output.delimiters.field&quot;"/>
+      <elementValue elementRef="ADDITIONAL_VALUE" value="&quot;|&quot;"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_SPEED_PARALLEL" value="false"/>
+    <elementParameter field="LABEL" name="NOTE_CUSTOMER" value="This function only applies for HDP and Teradata"/>
+    <elementParameter field="TABLE" name="SPECIFIC_PARAMS" show="false"/>
+    <elementParameter field="CHECK" name="USE_ADDITION_PARAM" show="false" value="false"/>
+    <elementParameter field="TEXT" name="SPECIFIC_ADDITION_PARAM" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="HADOOP_ADVANCED_PROPERTIES" show="false"/>
+    <elementParameter field="TEXT" name="MAPRED_JOB_MAP_MEMORY_MB" show="false" value="&quot;1000&quot;"/>
+    <elementParameter field="TEXT" name="MAPRED_JOB_REDUCE_MEMORY_MB" show="false" value="&quot;1000&quot;"/>
+    <elementParameter field="CHECK" name="SET_MEMORY" show="false" value="false"/>
+    <elementParameter field="TEXT" name="MAPREDUCE_MAP_MEMORY_MB" show="false" value="&quot;1024&quot;"/>
+    <elementParameter field="TEXT" name="MAPREDUCE_REDUCE_MEMORY_MB" show="false" value="&quot;1024&quot;"/>
+    <elementParameter field="TEXT" name="YARN_APP_MAPREDUCE_AM_RESOURCE_MB" show="false" value="&quot;1024&quot;"/>
+    <elementParameter field="TEXT" name="CLASSPATH_SEPARATOR" show="false" value="&quot;:&quot;"/>
+    <elementParameter field="CHECK" name="SET_MAPR_HOME_DIR" show="false" value="false"/>
+    <elementParameter field="TEXT" name="MAPR_HOME_DIR" show="false" value="&quot;/opt/mapr&quot;"/>
+    <elementParameter field="CHECK" name="SET_HADOOP_LOGIN" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HADOOP_LOGIN" show="false" value="&quot;kerberos&quot;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Execute Sqoop Command"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="jl_pre_ingestion_stats" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="608" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="jl_pre_ingestion_stats_1"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="CHECK" name="DUMMY" show="false" value="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
+    <elementParameter field="CHECK" name="START" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="CLOSED_LIST" name="TRIGGER_INPUT_1" value="SUBJOB_OK"/>
+    <elementParameter field="COMPONENT_LIST" name="TRIGGER_INPUT_1:COMPONENT_LIST" value="tChronometerStart_1"/>
+    <elementParameter field="TEXT" name="LABEL" value="joblet_ingestion_stats"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+  </node>
+  <node componentName="jl_post_ingestion_stats" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="608" posY="640">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="jl_post_ingestion_stats_1"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="CHECK" name="DUMMY" show="false" value="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
+    <elementParameter field="CHECK" name="START" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="CLOSED_LIST" name="TRIGGER_INPUT_1" value="SUBJOB_OK"/>
+    <elementParameter field="COMPONENT_LIST" name="TRIGGER_INPUT_1:COMPONENT_LIST" value="tChronometerStop_2"/>
+    <elementParameter field="TEXT" name="LABEL" value="jl_post_ingestion_stats"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+  </node>
+  <node componentName="tPostjob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="640">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPostjob_3"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="jl_ingestion_logs" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="864" posY="640">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="jl_ingestion_logs_1"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="CHECK" name="DUMMY" show="false" value="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
+    <elementParameter field="CHECK" name="START" show="false" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="LABEL" value="jl_ingestion_logs"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+  </node>
+  <node componentName="tChronometerStart" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tChronometerStart_1"/>
+    <elementParameter field="TEXT" name="CAPTION" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Job Started"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tChronometerStop" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="640">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tChronometerStop_2"/>
+    <elementParameter field="RADIO" name="SINCE_BEGINNING" value="false"/>
+    <elementParameter field="RADIO" name="SINCE_STARTER" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="STARTER" value="tChronometerStart_1"/>
+    <elementParameter field="CHECK" name="DISPLAY" value="true"/>
+    <elementParameter field="CHECK" name="DISPLAY_COMPONENT_NAME" value="true"/>
+    <elementParameter field="TEXT" name="CAPTION" value="&quot;Job Duration: &quot;"/>
+    <elementParameter field="CHECK" name="DISPLAY_READABLE_DURATION" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="Job Completed"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tJDBCInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJDBCInput_1"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="LABEL" value="Get Source Table Count"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter name="PROPERTIES" value="{&quot;@id&quot;:1,&quot;@type&quot;:&quot;org.talend.components.jdbc.tjdbcinput.TJDBCInputProperties&quot;,&quot;referencedComponent&quot;:{&quot;referenceType&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.EnumProperty&quot;,&quot;flags&quot;:null,&quot;storedValue&quot;:{&quot;@type&quot;:&quot;org.talend.components.api.properties.ComponentReferenceProperties$ReferenceType&quot;,&quot;name&quot;:&quot;COMPONENT_INSTANCE&quot;},&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:{&quot;@type&quot;:&quot;java.util.Arrays$ArrayList&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.components.api.properties.ComponentReferenceProperties$ReferenceType&quot;,&quot;name&quot;:&quot;THIS_COMPONENT&quot;},{&quot;@type&quot;:&quot;org.talend.components.api.properties.ComponentReferenceProperties$ReferenceType&quot;,&quot;name&quot;:&quot;COMPONENT_TYPE&quot;},{&quot;@type&quot;:&quot;org.talend.components.api.properties.ComponentReferenceProperties$ReferenceType&quot;,&quot;name&quot;:&quot;COMPONENT_INSTANCE&quot;}]},&quot;currentType&quot;:&quot;org.talend.components.api.properties.ComponentReferenceProperties&lt;P extends org.talend.daikon.properties.Properties&gt;.ReferenceType&quot;,&quot;name&quot;:&quot;referenceType&quot;,&quot;tags&quot;:null},&quot;componentInstanceId&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;jl_pre_ingestion_stats_1_tJDBCConnection_1&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;ADD_QUOTES&quot;:true},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;componentInstanceId&quot;,&quot;tags&quot;:null},&quot;referenceDefinitionName&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;tJDBCConnection&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;referenceDefinitionName&quot;,&quot;tags&quot;:null},&quot;reference&quot;:null,&quot;name&quot;:&quot;referencedComponent&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null},&quot;connection&quot;:{&quot;jdbcUrl&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;\&quot;jdbc:\&quot;&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;jdbcUrl&quot;,&quot;tags&quot;:null},&quot;driverTable&quot;:{&quot;drivers&quot;:{&quot;flags&quot;:null,&quot;storedValue&quot;:null,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.util.List&lt;java.lang.String&gt;&quot;,&quot;name&quot;:&quot;drivers&quot;,&quot;tags&quot;:null},&quot;name&quot;:&quot;driverTable&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null},&quot;driverClass&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;\&quot;\&quot;&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;driverClass&quot;,&quot;tags&quot;:null},&quot;userPassword&quot;:{&quot;useAuth&quot;:{&quot;flags&quot;:null,&quot;storedValue&quot;:{&quot;@type&quot;:&quot;boolean&quot;,&quot;value&quot;:false},&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.Boolean&quot;,&quot;name&quot;:&quot;useAuth&quot;,&quot;tags&quot;:null},&quot;userId&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;\&quot;\&quot;&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;userId&quot;,&quot;tags&quot;:null},&quot;password&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:{&quot;@type&quot;:&quot;java.util.RegularEnumSet&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;ENCRYPT&quot;},{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;SUPPRESS_LOGGING&quot;}]},&quot;storedValue&quot;:&quot;0RMsyjmybrE=&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;password&quot;,&quot;tags&quot;:null},&quot;needSwitch&quot;:false,&quot;name&quot;:&quot;userPassword&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null},&quot;useInWizard&quot;:false,&quot;name&quot;:&quot;connection&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null},&quot;schemaListener&quot;:{&quot;@type&quot;:&quot;org.talend.components.jdbc.tjdbcinput.TJDBCInputProperties$2&quot;,&quot;this$0&quot;:{&quot;@ref&quot;:1}},&quot;main&quot;:{&quot;@type&quot;:&quot;org.talend.components.jdbc.tjdbcinput.TJDBCInputProperties$1&quot;,&quot;this$0&quot;:{&quot;@ref&quot;:1},&quot;schema&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.SchemaProperty&quot;,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;{\&quot;type\&quot;:\&quot;record\&quot;,\&quot;name\&quot;:\&quot;tJDBCInput_1\&quot;,\&quot;fields\&quot;:[{\&quot;name\&quot;:\&quot;record_count\&quot;,\&quot;type\&quot;:[\&quot;int\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbType\&quot;:\&quot;INT\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;record_count\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_Integer\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;record_count\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;}],\&quot;di.table.name\&quot;:\&quot;tJDBCInput_1\&quot;,\&quot;di.table.label\&quot;:\&quot;tJDBCInput_1\&quot;}&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;org.apache.avro.Schema&quot;,&quot;name&quot;:&quot;schema&quot;,&quot;tags&quot;:null},&quot;name&quot;:&quot;main&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null},&quot;tableSelection&quot;:{&quot;tablename&quot;:{&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;\&quot;\&quot;&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;tablename&quot;,&quot;tags&quot;:null},&quot;connection&quot;:{&quot;@ref&quot;:1},&quot;name&quot;:&quot;tableSelection&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null},&quot;sql&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;\&quot;select count(*) from \&quot; + context.parameter_source_tablename&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;LINE_SEPARATOR_REPLACED_TO&quot;:&quot; &quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;sql&quot;,&quot;tags&quot;:null},&quot;useDataSource&quot;:{&quot;flags&quot;:null,&quot;storedValue&quot;:{&quot;@type&quot;:&quot;boolean&quot;,&quot;value&quot;:false},&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.Boolean&quot;,&quot;name&quot;:&quot;useDataSource&quot;,&quot;tags&quot;:null},&quot;dataSource&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:{&quot;@type&quot;:&quot;java.util.RegularEnumSet&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;HIDDEN&quot;}]},&quot;storedValue&quot;:&quot;\&quot;\&quot;&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;dataSource&quot;,&quot;tags&quot;:null},&quot;useCursor&quot;:{&quot;flags&quot;:null,&quot;storedValue&quot;:{&quot;@type&quot;:&quot;boolean&quot;,&quot;value&quot;:false},&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.Boolean&quot;,&quot;name&quot;:&quot;useCursor&quot;,&quot;tags&quot;:null},&quot;cursor&quot;:{&quot;flags&quot;:{&quot;@type&quot;:&quot;java.util.RegularEnumSet&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;HIDDEN&quot;}]},&quot;storedValue&quot;:&quot;1000&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.Integer&quot;,&quot;name&quot;:&quot;cursor&quot;,&quot;tags&quot;:null},&quot;trimStringOrCharColumns&quot;:{&quot;flags&quot;:null,&quot;storedValue&quot;:{&quot;@type&quot;:&quot;boolean&quot;,&quot;value&quot;:false},&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.Boolean&quot;,&quot;name&quot;:&quot;trimStringOrCharColumns&quot;,&quot;tags&quot;:null},&quot;trimTable&quot;:{&quot;trim&quot;:{&quot;flags&quot;:null,&quot;storedValue&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;,&quot;@items&quot;:[&quot;false&quot;]},&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.util.List&lt;java.lang.Boolean&gt;&quot;,&quot;name&quot;:&quot;trim&quot;,&quot;tags&quot;:null},&quot;columnName&quot;:{&quot;flags&quot;:null,&quot;storedValue&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;,&quot;@items&quot;:[&quot;record_count&quot;]},&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;ADD_QUOTES&quot;:true},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.util.List&lt;java.lang.String&gt;&quot;,&quot;name&quot;:&quot;columnName&quot;,&quot;tags&quot;:null},&quot;name&quot;:&quot;trimTable&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null},&quot;enableDBMapping&quot;:{&quot;flags&quot;:null,&quot;storedValue&quot;:{&quot;@type&quot;:&quot;boolean&quot;,&quot;value&quot;:false},&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.Boolean&quot;,&quot;name&quot;:&quot;enableDBMapping&quot;,&quot;tags&quot;:null},&quot;dbMapping&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.EnumProperty&quot;,&quot;flags&quot;:{&quot;@type&quot;:&quot;java.util.RegularEnumSet&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;HIDDEN&quot;}]},&quot;storedValue&quot;:&quot;mysql_id&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:{&quot;@type&quot;:&quot;java.util.Arrays$ArrayList&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.DBTypes&quot;,&quot;name&quot;:&quot;AS400&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.DBTypes&quot;,&quot;name&quot;:&quot;ACCESS&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.DBTypes&quot;,&quot;name&quot;:&quot;DB2&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.DBTypes&quot;,&quot;name&quot;:&quot;FIREBIRD&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.DBTypes&quot;,&quot;name&quot;:&quot;HSQLDB&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.DBTypes&quot;,&quot;name&quot;:&quot;INFORMIX&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.DBTypes&quot;,&quot;name&quot;:&quot;INGRES&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.DBTypes&quot;,&quot;name&quot;:&quot;VECTORWISE&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.DBTypes&quot;,&quot;name&quot;:&quot;INTERBASE&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.DBTypes&quot;,&quot;name&quot;:&quot;JAVADB&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.DBTypes&quot;,&quot;name&quot;:&quot;MAXDB&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.DBTypes&quot;,&quot;name&quot;:&quot;MSSQL&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.DBTypes&quot;,&quot;name&quot;:&quot;MYSQL&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.DBTypes&quot;,&quot;name&quot;:&quot;NETEZZA&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.DBTypes&quot;,&quot;name&quot;:&quot;ORACLE&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.DBTypes&quot;,&quot;name&quot;:&quot;POSTGRESQL&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.DBTypes&quot;,&quot;name&quot;:&quot;POSTGREPLUS&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.DBTypes&quot;,&quot;name&quot;:&quot;SQLITE&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.DBTypes&quot;,&quot;name&quot;:&quot;SYBASE&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.DBTypes&quot;,&quot;name&quot;:&quot;SAPHANA&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.DBTypes&quot;,&quot;name&quot;:&quot;TERADATA&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.DBTypes&quot;,&quot;name&quot;:&quot;VERTICA&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.DBTypes&quot;,&quot;name&quot;:&quot;H2&quot;},{&quot;@type&quot;:&quot;org.talend.components.jdbc.module.DBTypes&quot;,&quot;name&quot;:&quot;ODBC&quot;}]},&quot;currentType&quot;:&quot;org.talend.components.jdbc.module.DBTypes&quot;,&quot;name&quot;:&quot;dbMapping&quot;,&quot;tags&quot;:null},&quot;name&quot;:&quot;root&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null}"/>
+    <metadata connector="FLOW" name="tJDBCInput_1">
+      <column comment="" key="false" length="-1" name="record_count" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFlowToIterate_1"/>
+    <elementParameter field="CHECK" name="DEFAULT_MAP" value="true"/>
+    <elementParameter field="TABLE" name="MAP" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFlowToIterate_1"/>
+  </node>
+  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSetGlobalVar_1"/>
+    <elementParameter field="TABLE" name="VARIABLES">
+      <elementValue elementRef="KEY" value="&quot;source_record_count&quot;"/>
+      <elementValue elementRef="VALUE" value="((Integer)globalMap.get(&quot;row1.record_count&quot;))"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="Set Source Count"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSetGlobalVar_1"/>
+  </node>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tHiveInput_1" offsetLabelX="0" offsetLabelY="0" source="tHiveInput_1" target="tFlowToIterate_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFlowToIterate_2" offsetLabelX="0" offsetLabelY="0" source="tFlowToIterate_2" target="tSetGlobalVar_2">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" show="false" value="2"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="iterate2"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSqoopImport_1" offsetLabelX="0" offsetLabelY="0" source="tSqoopImport_1" target="tHiveInput_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk2"/>
+  </connection>
+  <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tSqoopImport_1" offsetLabelX="0" offsetLabelY="0" source="tSqoopImport_1" target="tDie_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobError1"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPostjob_3" offsetLabelX="0" offsetLabelY="0" source="tPostjob_3" target="tChronometerStop_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tChronometerStart_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk2"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tChronometerStart_1" offsetLabelX="0" offsetLabelY="0" source="tChronometerStart_1" target="jl_pre_ingestion_stats_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk6"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tChronometerStop_2" offsetLabelX="0" offsetLabelY="0" source="tChronometerStop_2" target="jl_post_ingestion_stats_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk5"/>
+  </connection>
+  <connection connectorName="MAIN" label="row1" lineStyle="0" metaname="tJDBCInput_1" offsetLabelX="0" offsetLabelY="0" source="tJDBCInput_1" target="tFlowToIterate_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJDBCInput_1" offsetLabelX="0" offsetLabelY="0" source="tJDBCInput_1" target="tSqoopImport_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFlowToIterate_1" offsetLabelX="0" offsetLabelY="0" source="tFlowToIterate_1" target="tSetGlobalVar_1">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" show="false" value="2"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="iterate1"/>
+  </connection>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHiveInput_1"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Get Target Row Count"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="128;255;128"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSqoopImport_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="COLLAPSED" show="false" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="jl_pre_ingestion_stats_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="COLLAPSED" show="false" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="jl_post_ingestion_stats_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" show="false" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPostjob_3"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" show="false" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="jl_ingestion_logs_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tChronometerStart_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tChronometerStop_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJDBCInput_1"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Get Source Row Count"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="128;255;128"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_86d77155-9341-4356-944a-b80780515f71"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>eWg8TzBtxnaygJLLQ/YlMa4xm50fS+GI3Ocbve7x7z/mTXb/qWHzJV+2+Gi5okBlAD2aeP3QJV2g
+WHVbc2NUYQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_463cf087-2a01-4b5f-b289-cea5585c217c"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>fQgYlcNHYBgWTKHqu5HUVvBpNzx0IYQwH1es3niTVXdY3peZ+su2CpaxYuadmjYWUvvHY3wBDWsk
+p6qXC0qmkA==</DigestValue></Reference></SignedInfo><SignatureValue>JdIzNeAuPuifEVvbyfwTeo5iDXPmENFM8yT/u31Oi65pZMTdGMP+zTx5nYtOTFwBHzwTeS7TtUmi
++YiQPDL7Aqnr1Xlz6oQWGyYgXEoFhl/v9QRsFj4BI5UR97Gi89HxgukxgLAWiKkrBb184AszLXkK
+xQZzh0Zu1xQk39wqN3QX+aSzIsUHgGiTids5Mq+mCPJCOJvKgn4rrVC4hwhCdTqRLgtHmcVpbDIz
+4elB8NCf1d6r2YYNAofFh74G/wEOx9MpKR5TpGeuNADQ7Qb0Ryv3Y0asOhU08ts3ai7qgPl0bOtx
+RiwMoqAaW06EwsjCc6cWnx3WTLCXZuMRS/iOLg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
+RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
+LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
+VQQIDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1ImRDEpMCcGA1UEAwwg
+RGVmYXVsdCBjb2RlLXNpZ25pbmcgY2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw
+ggEKAoIBAQDiCz1II/o6hDUWu/ygxTCT2o/fYxVzPW23AoONQC/Vuiqh0COyLIgaMTjBPmQdTQFq
+rmM5tD64gi4TEQF+Z3iYt3daLdQUfaW9SzaMlY+XVNz5xnMBVDuiSHJSFE9lKnhgbKAHvOeoJo46
+UgWwb1za0WpRckDtjKcntwEK1orZCgrcIo1nDvFXyB5n0KfpLyktEOa0bSHde50MPbvQeB66XlEb
+lhjfs5S9WnAUja9RgqdwqZoI0ss+x/pjkQygDT8f17MktM21HOtg09lJlhMGJckhgD7jUF5tfYGM
+sv/O27g5CToFhxOnutDtsrDw7AkEQIml8KJp97bQLAFlLnh1AgMBAAGjge0wgeowHQYDVR0OBBYE
+FFzdy6ZfpUX8JwkM/SUrqkwLNqWAMB8GA1UdIwQYMBaAFOd9C3L8tYGZxoAr2SzsgnMytaj3MAsG
+A1UdDwQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzAJBgNVHRMEAjAAMHsGCWCGSAGG+EIBDQRu
+FmxEZWZhdWx0IHRoaXJkIHBhcnR5IGNvZGUtc2lnbmluZyBjZXJ0aWZpY2F0ZS4gTm8gY29tbWl0
+bWVudCBpcyBtYWRlIG9uIHRoZSBjb250ZW50IHNpZ25lZCBieSB0aGUgdGhpcmQgcGFydHkwDQYJ
+KoZIhvcNAQELBQADggIBAKzYdnzoFgrRtDLSSzWtwuOrGo5+1RPoDHm/1dlbVnB7oZzUwfRGwZT5
+ser0V7OZyt9wWR8iQ2ka30fHWrNAosNtlIkF88s5YZw7OOIMxR+qYA99BnWLa79DZVIuukI2f5qJ
+Cr9nw6Oygo8CWeNMWhtXcvV4gqROhb2QMBrvWBw9QvNK1XMdtPShfWiXwyPzzRKgwqrN2meXtOY3
+S+MXu6u+RUD9EYeElp9M+9Yp+zRySl5/s+0sbvo7qz369dlsw8XhKXT+s4YQQe3Sx14Kg3SDFXKn
+QcVgycaZMOw4YUxOeP2hKOHnNuOMORfu3qlYkN/0RMGjn6r4PU4+yL276TiWI5b8J06y4leng2as
+r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
+EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
+BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
+6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_463cf087-2a01-4b5f-b289-cea5585c217c" Target="#_86d77155-9341-4356-944a-b80780515f71"><Timestamp>2018-06-26 20:20:57</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

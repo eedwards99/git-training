@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <TalendMetadata:FileExcelConnection Encoding="UTF-8" FilePath="D:/Talend/Pre Sales/Demos/Accounts/URBIS/Data/Industrial Occupier Survey - 2017-12- QLD - LIVE.XLSX" FirstLineCaption="true" HeaderValue="6" Server="Localhost 127.0.0.1" SheetName="Input Sheet" UseHeader="true" dataPackage="_qKXIQVGpEeifOpH2iBUY9w" decimalSeparator="'.'" firstColumn="1" generationMode="USER_MODE" name="Survey_QLD" sheetList="Input Sheet:w&#10;" thousandSeparator="','" xmi:id="_oEEWAFoAEei2YpISzs-MgQ">
+    <sheetColumns>A</sheetColumns>
+    <sheetColumns>B</sheetColumns>
+    <sheetColumns>C</sheetColumns>
+    <sheetColumns>D</sheetColumns>
+    <sheetColumns>E</sheetColumns>
+    <sheetColumns>F</sheetColumns>
+    <sheetColumns>G</sheetColumns>
+    <sheetColumns>H</sheetColumns>
+    <sheetColumns>I</sheetColumns>
+    <sheetColumns>J</sheetColumns>
+    <sheetColumns>K</sheetColumns>
+    <sheetColumns>L</sheetColumns>
+    <sheetColumns>M</sheetColumns>
+    <sheetColumns>N</sheetColumns>
+    <sheetColumns>O</sheetColumns>
+    <sheetColumns>P</sheetColumns>
+    <sheetColumns>Q</sheetColumns>
+    <sheetColumns>R</sheetColumns>
+    <sheetColumns>S</sheetColumns>
+    <sheetColumns>T</sheetColumns>
+    <sheetColumns>U</sheetColumns>
+    <sheetColumns>V</sheetColumns>
+    <sheetColumns>W</sheetColumns>
+    <sheetColumns>X</sheetColumns>
+    <sheetColumns>Y</sheetColumns>
+    <sheetColumns>Z</sheetColumns>
+    <sheetColumns>AA</sheetColumns>
+    <sheetColumns>AB</sheetColumns>
+    <sheetColumns>AC</sheetColumns>
+    <sheetColumns>AD</sheetColumns>
+    <sheetColumns>AE</sheetColumns>
+    <sheetColumns>AF</sheetColumns>
+    <sheetColumns>AG</sheetColumns>
+    <sheetColumns>AH</sheetColumns>
+    <sheetColumns>AI</sheetColumns>
+    <sheetColumns>AJ</sheetColumns>
+    <sheetColumns>AK</sheetColumns>
+    <sheetColumns>AL</sheetColumns>
+    <sheetColumns>AM</sheetColumns>
+    <sheetColumns>AN</sheetColumns>
+    <sheetColumns>AO</sheetColumns>
+    <sheetColumns>AP</sheetColumns>
+    <sheetColumns>AQ</sheetColumns>
+    <sheetColumns>AR</sheetColumns>
+    <sheetColumns>AS</sheetColumns>
+    <sheetColumns>AT</sheetColumns>
+    <sheetColumns>AU</sheetColumns>
+    <sheetColumns>AV</sheetColumns>
+    <sheetColumns>AW</sheetColumns>
+    <sheetColumns>AX</sheetColumns>
+    <sheetColumns>AY</sheetColumns>
+    <sheetColumns>AZ</sheetColumns>
+    <sheetColumns>BA</sheetColumns>
+    <sheetColumns>BB</sheetColumns>
+    <sheetColumns>BC</sheetColumns>
+    <sheetColumns>BD</sheetColumns>
+    <sheetColumns>BE</sheetColumns>
+    <sheetColumns>BF</sheetColumns>
+    <sheetColumns>BG</sheetColumns>
+    <sheetColumns>BH</sheetColumns>
+    <sheetColumns>BI</sheetColumns>
+    <sheetColumns>BJ</sheetColumns>
+    <sheetColumns>BK</sheetColumns>
+    <sheetColumns>BL</sheetColumns>
+    <sheetColumns>BM</sheetColumns>
+    <sheetColumns>BN</sheetColumns>
+    <sheetColumns>BO</sheetColumns>
+    <sheetColumns>BP</sheetColumns>
+    <sheetColumns>BQ</sheetColumns>
+    <sheetColumns>BR</sheetColumns>
+    <sheetColumns>BS</sheetColumns>
+    <sheetColumns>BT</sheetColumns>
+    <sheetColumns>BU</sheetColumns>
+    <sheetColumns>BV</sheetColumns>
+    <sheetColumns>BW</sheetColumns>
+    <sheetColumns>BX</sheetColumns>
+    <sheetColumns>BY</sheetColumns>
+    <sheetColumns>BZ</sheetColumns>
+    <sheetColumns>CA</sheetColumns>
+    <sheetColumns>CB</sheetColumns>
+    <sheetColumns>CC</sheetColumns>
+    <sheetColumns>CD</sheetColumns>
+    <sheetColumns>CE</sheetColumns>
+    <sheetColumns>CF</sheetColumns>
+    <sheetColumns>CG</sheetColumns>
+    <sheetColumns>CH</sheetColumns>
+    <sheetColumns>CI</sheetColumns>
+    <sheetColumns>CJ</sheetColumns>
+    <sheetColumns>CK</sheetColumns>
+    <sheetColumns>CL</sheetColumns>
+    <sheetColumns>CM</sheetColumns>
+    <sheetColumns>CN</sheetColumns>
+    <sheetColumns>CO</sheetColumns>
+    <sheetColumns>CP</sheetColumns>
+    <sheetColumns>CQ</sheetColumns>
+    <sheetColumns>CR</sheetColumns>
+    <sheetColumns>CS</sheetColumns>
+    <sheetColumns>CT</sheetColumns>
+    <sheetColumns>CU</sheetColumns>
+    <sheetColumns>CV</sheetColumns>
+    <sheetColumns>CW</sheetColumns>
+    <sheetColumns>CX</sheetColumns>
+    <sheetColumns>CY</sheetColumns>
+    <sheetColumns>CZ</sheetColumns>
+    <sheetColumns>DA</sheetColumns>
+    <sheetColumns>DB</sheetColumns>
+    <sheetColumns>DC</sheetColumns>
+  </TalendMetadata:FileExcelConnection>
+  <orgomg.cwm.resource.record:RecordFile dataManager="_oEEWAFoAEei2YpISzs-MgQ" name="default" xmi:id="_qKXIQVGpEeifOpH2iBUY9w">
+    <ownedElement id="_LNEfwFGgEeifOpH2iBUY9w" label="metadata" xmi:id="_qKXvUFGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataTable">
+      <feature label="VACPID" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvUVGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Street_No_" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvUlGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Street_Address" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvU1GpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Suburb" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvVFGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Region" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvVVGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="State" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvVlGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Latitude" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvV1GpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Longitude" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvWFGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="GBA_m" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvWVGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Land_Area_m" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvWlGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Plot_Ratio" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvW1GpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Major_Occupier" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvXFGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Major_Occupier_Type" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvXVGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Owned_Leased" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvXlGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="For_Lease_Yes_No" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvX1GpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Agents" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvYFGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Area_Available" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvYVGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Asking_Rent_Per_M" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvYlGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Incentive_Range" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvY1GpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Photo_Link_Only" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvZFGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Occupency_Status" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvZVGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Year_Lease_Expiry" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvZlGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Year_Built" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvZ1GpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Construction_Basis" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvaFGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Developer" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvaVGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Grade" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvalGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Ownership_Fund_Entity" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXva1GpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Owner_Type" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvbFGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Industry_Code" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvbVGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Questions_Refs_Comment" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvblGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Questions_Refs_Reference_Number" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvb1GpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Questions_Refs_Sheet_No" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvcFGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Questions_Refs_NO_DATA" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvcVGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Accom_Grade_Total_Accom_Prime" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvclGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Accom_Grade_Total_Accom_Modern" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvc1GpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Accom_Grade_Total_Accom_Secondary" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvdFGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Accom_Grade_Total_Accom_Tertiary" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvdVGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Accom_Grade_Vacant_Accom_Prime" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvdlGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Accom_Grade_Vacant_Accom_Modern" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvd1GpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Accom_Grade_Vacant_Accom_Secondary" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXveFGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Accom_Grade_Vacant_Accom_Tertiary" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXveVGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Accom_Grade_Vacant_Accom_NO_DATA" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvelGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Accom_Use_Total_Accom_IA" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXve1GpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Accom_Use_Total_Accom_IC" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvfFGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Accom_Use_Total_Accom_CC" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvfVGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Accom_Use_Total_Accom_CF" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvflGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Accom_Use_Total_Accom_CO" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvf1GpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Accom_Use_Vacant_Accom_IA" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvgFGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Accom_Use_Vacant_Accom_IC" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvgVGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Accom_Use_Vacant_Accom_CC" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvglGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Accom_Use_Vacant_Accom_CF" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvg1GpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Accom_Use_Vacant_Accom_CO" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvhFGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Accom_Use_Vacant_Accom_NO_DATA" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvhVGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Accom_Size_Total_Accom_0_15000" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvhlGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Accom_Size_Total_Accom_15000_25000" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvh1GpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Accom_Size_Total_Accom_25000_35000" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXviFGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Accom_Size_Total_Accom_35000_50000" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXviVGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Accom_Size_Total_Accom_50000" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvilGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Accom_Size_Vacant_Accom_0_15000" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvi1GpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Accom_Size_Vacant_Accom_15000_25000" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvjFGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Accom_Size_Vacant_Accom_25000_35000" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvjVGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Accom_Size_Vacant_Accom_35000_50000" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvjlGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Accom_Size_Vacant_Accom_50000" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvj1GpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Accom_Size_Vacant_Accom_NO_DATA" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvkFGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Ownership_Profile_Goodman" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvkVGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Ownership_Profile_Frasers_Property" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvklGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Ownership_Profile_Dexus" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvk1GpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Ownership_Profile_Growthpoint" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvlFGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Ownership_Profile_GPT" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvlVGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Ownership_Profile_Stockland" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvllGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Ownership_Profile_Pellicano" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvl1GpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Ownership_Profile_GIC" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvmFGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Ownership_Profile_Charter_Hall" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvmVGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Ownership_Profile_ISPT" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvmlGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Ownership_Profile_Small_Instit" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvm1GpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Ownership_Profile_Private" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvnFGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Ownership_Profile_Major_Instit" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvnVGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Ownership_Profile_Unknown" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvnlGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Ownership_Profile_NO_DATA" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvn1GpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Major_Occupier_Profile_Toll" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvoFGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Major_Occupier_Profile_Amcor" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvoVGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Major_Occupier_Profile_Ford" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvolGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Major_Occupier_Profile_GM" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvo1GpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Major_Occupier_Profile_Toyota" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvpFGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Major_Occupier_Profile_Woolworths" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvpVGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Major_Occupier_Profile_Coles" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvplGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Major_Occupier_Profile_Caterpillar" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvp1GpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Major_Occupier_Profile_Visy" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvqFGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Major_Occupier_Profile_One_Steel" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvqVGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Major_Occupier_Profile_Viridian_Glass" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvqlGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Major_Occupier_Profile_Linfox" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvq1GpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Major_Occupier_Profile_Bluescope_Steel" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvrFGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Major_Occupier_Profile_Fosters" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvrVGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Major_Occupier_Profile_Aldi" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvrlGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Major_Occupier_Profile_Kmart" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvr1GpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Major_Occupier_Profile_Metcash" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvsFGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Major_Occupier_Profile_Goodyear" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvsVGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Major_Occupier_Profile_Australia_Post" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvslGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Major_Occupier_Profile_CSR" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvs1GpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Major_Occupier_Profile_Fastline" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvtFGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Major_Occupier_Profile_Masters" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvtVGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Major_Occupier_Profile_Bunnings" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvtlGpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Major_Occupier_Profile_Other" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" talendType="id_String" xmi:id="_qKXvt1GpEeifOpH2iBUY9w" xsi:type="TalendMetadata:MetadataColumn"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_b2489156-741c-4106-b6bc-e3dcce87f437"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>S23MJj61Sht1Ipti4M/m5gvb/GCojIUdPIAvVOT8yifj3Lc7GhJm68BqJe8Aj3dIQfHaAd/1VRUW
+S31nDwf4Ww==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_ef1b8431-f6e4-4206-b9a2-39fd6eccfa06"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>pdC0vBXQwut7/Z5DuhRB5KKTf754ijs+PyDmRe/pWaeWAzdS9qK+895QVsmQeQ55zOiAcVQHahK6
+lOk5LBJ9Dg==</DigestValue></Reference></SignedInfo><SignatureValue>tOIpWr2kAjpDNHPWsanuwAG19o68pJSjImgtMkYRico2384mw+jFBJS1z9Bd06W2Wdkod4/A0Wvf
+2iFKaOfhNTSjisaVrv67/4LmpeeXCJI6Ot1xEnbPj/b6F8OyuRd8IC/Q/OwBQTaZ0jifmVmD7klk
+RZNzPNifxT2flTZS2VTPg4CTuQtMwot37k70cRHoJdXcyPx/FxDSNY7mdTQki1X0vEWM6NFGm0ZX
+oTfIC52UT2Atxnu5vOc9lJIRqk3/RTNzOm0Trn7xPFFYbhiCAF1XICcYptXJF9R8Aw6VtwJziThq
+dntJGLd/awEwfyFcAjrvpbUeZ3e9uD421RMaXw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
+RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
+LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
+VQQIDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1ImRDEpMCcGA1UEAwwg
+RGVmYXVsdCBjb2RlLXNpZ25pbmcgY2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw
+ggEKAoIBAQDiCz1II/o6hDUWu/ygxTCT2o/fYxVzPW23AoONQC/Vuiqh0COyLIgaMTjBPmQdTQFq
+rmM5tD64gi4TEQF+Z3iYt3daLdQUfaW9SzaMlY+XVNz5xnMBVDuiSHJSFE9lKnhgbKAHvOeoJo46
+UgWwb1za0WpRckDtjKcntwEK1orZCgrcIo1nDvFXyB5n0KfpLyktEOa0bSHde50MPbvQeB66XlEb
+lhjfs5S9WnAUja9RgqdwqZoI0ss+x/pjkQygDT8f17MktM21HOtg09lJlhMGJckhgD7jUF5tfYGM
+sv/O27g5CToFhxOnutDtsrDw7AkEQIml8KJp97bQLAFlLnh1AgMBAAGjge0wgeowHQYDVR0OBBYE
+FFzdy6ZfpUX8JwkM/SUrqkwLNqWAMB8GA1UdIwQYMBaAFOd9C3L8tYGZxoAr2SzsgnMytaj3MAsG
+A1UdDwQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzAJBgNVHRMEAjAAMHsGCWCGSAGG+EIBDQRu
+FmxEZWZhdWx0IHRoaXJkIHBhcnR5IGNvZGUtc2lnbmluZyBjZXJ0aWZpY2F0ZS4gTm8gY29tbWl0
+bWVudCBpcyBtYWRlIG9uIHRoZSBjb250ZW50IHNpZ25lZCBieSB0aGUgdGhpcmQgcGFydHkwDQYJ
+KoZIhvcNAQELBQADggIBAKzYdnzoFgrRtDLSSzWtwuOrGo5+1RPoDHm/1dlbVnB7oZzUwfRGwZT5
+ser0V7OZyt9wWR8iQ2ka30fHWrNAosNtlIkF88s5YZw7OOIMxR+qYA99BnWLa79DZVIuukI2f5qJ
+Cr9nw6Oygo8CWeNMWhtXcvV4gqROhb2QMBrvWBw9QvNK1XMdtPShfWiXwyPzzRKgwqrN2meXtOY3
+S+MXu6u+RUD9EYeElp9M+9Yp+zRySl5/s+0sbvo7qz369dlsw8XhKXT+s4YQQe3Sx14Kg3SDFXKn
+QcVgycaZMOw4YUxOeP2hKOHnNuOMORfu3qlYkN/0RMGjn6r4PU4+yL276TiWI5b8J06y4leng2as
+r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
+EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
+BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
+6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_ef1b8431-f6e4-4206-b9a2-39fd6eccfa06" Target="#_b2489156-741c-4106-b6bc-e3dcce87f437"><Timestamp>2018-06-26 20:20:58</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

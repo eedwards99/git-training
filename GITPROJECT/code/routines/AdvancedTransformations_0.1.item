@@ -1,0 +1,72 @@
+package routines;
+
+/*
+ * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
+ * it must be before the "{talendTypes}" key.
+ * 
+ * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
+ * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
+ * Short
+ * 
+ * 3. {Category} define a category for the Function. it is required. its value is user-defined .
+ * 
+ * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
+ * 
+ * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
+ * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
+ * added. you can have many parameters for the Function.
+ * 
+ * 5. {example} gives a example for the Function. it is optional.
+ */
+public class AdvancedTransformations {
+
+    /**
+     * StringToHashmap: Convert a String with key/value pairs to a Java Hashmap
+     * 
+     * 
+     * {talendTypes} Strings
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("1;2|3;4|5;6") inputString: The string with the list
+     * 
+     * {param} string("|") separator: The separator
+     * 
+     * {example} StringToHashmap("1;2|3;4|5;6","|") # hello world !.
+     */
+    public static java.util.Map<String,String> StringToHashmap(String inputString, String separator) {
+        
+    	String[] list = inputString.split(separator);
+    	java.util.Map<String, String> m = new java.util.HashMap<String, String>();
+    	for (int i = 0; i < list.length; i++) {
+    		m.put(list[i].substring(0,list[i].indexOf(";")), list[i].substring(list[i].indexOf(";")+1));
+    	}
+    	return m;
+      }
+    
+    /**
+     * ReplaceDynamicString: Replace a character in all columns in Dynamic Schema
+     * 
+     * 
+     * {talendTypes} Strings
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("1;2|3;4|5;6") inputString: The string with the list
+     * 
+     * {param} string("|") separator: The separator
+     * 
+     * {example} StringToHashmap("1;2|3;4|5;6","|") # hello world !.
+     */
+    public static routines.system.Dynamic ReplaceDynamicString(routines.system.Dynamic inputColumn, String OrigChar, String TargetChar) {
+        
+    	Integer nbColumns = inputColumn.getColumnCount();
+    	String columnText = "";
+    	for (int i=0; i<nbColumns; i++)
+    	{
+    		columnText = ((String)inputColumn.getColumnValue(i));
+    		inputColumn.setColumnValue(i, columnText.replace(OrigChar, TargetChar));
+    	}
+    	return inputColumn;
+      }
+}

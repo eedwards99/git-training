@@ -1,0 +1,14 @@
+package org.talend.survivorship.dups2 
+
+rule "6_country"
+    no-loop true
+    dialect "mvel"
+    ruleflow-group "6_countryGroup"
+when
+    $input : RecordIn( dataset.isMostCommon( country, "country", false) )  
+then
+    dataset.survive( $input.TALEND_INTERNAL_ID, "country", drools.getRule().getName());
+
+end
+
+

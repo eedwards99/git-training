@@ -1,0 +1,1457 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="ref_data" prompt="ref_data?" promptNeeded="false" type="id_String" value="&quot;/home/scorreia/DEMOS/TDQ_EE_MPX-All-r48034-V4.1.0RC1/workspace/refs.csv&quot;"/>
+    <contextParameter comment="" name="suspects" prompt="suspects?" promptNeeded="false" type="id_String" value="&quot;/home/scorreia/DEMOS/TDQ_EE_MPX-All-r48034-V4.1.0RC1/workspace/suspects.csv&quot;"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Users/tshaikh/workspace/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_lXWSwDjIEeCzEJHrMHoE0g" name="DQTechnical"/>
+    <routinesParameter id="_lWqWQDjIEeCzEJHrMHoE0g" name="DataOperation"/>
+    <routinesParameter id="_lXOW8DjIEeCzEJHrMHoE0g" name="DataQuality"/>
+    <routinesParameter id="_lXYH8DjIEeCzEJHrMHoE0g" name="MDM"/>
+    <routinesParameter id="_lXMhwDjIEeCzEJHrMHoE0g" name="Mathematical"/>
+    <routinesParameter id="_lXLToDjIEeCzEJHrMHoE0g" name="Numeric"/>
+    <routinesParameter id="_lXGbIDjIEeCzEJHrMHoE0g" name="Relational"/>
+    <routinesParameter id="_lWGVkDjIEeCzEJHrMHoE0g" name="SQLike"/>
+    <routinesParameter id="_lXEl8DjIEeCzEJHrMHoE0g" name="StringHandling"/>
+    <routinesParameter id="_lXIQUDjIEeCzEJHrMHoE0g" name="TalendDataGenerator"/>
+    <routinesParameter id="_lXJecDjIEeCzEJHrMHoE0g" name="TalendDate"/>
+    <routinesParameter id="_lWwc4DjIEeCzEJHrMHoE0g" name="TalendString"/>
+    <routinesParameter id="_5aMnAGP_EeC9WI7GsNPwkw" name="DqStringHandling"/>
+    <routinesParameter id="_fuIxsMVlEeWHdbLgN3lPDQ" name="DataQualityDependencies"/>
+    <routinesParameter id="_9nddkBjnEeisCoBX7n8v1Q" name="DataMasking"/>
+    <routinesParameter id="_9k8VEBjnEeisCoBX7n8v1Q" name="TalendStringUtil"/>
+  </parameters>
+  <node componentName="tRESTRequest" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRESTRequest_1"/>
+    <elementParameter field="TEXT" name="REST_ENDPOINT" value="&quot;http://localhost:8042/account/&quot;"/>
+    <elementParameter field="TABLE" name="SCHEMAS">
+      <elementValue elementRef="SCHEMA" value="match_account"/>
+      <elementValue elementRef="HTTP_VERB" value="GET"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/match/&quot;"/>
+      <elementValue elementRef="CONSUMES" value="NONE"/>
+      <elementValue elementRef="PRODUCES" value="XML-JSON"/>
+      <elementValue elementRef="STREAMING" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false"/>
+    <elementParameter field="TEXT" name="SERVICE_NAMESPACE" show="false" value="&quot;http://www.talend.org/rest/&quot;"/>
+    <elementParameter field="TEXT" name="SERVICE_NAME" show="false" value="&quot;MDM_Account_Matching_Service&quot;"/>
+    <elementParameter field="CHECK" name="SERVICE_ACTIVITY_MONITOR" value="false"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" show="false" value="BASIC"/>
+    <elementParameter field="CHECK" name="NEED_AUTHORIZATION" show="false" value="false"/>
+    <elementParameter field="CHECK" name="USE_BUSINESS_CORRELATION" value="false"/>
+    <elementParameter field="CHECK" name="LOG_MESSAGES" value="true"/>
+    <elementParameter field="CHECK" name="WRAP_JSON_REQUEST" value="true"/>
+    <elementParameter field="TABLE" name="SERVICE_LOCATOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="TABLE" name="SERVICE_ACTIVITY_MONITOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="CHECK" name="CONVERT_JSON_VALUES_TO_STRING" value="false"/>
+    <elementParameter field="CHECK" name="EXPOSE_SWAGGER_SPEC" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDE_DOC_INTO_SWAGGER_SPEC" show="false" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="WRONG_CALLS" name="WRONG_CALLS">
+      <column defaultValue="" key="false" length="255" name="uri" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="method" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="status" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="1024" name="error" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" label="match_account" name="match_account">
+      <column comment="query" key="false" length="0" name="company_name" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="query" key="false" length="30" name="fname" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="query" key="false" length="30" name="lname" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="query" key="false" length="0" name="home_phone" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="256" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_2"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_YmM9oCEvEee4LYt-4nXwyw-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="new_input">
+      <column comment="" key="false" length="0" name="company_name" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="fname" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="lname" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="home_phone" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="isReference" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="new_input" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="match_account.company_name" name="company_name" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="match_account.fname" name="fname" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="match_account.lname " name="lname" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="match_account.home_phone" name="home_phone" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="false" name="isReference" nullable="true" type="id_Boolean"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="match_account" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="company_name" nullable="true" type="id_String"/>
+        <mapperTableEntries name="fname" nullable="true" type="id_String"/>
+        <mapperTableEntries name="lname" nullable="true" type="id_String"/>
+        <mapperTableEntries name="home_phone" nullable="true" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tRecordMatching" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRecordMatching_1"/>
+    <elementParameter field="CHECK" name="REPLACED_BY_LOOKUPCOL" value="false"/>
+    <elementParameter field="TABLE" name="REPLACED_COLS" show="false"/>
+    <elementParameter field="MATCH_RULE_IMEX_CONTROLLER" name="MATCH_RULE_IMEX" value="false"/>
+    <elementParameter field="TABLE" name="JOIN_KEY">
+      <elementValue elementRef="INPUT_COLUMN" value="company_name"/>
+      <elementValue elementRef="LOOKUP_COLUMN" value="CompanyName"/>
+      <elementValue elementRef="MATCHING_TYPE" value="Levenshtein"/>
+      <elementValue elementRef="CUSTOM_MATCHER" value="&quot;&quot;"/>
+      <elementValue elementRef="TOKENIZATION_TYPE" value="No"/>
+      <elementValue elementRef="CONFIDENCE_WEIGHT" value="3"/>
+      <elementValue elementRef="HANDLE_NULL" value="nullMatchNull"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="BLOCKING_DEFINITION"/>
+    <elementParameter field="CLOSED_LIST" name="OUTPUT_STAT" value="ALL_MATCHES"/>
+    <elementParameter field="CLOSED_LIST" name="MATCHING_ALGORITHM" value="Simple VSR Matcher"/>
+    <elementParameter field="TEXT" name="MINIMUM" value="0.40"/>
+    <elementParameter field="TEXT" name="MAXIMUM" value="1.1"/>
+    <elementParameter field="CHECK" name="IS_VIRTUAL_COMPONENT" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" show="false" value="200000"/>
+    <elementParameter field="DIRECTORY" name="TMP_DIRECTORY" show="false" value="&quot;D:/Talend/5.4.1/studio/workspace&quot;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="AccountIn" name="tRecordMatching_1">
+      <column comment="" key="false" length="0" name="MDMAccntID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CompanyName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Priority" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Accnt_Status" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Contact_Info" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="First_Name" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Last_Name" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Middle_Name" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Suffix" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Prefix" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Gender" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DOB" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Mobile_Phone" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Home_Phone" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Email" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Website" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Ownership" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Logo" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ProcessData" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CreateDate" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CreatedBy" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="LastUpdated" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="LastUpdatedBy" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Eff_Start_Date" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Eff_End_Date" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DSC_Task_ID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Region" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Industry" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ParentAccnt" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="AccntLocations" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="LocationFK" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Social" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Media" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="SourceInfos" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="SourceFK" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="company_name" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="fname" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="lname" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="home_phone" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="MATCHING_DISTANCES" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="MATCHING_WEIGHT" nullable="true" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="MATCHES" label="AccountIn" name="MATCHES">
+      <column comment="" key="false" length="0" name="MDMAccntID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CompanyName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Priority" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Accnt_Status" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Contact_Info" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="First_Name" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Last_Name" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Middle_Name" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Suffix" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Prefix" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Gender" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DOB" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Mobile_Phone" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Home_Phone" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Email" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Website" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Ownership" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Logo" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ProcessData" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CreateDate" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CreatedBy" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="LastUpdated" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="LastUpdatedBy" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Eff_Start_Date" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Eff_End_Date" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DSC_Task_ID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Region" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Industry" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ParentAccnt" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="AccntLocations" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="LocationFK" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Social" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Media" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="SourceInfos" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="SourceFK" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="company_name" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="fname" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="lname" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="home_phone" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="MATCHING_DISTANCES" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="MATCHING_WEIGHT" nullable="true" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="POSSIBLE_MATCHES" label="AccountIn" name="POSSIBLE_MATCHES">
+      <column comment="" key="false" length="0" name="MDMAccntID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CompanyName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Priority" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Accnt_Status" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Contact_Info" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="First_Name" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Last_Name" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Middle_Name" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Suffix" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Prefix" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Gender" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DOB" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Mobile_Phone" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Home_Phone" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Email" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Website" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Ownership" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Logo" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ProcessData" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CreateDate" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CreatedBy" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="LastUpdated" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="LastUpdatedBy" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Eff_Start_Date" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Eff_End_Date" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DSC_Task_ID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Region" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Industry" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ParentAccnt" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="AccntLocations" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="LocationFK" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Social" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Media" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="SourceInfos" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="SourceFK" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="company_name" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="fname" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="lname" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="home_phone" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="MATCHING_DISTANCES" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="MATCHING_WEIGHT" nullable="true" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="NON_MATCHES" label="AccountIn" name="NON_MATCHES">
+      <column comment="" key="false" length="0" name="MDMAccntID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CompanyName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Priority" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Accnt_Status" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Contact_Info" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="First_Name" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Last_Name" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Middle_Name" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Suffix" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Prefix" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Gender" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DOB" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Mobile_Phone" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Home_Phone" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Email" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Website" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Ownership" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Logo" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ProcessData" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CreateDate" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CreatedBy" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="LastUpdated" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="LastUpdatedBy" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Eff_Start_Date" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Eff_End_Date" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DSC_Task_ID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Region" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Industry" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ParentAccnt" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="AccntLocations" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="LocationFK" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Social" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Media" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="SourceInfos" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="SourceFK" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="company_name" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="fname" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="lname" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="home_phone" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="MATCHING_DISTANCES" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="MATCHING_WEIGHT" nullable="true" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="832" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tXMLMap_3"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="AccountIn" name="not_matches">
+      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="row5">
+        <nodes name="MDMAccntID" type="id_String" xpath="row5/MDMAccntID"/>
+        <nodes name="CompanyName" type="id_String" xpath="row5/CompanyName"/>
+        <nodes name="Priority" type="id_String" xpath="row5/Priority"/>
+        <nodes name="Accnt_Status" type="id_String" xpath="row5/Accnt_Status"/>
+        <nodes name="Contact_Info" type="id_String" xpath="row5/Contact_Info"/>
+        <nodes name="First_Name" type="id_String" xpath="row5/First_Name"/>
+        <nodes name="Last_Name" type="id_String" xpath="row5/Last_Name"/>
+        <nodes name="Middle_Name" type="id_String" xpath="row5/Middle_Name"/>
+        <nodes name="Suffix" type="id_String" xpath="row5/Suffix"/>
+        <nodes name="Prefix" type="id_String" xpath="row5/Prefix"/>
+        <nodes name="Gender" type="id_String" xpath="row5/Gender"/>
+        <nodes name="DOB" type="id_String" xpath="row5/DOB"/>
+        <nodes name="Mobile_Phone" type="id_String" xpath="row5/Mobile_Phone"/>
+        <nodes name="Home_Phone" type="id_String" xpath="row5/Home_Phone"/>
+        <nodes name="Email" type="id_String" xpath="row5/Email"/>
+        <nodes name="Website" type="id_String" xpath="row5/Website"/>
+        <nodes name="Ownership" type="id_String" xpath="row5/Ownership"/>
+        <nodes name="Logo" type="id_String" xpath="row5/Logo"/>
+        <nodes name="ProcessData" type="id_String" xpath="row5/ProcessData"/>
+        <nodes name="CreateDate" type="id_String" xpath="row5/CreateDate"/>
+        <nodes name="CreatedBy" type="id_String" xpath="row5/CreatedBy"/>
+        <nodes name="LastUpdated" type="id_String" xpath="row5/LastUpdated"/>
+        <nodes name="LastUpdatedBy" type="id_String" xpath="row5/LastUpdatedBy"/>
+        <nodes name="Eff_Start_Date" type="id_String" xpath="row5/Eff_Start_Date"/>
+        <nodes name="Eff_End_Date" type="id_String" xpath="row5/Eff_End_Date"/>
+        <nodes name="DSC_Task_ID" type="id_String" xpath="row5/DSC_Task_ID"/>
+        <nodes name="Region" type="id_String" xpath="row5/Region"/>
+        <nodes name="Industry" type="id_String" xpath="row5/Industry"/>
+        <nodes name="ParentAccnt" type="id_String" xpath="row5/ParentAccnt"/>
+        <nodes name="AccntLocations" type="id_String" xpath="row5/AccntLocations"/>
+        <nodes name="LocationFK" type="id_String" xpath="row5/LocationFK"/>
+        <nodes name="Social" type="id_String" xpath="row5/Social"/>
+        <nodes name="Media" type="id_String" xpath="row5/Media"/>
+        <nodes name="SourceInfos" type="id_String" xpath="row5/SourceInfos"/>
+        <nodes name="SourceFK" type="id_String" xpath="row5/SourceFK"/>
+        <nodes name="company_name" outgoingConnections="//@node.3/@nodeData/@connections.2" type="id_String" xpath="row5/company_name"/>
+        <nodes name="fname" outgoingConnections="//@node.3/@nodeData/@connections.0" type="id_String" xpath="row5/fname"/>
+        <nodes name="lname" outgoingConnections="//@node.3/@nodeData/@connections.1" type="id_String" xpath="row5/lname"/>
+        <nodes name="home_phone" outgoingConnections="//@node.3/@nodeData/@connections.3" type="id_String" xpath="row5/home_phone"/>
+        <nodes name="MATCHING_DISTANCES" type="id_String" xpath="row5/MATCHING_DISTANCES"/>
+        <nodes name="MATCHING_WEIGHT" type="id_Double" xpath="row5/MATCHING_WEIGHT"/>
+      </inputTrees>
+      <outputTrees activateCondensedTool="true" allInOne="true" enableEmptyElement="false" name="not_matches">
+        <nodes expression="" name="body" pattern="" type="id_Document" xpath="not_matches/body">
+          <children name="accounts" type="id_String" xpath="not_matches.body:/accounts" xsi:type="TalendXMLMap:OutputTreeNode">
+            <children loop="true" name="account" type="id_String" xpath="not_matches.body:/accounts/account" xsi:type="TalendXMLMap:OutputTreeNode">
+              <children name="MDM_ID" type="id_String" xpath="not_matches.body:/accounts/account/MDM_ID" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression=" row5.company_name" incomingConnections="//@node.3/@nodeData/@connections.2" name="Company_Name" type="id_String" xpath="not_matches.body:/accounts/account/Company_Name" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row5.fname" incomingConnections="//@node.3/@nodeData/@connections.0" name="First_Name" type="id_String" xpath="not_matches.body:/accounts/account/First_Name" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="Middle_Name" type="id_String" xpath="not_matches.body:/accounts/account/Middle_Name" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row5.lname" incomingConnections="//@node.3/@nodeData/@connections.1" name="Last_Name" type="id_String" xpath="not_matches.body:/accounts/account/Last_Name" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="Suffix" type="id_String" xpath="not_matches.body:/accounts/account/Suffix" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="Prefix" type="id_String" xpath="not_matches.body:/accounts/account/Prefix" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="Gender" type="id_String" xpath="not_matches.body:/accounts/account/Gender" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="DOB" type="id_String" xpath="not_matches.body:/accounts/account/DOB" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="Email" type="id_String" xpath="not_matches.body:/accounts/account/Email" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="Website" type="id_String" xpath="not_matches.body:/accounts/account/Website" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="" name="Mobile_Phone" type="id_String" xpath="not_matches.body:/accounts/account/Mobile_Phone" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row5.home_phone" incomingConnections="//@node.3/@nodeData/@connections.3" name="Home_Phone" type="id_String" xpath="not_matches.body:/accounts/account/Home_Phone" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="Region" type="id_String" xpath="not_matches.body:/accounts/account/Region" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="Priority" type="id_String" xpath="not_matches.body:/accounts/account/Priority" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="Status" type="id_String" xpath="not_matches.body:/accounts/account/Status" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="&quot;0%&quot;" name="match_pct" type="id_String" xpath="not_matches.body:/accounts/account/match_pct" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            </children>
+          </children>
+        </nodes>
+      </outputTrees>
+      <varTables minimized="true" name="Var"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.36" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.2" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.37" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.4" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.35" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.38" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.12" xsi:type="TalendXMLMap:Connection"/>
+    </nodeData>
+  </node>
+  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRESTResponse_3"/>
+    <elementParameter field="REST_RESPONSE_SCHEMA_TYPE" name="RESPONSE_TYPE" value="id_Document"/>
+    <elementParameter field="CLOSED_LIST" name="STATUS_CODE" value="404"/>
+    <elementParameter field="TEXT" name="CUSTOM_STATUS_CODE" show="false" value="200"/>
+    <elementParameter field="TABLE" name="RESPONSE_HEADERS">
+      <elementValue elementRef="NAME" value="&quot;Access-Control-Allow-Origin&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;null&quot;"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="UNWRAP_JSON_RESPONSE" value="true"/>
+    <elementParameter field="TEXT" name="JSON_ARRAY_KEYS" value=""/>
+    <elementParameter field="TEXT" name="LABEL" value="Not Found Response"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRESTResponse_3">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tSortRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="672" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSortRow_2"/>
+    <elementParameter field="TABLE" name="CRITERIA">
+      <elementValue elementRef="COLNAME" value="MATCHING_DISTANCES"/>
+      <elementValue elementRef="SORT" value="alpha"/>
+      <elementValue elementRef="ORDER" value="desc"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="EXTERNAL" value="false"/>
+    <elementParameter field="DIRECTORY" name="TEMPFILE" show="false" value="&quot;D:/Talend/5.4.1/studio/bpm_workspace/temp&quot;"/>
+    <elementParameter field="CHECK" name="CREATEDIR" show="false" value="true"/>
+    <elementParameter field="TEXT" name="EXTERNAL_SORT_BUFFERSIZE" show="false" value="1000000"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="AccountIn" name="tSortRow_2">
+      <column comment="" key="false" length="0" name="MDMAccntID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CompanyName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Priority" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Accnt_Status" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Contact_Info" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="First_Name" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Last_Name" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Middle_Name" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Suffix" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Prefix" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Gender" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DOB" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Mobile_Phone" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Home_Phone" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Email" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Website" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Ownership" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Logo" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ProcessData" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CreateDate" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CreatedBy" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="LastUpdated" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="LastUpdatedBy" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Eff_Start_Date" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Eff_End_Date" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DSC_Task_ID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Region" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Industry" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ParentAccnt" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="AccntLocations" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="LocationFK" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Social" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Media" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="SourceInfos" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="SourceFK" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="company_name" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="fname" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="lname" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="home_phone" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="MATCHING_DISTANCES" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="MATCHING_WEIGHT" nullable="true" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="832" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tXMLMap_2"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="possibles" name="possibles">
+      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="row4">
+        <nodes name="MDMAccntID" outgoingConnections="//@node.6/@nodeData/@connections.1" type="id_String" xpath="row4/MDMAccntID"/>
+        <nodes name="CompanyName" outgoingConnections="//@node.6/@nodeData/@connections.2" type="id_String" xpath="row4/CompanyName"/>
+        <nodes name="Priority" outgoingConnections="//@node.6/@nodeData/@connections.15" type="id_String" xpath="row4/Priority"/>
+        <nodes name="Accnt_Status" outgoingConnections="//@node.6/@nodeData/@connections.14" type="id_String" xpath="row4/Accnt_Status"/>
+        <nodes name="Contact_Info" type="id_String" xpath="row4/Contact_Info"/>
+        <nodes name="First_Name" outgoingConnections="//@node.6/@nodeData/@connections.3" type="id_String" xpath="row4/First_Name"/>
+        <nodes name="Last_Name" outgoingConnections="//@node.6/@nodeData/@connections.5" type="id_String" xpath="row4/Last_Name"/>
+        <nodes name="Middle_Name" outgoingConnections="//@node.6/@nodeData/@connections.4" type="id_String" xpath="row4/Middle_Name"/>
+        <nodes name="Suffix" outgoingConnections="//@node.6/@nodeData/@connections.6" type="id_String" xpath="row4/Suffix"/>
+        <nodes name="Prefix" outgoingConnections="//@node.6/@nodeData/@connections.7" type="id_String" xpath="row4/Prefix"/>
+        <nodes name="Gender" outgoingConnections="//@node.6/@nodeData/@connections.8" type="id_String" xpath="row4/Gender"/>
+        <nodes name="DOB" outgoingConnections="//@node.6/@nodeData/@connections.9" type="id_String" xpath="row4/DOB"/>
+        <nodes name="Mobile_Phone" outgoingConnections="//@node.6/@nodeData/@connections.12" type="id_String" xpath="row4/Mobile_Phone"/>
+        <nodes name="Home_Phone" outgoingConnections="//@node.6/@nodeData/@connections.13" type="id_String" xpath="row4/Home_Phone"/>
+        <nodes name="Email" outgoingConnections="//@node.6/@nodeData/@connections.10" type="id_String" xpath="row4/Email"/>
+        <nodes name="Website" outgoingConnections="//@node.6/@nodeData/@connections.11" type="id_String" xpath="row4/Website"/>
+        <nodes name="Ownership" type="id_String" xpath="row4/Ownership"/>
+        <nodes name="Logo" type="id_String" xpath="row4/Logo"/>
+        <nodes name="ProcessData" type="id_String" xpath="row4/ProcessData"/>
+        <nodes name="CreateDate" type="id_String" xpath="row4/CreateDate"/>
+        <nodes name="CreatedBy" type="id_String" xpath="row4/CreatedBy"/>
+        <nodes name="LastUpdated" type="id_String" xpath="row4/LastUpdated"/>
+        <nodes name="LastUpdatedBy" type="id_String" xpath="row4/LastUpdatedBy"/>
+        <nodes name="Eff_Start_Date" type="id_String" xpath="row4/Eff_Start_Date"/>
+        <nodes name="Eff_End_Date" type="id_String" xpath="row4/Eff_End_Date"/>
+        <nodes name="DSC_Task_ID" type="id_String" xpath="row4/DSC_Task_ID"/>
+        <nodes name="Region" outgoingConnections="//@node.6/@nodeData/@connections.16" type="id_String" xpath="row4/Region"/>
+        <nodes name="Industry" type="id_String" xpath="row4/Industry"/>
+        <nodes name="ParentAccnt" type="id_String" xpath="row4/ParentAccnt"/>
+        <nodes name="AccntLocations" type="id_String" xpath="row4/AccntLocations"/>
+        <nodes name="LocationFK" type="id_String" xpath="row4/LocationFK"/>
+        <nodes name="Social" type="id_String" xpath="row4/Social"/>
+        <nodes name="Media" type="id_String" xpath="row4/Media"/>
+        <nodes name="SourceInfos" type="id_String" xpath="row4/SourceInfos"/>
+        <nodes name="SourceFK" type="id_String" xpath="row4/SourceFK"/>
+        <nodes name="company_name" type="id_String" xpath="row4/company_name"/>
+        <nodes name="fname" type="id_String" xpath="row4/fname"/>
+        <nodes name="lname" type="id_String" xpath="row4/lname"/>
+        <nodes name="home_phone" type="id_String" xpath="row4/home_phone"/>
+        <nodes name="MATCHING_DISTANCES" type="id_String" xpath="row4/MATCHING_DISTANCES"/>
+        <nodes name="MATCHING_WEIGHT" outgoingConnections="//@node.6/@nodeData/@connections.0" type="id_Double" xpath="row4/MATCHING_WEIGHT"/>
+      </inputTrees>
+      <outputTrees activateCondensedTool="true" allInOne="true" enableEmptyElement="false" name="possibles">
+        <nodes expression="" name="body" pattern="" type="id_Document" xpath="possibles/body">
+          <children name="accounts" type="id_String" xpath="possibles.body:/accounts" xsi:type="TalendXMLMap:OutputTreeNode">
+            <children loop="true" name="account" type="id_String" xpath="possibles.body:/accounts/account" xsi:type="TalendXMLMap:OutputTreeNode">
+              <children expression="row4.MDMAccntID" incomingConnections="//@node.6/@nodeData/@connections.1" name="MDM_ID" type="id_String" xpath="possibles.body:/accounts/account/MDM_ID" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression=" row4.CompanyName" incomingConnections="//@node.6/@nodeData/@connections.2" name="Company_Name" type="id_String" xpath="possibles.body:/accounts/account/Company_Name" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row4.First_Name" incomingConnections="//@node.6/@nodeData/@connections.3" name="First_Name" type="id_String" xpath="possibles.body:/accounts/account/First_Name" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row4.Middle_Name" incomingConnections="//@node.6/@nodeData/@connections.4" name="Middle_Name" type="id_String" xpath="possibles.body:/accounts/account/Middle_Name" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row4.Last_Name" incomingConnections="//@node.6/@nodeData/@connections.5" name="Last_Name" type="id_String" xpath="possibles.body:/accounts/account/Last_Name" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row4.Suffix" incomingConnections="//@node.6/@nodeData/@connections.6" name="Suffix" type="id_String" xpath="possibles.body:/accounts/account/Suffix" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row4.Prefix" incomingConnections="//@node.6/@nodeData/@connections.7" name="Prefix" type="id_String" xpath="possibles.body:/accounts/account/Prefix" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row4.Gender" incomingConnections="//@node.6/@nodeData/@connections.8" name="Gender" type="id_String" xpath="possibles.body:/accounts/account/Gender" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row4.DOB" incomingConnections="//@node.6/@nodeData/@connections.9" name="DOB" type="id_String" xpath="possibles.body:/accounts/account/DOB" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row4.Email" incomingConnections="//@node.6/@nodeData/@connections.10" name="Email" type="id_String" xpath="possibles.body:/accounts/account/Email" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row4.Website" incomingConnections="//@node.6/@nodeData/@connections.11" name="Website" type="id_String" xpath="possibles.body:/accounts/account/Website" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row4.Mobile_Phone" incomingConnections="//@node.6/@nodeData/@connections.12" name="Mobile_Phone" type="id_String" xpath="possibles.body:/accounts/account/Mobile_Phone" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row4.Home_Phone" incomingConnections="//@node.6/@nodeData/@connections.13" name="Home_Phone" type="id_String" xpath="possibles.body:/accounts/account/Home_Phone" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="MDM.getFK(row4.Region,0)   " incomingConnections="//@node.6/@nodeData/@connections.16" name="Region" type="id_String" xpath="possibles.body:/accounts/account/Region" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row4.Priority" incomingConnections="//@node.6/@nodeData/@connections.15" name="Priority" type="id_String" xpath="possibles.body:/accounts/account/Priority" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row4.Accnt_Status" incomingConnections="//@node.6/@nodeData/@connections.14" name="Status" type="id_String" xpath="possibles.body:/accounts/account/Status" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="String.format(&quot;%.0f%%&quot;, row4.MATCHING_WEIGHT * 100) " incomingConnections="//@node.6/@nodeData/@connections.0" name="match_pct" type="id_String" xpath="possibles.body:/accounts/account/match_pct" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            </children>
+          </children>
+        </nodes>
+      </outputTrees>
+      <varTables minimized="true" name="Var"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.40" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.16" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.0" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.0" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.1" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.5" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.2" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.7" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.3" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.6" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.4" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.8" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.5" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.9" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.6" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.10" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.7" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.11" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.8" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.14" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.9" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.15" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.10" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.12" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.11" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.13" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.12" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.3" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.15" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.2" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.14" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.26" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.13" xsi:type="TalendXMLMap:Connection"/>
+    </nodeData>
+  </node>
+  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRESTResponse_2"/>
+    <elementParameter field="REST_RESPONSE_SCHEMA_TYPE" name="RESPONSE_TYPE" value="id_Document"/>
+    <elementParameter field="CLOSED_LIST" name="STATUS_CODE" value="200"/>
+    <elementParameter field="TEXT" name="CUSTOM_STATUS_CODE" show="false" value="200"/>
+    <elementParameter field="TABLE" name="RESPONSE_HEADERS">
+      <elementValue elementRef="NAME" value="&quot;Access-Control-Allow-Origin&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;null&quot;"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="UNWRAP_JSON_RESPONSE" value="false"/>
+    <elementParameter field="TEXT" name="JSON_ARRAY_KEYS" value=""/>
+    <elementParameter field="TEXT" name="LABEL" value="Possible Match Response"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRESTResponse_2">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMysqlInput_1"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;demo&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="r0M4Avw8nA8="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;mdmaccounts&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#10;  `mdmaccounts`.`MDMAccntID`, &#10;  `mdmaccounts`.`CompanyName`, &#10;  `mdmaccounts`.`Priority`, &#10;  `mdmaccounts`.`Accnt_Status`, &#10;  `mdmaccounts`.`Contact_Info`, &#10;  `mdmaccounts`.`First_Name`, &#10;  `mdmaccounts`.`Last_Name`, &#10;  `mdmaccounts`.`Middle_Name`, &#10;  `mdmaccounts`.`Suffix`, &#10;  `mdmaccounts`.`Prefix`, &#10;  `mdmaccounts`.`Gender`, &#10;  `mdmaccounts`.`DOB`, &#10;  `mdmaccounts`.`Mobile_Phone`, &#10;  `mdmaccounts`.`Home_Phone`, &#10;  `mdmaccounts`.`Email`, &#10;  `mdmaccounts`.`Website`, &#10;  `mdmaccounts`.`Ownership`, &#10;  `mdmaccounts`.`Logo`, &#10;  `mdmaccounts`.`ProcessData`, &#10;  `mdmaccounts`.`CreateDate`, &#10;  `mdmaccounts`.`CreatedBy`, &#10;  `mdmaccounts`.`LastUpdated`, &#10;  `mdmaccounts`.`LastUpdatedBy`, &#10;  `mdmaccounts`.`Eff_Start_Date`, &#10;  `mdmaccounts`.`Eff_End_Date`, &#10;  `mdmaccounts`.`DSC_Task_ID`, &#10;  `mdmaccounts`.`Region`, &#10;  `mdmaccounts`.`Industry`, &#10;  `mdmaccounts`.`ParentAccnt`, &#10;  `mdmaccounts`.`AccntLocations`, &#10;  `mdmaccounts`.`LocationFK`, &#10;  `mdmaccounts`.`Social`, &#10;  `mdmaccounts`.`Media`, &#10;  `mdmaccounts`.`SourceInfos`, &#10;  `mdmaccounts`.`SourceFK`&#10;FROM `mdmaccounts`&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ENABLE_STREAM" value="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="MDMAccntID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CompanyName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Priority"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Accnt_Status"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Contact_Info"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="First_Name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Last_Name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Middle_Name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Suffix"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Prefix"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Gender"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DOB"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Mobile_Phone"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Home_Phone"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Email"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Website"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Ownership"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Logo"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProcessData"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CreateDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CreatedBy"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LastUpdated"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LastUpdatedBy"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Eff_Start_Date"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Eff_End_Date"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DSC_Task_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Region"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Industry"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ParentAccnt"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AccntLocations"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LocationFK"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Social"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Media"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SourceInfos"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SourceFK"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="mdmaccounts" name="tMysqlInput_1">
+      <column comment="" key="false" length="10" name="MDMAccntID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="CompanyName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="3" name="Priority" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="6" name="Accnt_Status" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="Contact_Info" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="25" name="First_Name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="25" name="Last_Name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="Middle_Name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="Suffix" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="Prefix" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="Gender" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="DOB" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="Mobile_Phone" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="14" name="Home_Phone" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="Email" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="Website" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="Ownership" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="Logo" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="ProcessData" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="CreateDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="CreatedBy" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="LastUpdated" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8" name="LastUpdatedBy" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="Eff_Start_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="Eff_End_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="DSC_Task_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="9" name="Region" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="Industry" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="ParentAccnt" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="AccntLocations" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="6" name="LocationFK" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="Social" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="Media" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="SourceInfos" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="6" name="SourceFK" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="match_account" lineStyle="0" metaname="match_account" offsetLabelX="-2" offsetLabelY="-26" source="tRESTRequest_1" target="tMap_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="company_name"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="fname"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="lname"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="home_phone"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="match_account"/>
+  </connection>
+  <connection connectorName="FLOW" label="new_input" lineStyle="0" metaname="new_input" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tRecordMatching_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="CompanyName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="fname"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="lname"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="home_phone"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="isReference"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="company_name"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="new_input"/>
+  </connection>
+  <connection connectorName="POSSIBLE_MATCHES" label="row6" lineStyle="0" metaname="POSSIBLE_MATCHES" offsetLabelX="15" offsetLabelY="3" outputId="1" source="tRecordMatching_1" target="tSortRow_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="MDMAccntID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CompanyName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Priority"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Accnt_Status"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Contact_Info"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="First_Name"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Last_Name"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Middle_Name"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Suffix"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Prefix"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Gender"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DOB"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Mobile_Phone"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Home_Phone"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Email"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Website"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Ownership"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Logo"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ProcessData"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CreateDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CreatedBy"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LastUpdated"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LastUpdatedBy"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Eff_Start_Date"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Eff_End_Date"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DSC_Task_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Region"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Industry"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ParentAccnt"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AccntLocations"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LocationFK"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Social"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Media"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SourceInfos"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SourceFK"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="company_name"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="fname"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="lname"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="home_phone"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MATCHING_DISTANCES"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MATCHING_WEIGHT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row6"/>
+  </connection>
+  <connection connectorName="NON_MATCHES" label="row5" lineStyle="0" metaname="NON_MATCHES" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tRecordMatching_1" target="tXMLMap_3">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="MDMAccntID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CompanyName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Priority"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Accnt_Status"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Contact_Info"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="First_Name"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Last_Name"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Middle_Name"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Suffix"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Prefix"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Gender"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DOB"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Mobile_Phone"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Home_Phone"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Email"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Website"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Ownership"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Logo"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ProcessData"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CreateDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CreatedBy"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LastUpdated"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LastUpdatedBy"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Eff_Start_Date"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Eff_End_Date"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DSC_Task_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Region"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Industry"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ParentAccnt"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AccntLocations"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LocationFK"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Social"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Media"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SourceInfos"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SourceFK"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MATCHING_DISTANCES"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MATCHING_WEIGHT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row5"/>
+  </connection>
+  <connection connectorName="FLOW" label="not_matches" lineStyle="0" metaname="not_matches" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_3" target="tRESTResponse_3">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="body"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="not_matches"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tSortRow_2" offsetLabelX="0" offsetLabelY="0" source="tSortRow_2" target="tXMLMap_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="MDMAccntID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CompanyName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Priority"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Accnt_Status"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Contact_Info"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="First_Name"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Last_Name"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Middle_Name"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Suffix"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Prefix"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Gender"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DOB"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Mobile_Phone"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Home_Phone"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Email"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Website"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Ownership"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Logo"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ProcessData"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CreateDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CreatedBy"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LastUpdated"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LastUpdatedBy"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Eff_Start_Date"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Eff_End_Date"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DSC_Task_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Region"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Industry"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ParentAccnt"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AccntLocations"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LocationFK"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Social"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Media"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SourceInfos"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SourceFK"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="company_name"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="fname"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="lname"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="home_phone"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MATCHING_DISTANCES"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MATCHING_WEIGHT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row4"/>
+  </connection>
+  <connection connectorName="FLOW" label="possibles" lineStyle="0" metaname="possibles" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_2" target="tRESTResponse_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="body"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="possibles"/>
+  </connection>
+  <connection connectorName="FLOW" label="ref_account" lineStyle="8" metaname="tMysqlInput_1" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_1" target="tRecordMatching_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="MDMAccntID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CompanyName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Priority"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Accnt_Status"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Contact_Info"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="First_Name"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Last_Name"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Middle_Name"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Suffix"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Prefix"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Gender"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DOB"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Mobile_Phone"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Home_Phone"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Email"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Website"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Ownership"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Logo"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ProcessData"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CreateDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CreatedBy"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LastUpdated"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LastUpdatedBy"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Eff_Start_Date"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Eff_End_Date"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DSC_Task_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Region"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Industry"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ParentAccnt"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AccntLocations"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LocationFK"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Social"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Media"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SourceInfos"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SourceFK"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="ref_account"/>
+  </connection>
+  <note opaque="true" posX="320" posY="0" sizeHeight="64" sizeWidth="192" text="match with MDM hub"/>
+  <note opaque="true" posX="0" posY="160" sizeHeight="64" sizeWidth="161" text="Account lookup fields"/>
+  <note opaque="true" posX="480" posY="384" sizeHeight="65" sizeWidth="289" text="Matching is done on CompanyName"/>
+  <note opaque="true" posX="928" posY="96" sizeHeight="64" sizeWidth="225" text="Return matching records"/>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRESTRequest_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_303ec2c0-eddc-4903-b78a-4c640a4c5a06"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>nzoTS59sgpGs0dmeoYQZj25xrwzPAoswRtsNd/XCCyXs04AfvUqVlFkTvLTEesO6cy0rr+2CSS0v
+NmaOQHvFCg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e3ef22f8-71c7-4c22-9792-06e1f4247047"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>7pZKV+HZCKLC+8R/sbvjYEPTFXz8Gc5FM1uwiMBEQKvMjefYiTjjw55XpyHlXOnFWaoVNe0otzXZ
+kNAaNpU9/g==</DigestValue></Reference></SignedInfo><SignatureValue>Aq+h5i88F5kmBr4sU4g4tq6A/nAoS+80ZrVU+vI9hniihGPwyVQntl7l6oW9y6PMGKSUPHh4lI0P
+2vibO2+dmXSku+5+ar6a0RCpIhxDzU3D19A3rI1KuN03Zq8aDfyW227G3Bi3tYpD8LlxYRZRkxfa
+2ySP+R9//3VXFIW5P8DJhy2mhACv5Ou7ZI0IfuGizYaN549zL+fPeNFCb9eVVOTFVj3odTP7zYxA
+Dngcwk6k7mZFUkk9mDyUg6MBebjvETVaGiR4Sl39DjOf/eKmwG2xM5GSDmbWemBfA04TlkaD6wj6
+ZmyVBBuXtpnQhoFI1EyPx1SUI4Z5/nWP9jeQ+Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
+RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
+LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
+VQQIDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1ImRDEpMCcGA1UEAwwg
+RGVmYXVsdCBjb2RlLXNpZ25pbmcgY2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw
+ggEKAoIBAQDiCz1II/o6hDUWu/ygxTCT2o/fYxVzPW23AoONQC/Vuiqh0COyLIgaMTjBPmQdTQFq
+rmM5tD64gi4TEQF+Z3iYt3daLdQUfaW9SzaMlY+XVNz5xnMBVDuiSHJSFE9lKnhgbKAHvOeoJo46
+UgWwb1za0WpRckDtjKcntwEK1orZCgrcIo1nDvFXyB5n0KfpLyktEOa0bSHde50MPbvQeB66XlEb
+lhjfs5S9WnAUja9RgqdwqZoI0ss+x/pjkQygDT8f17MktM21HOtg09lJlhMGJckhgD7jUF5tfYGM
+sv/O27g5CToFhxOnutDtsrDw7AkEQIml8KJp97bQLAFlLnh1AgMBAAGjge0wgeowHQYDVR0OBBYE
+FFzdy6ZfpUX8JwkM/SUrqkwLNqWAMB8GA1UdIwQYMBaAFOd9C3L8tYGZxoAr2SzsgnMytaj3MAsG
+A1UdDwQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzAJBgNVHRMEAjAAMHsGCWCGSAGG+EIBDQRu
+FmxEZWZhdWx0IHRoaXJkIHBhcnR5IGNvZGUtc2lnbmluZyBjZXJ0aWZpY2F0ZS4gTm8gY29tbWl0
+bWVudCBpcyBtYWRlIG9uIHRoZSBjb250ZW50IHNpZ25lZCBieSB0aGUgdGhpcmQgcGFydHkwDQYJ
+KoZIhvcNAQELBQADggIBAKzYdnzoFgrRtDLSSzWtwuOrGo5+1RPoDHm/1dlbVnB7oZzUwfRGwZT5
+ser0V7OZyt9wWR8iQ2ka30fHWrNAosNtlIkF88s5YZw7OOIMxR+qYA99BnWLa79DZVIuukI2f5qJ
+Cr9nw6Oygo8CWeNMWhtXcvV4gqROhb2QMBrvWBw9QvNK1XMdtPShfWiXwyPzzRKgwqrN2meXtOY3
+S+MXu6u+RUD9EYeElp9M+9Yp+zRySl5/s+0sbvo7qz369dlsw8XhKXT+s4YQQe3Sx14Kg3SDFXKn
+QcVgycaZMOw4YUxOeP2hKOHnNuOMORfu3qlYkN/0RMGjn6r4PU4+yL276TiWI5b8J06y4leng2as
+r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
+EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
+BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
+6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e3ef22f8-71c7-4c22-9792-06e1f4247047" Target="#_303ec2c0-eddc-4903-b78a-4c640a4c5a06"><Timestamp>2018-06-26 20:20:56</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

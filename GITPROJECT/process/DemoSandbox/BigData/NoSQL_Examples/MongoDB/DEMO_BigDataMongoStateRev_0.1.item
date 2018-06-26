@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default"/>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;F:/Software/TalendStudio/V60tis/Talend-Studio-20150702_1518-V6.0.0EP/workspace/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_1MT44NjyEeK6ub-jRNZIEA" name="DQTechnical"/>
+    <routinesParameter id="_1MW8MNjyEeK6ub-jRNZIEA" name="DataOperation"/>
+    <routinesParameter id="_1Ln8YNjyEeK6ub-jRNZIEA" name="DataQuality"/>
+    <routinesParameter id="_1MQ1kNjyEeK6ub-jRNZIEA" name="DqStringHandling"/>
+    <routinesParameter id="_1MZYcNjyEeK6ub-jRNZIEA" name="Mathematical"/>
+    <routinesParameter id="_1McbwNjyEeK6ub-jRNZIEA" name="Numeric"/>
+    <routinesParameter id="_1MgGINjyEeK6ub-jRNZIEA" name="Relational"/>
+    <routinesParameter id="_1MxL4NjyEeK6ub-jRNZIEA" name="SQLike"/>
+    <routinesParameter id="_1MjJcNjyEeK6ub-jRNZIEA" name="StringHandling"/>
+    <routinesParameter id="_1Mmz0NjyEeK6ub-jRNZIEA" name="TalendDataGenerator"/>
+    <routinesParameter id="_1Mp3INjyEeK6ub-jRNZIEA" name="TalendDate"/>
+    <routinesParameter id="_1MthgNjyEeK6ub-jRNZIEA" name="TalendString"/>
+    <routinesParameter id="_BAkQgA3tEeOW8e7y0PXkKQ" name="MDM"/>
+    <routinesParameter id="__ACJ4AhbEeirK_JhLb2duw" name="DataMasking"/>
+    <routinesParameter id="__AJeoAhbEeirK_JhLb2duw" name="DataQualityDependencies"/>
+    <routinesParameter id="_-9_igAhbEeirK_JhLb2duw" name="TalendStringUtil"/>
+  </parameters>
+  <node componentName="tMongoDBConnection" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMongoDBConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MONGODB_2_6_X"/>
+    <elementParameter field="CHECK" name="USE_REPLICA_SET" value="false"/>
+    <elementParameter field="TABLE" name="REPLICA_SET" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;your_mongo_server_here&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="27017"/>
+    <elementParameter field="TEXT" name="DATABASE" value="&quot;talend&quot;"/>
+    <elementParameter field="CHECK" name="USE_SSL" value="false"/>
+    <elementParameter field="CHECK" name="REQUIRED_AUTHENTICATION" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTHENTICATION_MECHANISM" show="false" value="SCRAMSHA1_MEC"/>
+    <elementParameter field="CHECK" name="SET_AUTHENTICATION_DATABASE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="AUTHENTICATION_DATABASE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USERNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="TEXT" name="KRB_USER_PRINCIPAL" show="false" value="&quot;mongouser@EXAMPLE.COM&quot;"/>
+    <elementParameter field="TEXT" name="KRB_REALM" show="false" value="&quot;EXAMPLE.COM&quot;"/>
+    <elementParameter field="TEXT" name="KRB_KDC" show="false" value="&quot;kdc.example.com&quot;"/>
+    <elementParameter field="CHECK" name="QUERYOPTION_NOTIMEOUT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tMongoDBInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMongoDBInput_2"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMongoDBConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="MONGODB_2_6_X"/>
+    <elementParameter field="CHECK" name="USE_REPLICA_SET" show="false" value="false"/>
+    <elementParameter field="TABLE" name="REPLICA_SET" show="false"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="27017"/>
+    <elementParameter field="TEXT" name="DATABASE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_SSL" show="false" value="false"/>
+    <elementParameter field="CHECK" name="SET_READ_PREFERENCE" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="READ_PREFERENCE" show="false" value="PRIMARY"/>
+    <elementParameter field="CHECK" name="REQUIRED_AUTHENTICATION" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTHENTICATION_MECHANISM" show="false" value="SCRAMSHA1_MEC"/>
+    <elementParameter field="CHECK" name="SET_AUTHENTICATION_DATABASE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="AUTHENTICATION_DATABASE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USERNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="TEXT" name="KRB_USER_PRINCIPAL" show="false" value="&quot;mongouser@EXAMPLE.COM&quot;"/>
+    <elementParameter field="TEXT" name="KRB_REALM" show="false" value="&quot;EXAMPLE.COM&quot;"/>
+    <elementParameter field="TEXT" name="KRB_KDC" show="false" value="&quot;kdc.example.com&quot;"/>
+    <elementParameter field="TEXT" name="COLLECTION" value="&quot;StateRevAgg&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="QUERY_TYPE" value="FIND_QUERY"/>
+    <elementParameter field="LABEL" name="NOTE_ISOLATION" value="Note : Surround String values in your query with single quotes&#10;Note : If you are running on a Sharded Cluster, please make sure to include the shard key in the query."/>
+    <elementParameter field="MEMO" name="QUERY" value="&quot;{}&quot;"/>
+    <elementParameter field="TABLE" name="AGGREGATION_STAGES" show="false"/>
+    <elementParameter field="TABLE" name="MAPPING">
+      <elementValue elementRef="SCHEMA_COLUMN" value="StateCode"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="count"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="min"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="max"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="avg"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="SORT">
+      <elementValue elementRef="COLNAME" value="&quot;StateCode&quot;"/>
+      <elementValue elementRef="ORDER" value="asc"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="QUERYOPTION_NOTIMEOUT" show="false" value="false"/>
+    <elementParameter field="CHECK" name="EXTERNAL_SORT_AGGREGATION" show="false" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMongoDBInput_2">
+      <column comment="" key="false" length="2" name="StateCode" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="count" nullable="true" originalLength="10" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="min" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="max" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="avg" nullable="true" pattern="" precision="0" sourceType="REAL" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_2"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" show="false" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" show="false" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="StateCode"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="count"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="min"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="max"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="avg"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_2">
+      <column comment="" key="false" length="2" name="StateCode" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="count" nullable="true" originalLength="10" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="min" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="max" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="avg" nullable="true" pattern="" precision="0" sourceType="REAL" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tMongoDBClose" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="480">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMongoDBClose_1"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMongoDBConnection_1"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tRowGenerator" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRowGenerator_1"/>
+    <elementParameter field="TEXT" name="NB_ROWS" show="false" value="100"/>
+    <elementParameter field="TABLE" name="VALUES" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="StateCode"/>
+      <elementValue elementRef="ARRAY" value="TalendDataGenerator.getUsStateId()"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="count"/>
+      <elementValue elementRef="ARRAY" value="Numeric.random(1000,100000 )"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="min"/>
+      <elementValue elementRef="ARRAY" value="Numeric.random(1000,10000)"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="max"/>
+      <elementValue elementRef="ARRAY" value="Numeric.random(10000,100000)"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="avg"/>
+      <elementValue elementRef="ARRAY" value="Numeric.random(10000,1000000)"/>
+    </elementParameter>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRowGenerator_1">
+      <column comment="" key="false" length="2" name="StateCode" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="count" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="min" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="max" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="avg" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMongoDBOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMongoDBOutput_1"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMongoDBConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="MONGODB_2_6_X"/>
+    <elementParameter field="CHECK" name="USE_REPLICA_SET" show="false" value="false"/>
+    <elementParameter field="TABLE" name="REPLICA_SET" show="false"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="27017"/>
+    <elementParameter field="TEXT" name="DATABASE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_SSL" show="false" value="false"/>
+    <elementParameter field="CHECK" name="SET_WRITE_CONCERN" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="WRITE_CONCERN" show="false" value="ACKNOWLEDGED"/>
+    <elementParameter field="CHECK" name="SET_BULK_WRITE" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="BULK_WRITE_TYPE" show="false" value="Unordered"/>
+    <elementParameter field="TEXT" name="BULK_WRITE_SIZE" show="false" value="&quot;1000&quot;"/>
+    <elementParameter field="CHECK" name="REQUIRED_AUTHENTICATION" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTHENTICATION_MECHANISM" show="false" value="SCRAMSHA1_MEC"/>
+    <elementParameter field="CHECK" name="SET_AUTHENTICATION_DATABASE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="AUTHENTICATION_DATABASE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USERNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="TEXT" name="KRB_USER_PRINCIPAL" show="false" value="&quot;mongouser@EXAMPLE.COM&quot;"/>
+    <elementParameter field="TEXT" name="KRB_REALM" show="false" value="&quot;EXAMPLE.COM&quot;"/>
+    <elementParameter field="TEXT" name="KRB_KDC" show="false" value="&quot;kdc.example.com&quot;"/>
+    <elementParameter field="TEXT" name="COLLECTION" value="&quot;StateRevAgg&quot;"/>
+    <elementParameter field="CHECK" name="DROP_COLLECTION_CREATE" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="CHECK" name="UPDATE_ALL" show="false" value="false"/>
+    <elementParameter field="TABLE" name="MAPPING">
+      <elementValue elementRef="SCHEMA_COLUMN" value="StateCode"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="REMOVE_NULL_FIELD" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="count"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="REMOVE_NULL_FIELD" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="min"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="REMOVE_NULL_FIELD" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="max"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="REMOVE_NULL_FIELD" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="avg"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="REMOVE_NULL_FIELD" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="QUERYOPTION_NOTIMEOUT" show="false" value="false"/>
+    <elementParameter field="CHECK" name="IS_VIRTUAL_COMPONENT" value="false"/>
+    <elementParameter field="TABLE" name="ROOT" show="false"/>
+    <elementParameter field="TABLE" name="GROUP" show="false"/>
+    <elementParameter field="TABLE" name="LOOP" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" show="false" value=""/>
+    <elementParameter field="CHECK" name="CREATE_EMPTY_ELEMENT" show="false" value="true"/>
+    <elementParameter field="TABLE" name="GROUPBYS" show="false"/>
+    <elementParameter field="CHECK" name="REMOVE_ROOT" show="false" value="true"/>
+    <elementParameter field="TEXT" name="DATA_NODE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_NODE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="COMPACT_FORMAT" show="false" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="Insert from SQL"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="StateRevAgg" name="tMongoDBOutput_1">
+      <column comment="" key="false" length="2" name="StateCode" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="count" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="min" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="max" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="avg" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMongoDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tMongoDBConnection_1" target="tRowGenerator_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk2"/>
+  </connection>
+  <connection connectorName="FLOW" label="row7" lineStyle="0" metaname="tMongoDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tMongoDBInput_2" target="tLogRow_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="content"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="title"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="keyword"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="min"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="max"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="avg"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="StateCode"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="count"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row7"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMongoDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tMongoDBInput_2" target="tMongoDBClose_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk4"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tRowGenerator_1" offsetLabelX="0" offsetLabelY="0" source="tRowGenerator_1" target="tMongoDBOutput_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="StateCode"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="count"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="min"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="max"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="avg"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRowGenerator_1" offsetLabelX="0" offsetLabelY="0" source="tRowGenerator_1" target="tMongoDBInput_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
+  </connection>
+  <note opaque="true" posX="672" posY="32" sizeHeight="97" sizeWidth="353" text="A simple example of write to &#13;&#10;Mongo DB and reading the &#13;&#10;data back">
+    <elementParameter field="COLOR" name="NOTE_COLOR" value="166;193;152"/>
+  </note>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMongoDBConnection_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="COLLAPSED" show="false" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMongoDBInput_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMongoDBClose_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRowGenerator_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_182bde30-9df2-442a-98a1-35a963c42af0"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>FkHlu84jA38BQhtfZbYXvnNLdjd6UnoWFml2D/3Gn1rSMGaUhZW/XjZHoTqNoHXp0yT8GaVwRH0y
+JXtXKjQsvg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_21aab275-dc95-4fca-abde-5139f9883286"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>r4xZnXdx+BPFOsvEUgWoQN77T35ojQ51vYedG7rcujkFf7bv970r112oqsVRTs2lKHQdMbWRvGRW
+NufvkBzUoA==</DigestValue></Reference></SignedInfo><SignatureValue>aJ1xofeL7Msx52dH0fxH7LXC94Ab341k/VTLH9FQkp2ujwGGZu9uRDSL7sjrhZZvnDCQsX5G9AUb
+5HGW41JMAF4lQipTu/kjwtk6b1ydFSGnIvM5fhGvp1NjenO37DNG0s5kM1xRAhbr2vsZ/FsghxLr
+xYypMyEhf6ynhHmG14rEJciISzSbilx5wGsDhGDPfPnlaDg9JfS6b0qEToPO3k0SrFS09vuXcF4O
+gX4UMl1LqESFL3nP3z8o3STEbwg5ENbabkd/Gv3y7HUD8ttbf6wbRR+3u/bTGAv1ZIcNHpOtMBe8
+DL79jBAo+DauWrLxrYEEaKRaC+ckoHBfbICm1g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
+RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
+LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
+VQQIDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1ImRDEpMCcGA1UEAwwg
+RGVmYXVsdCBjb2RlLXNpZ25pbmcgY2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw
+ggEKAoIBAQDiCz1II/o6hDUWu/ygxTCT2o/fYxVzPW23AoONQC/Vuiqh0COyLIgaMTjBPmQdTQFq
+rmM5tD64gi4TEQF+Z3iYt3daLdQUfaW9SzaMlY+XVNz5xnMBVDuiSHJSFE9lKnhgbKAHvOeoJo46
+UgWwb1za0WpRckDtjKcntwEK1orZCgrcIo1nDvFXyB5n0KfpLyktEOa0bSHde50MPbvQeB66XlEb
+lhjfs5S9WnAUja9RgqdwqZoI0ss+x/pjkQygDT8f17MktM21HOtg09lJlhMGJckhgD7jUF5tfYGM
+sv/O27g5CToFhxOnutDtsrDw7AkEQIml8KJp97bQLAFlLnh1AgMBAAGjge0wgeowHQYDVR0OBBYE
+FFzdy6ZfpUX8JwkM/SUrqkwLNqWAMB8GA1UdIwQYMBaAFOd9C3L8tYGZxoAr2SzsgnMytaj3MAsG
+A1UdDwQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzAJBgNVHRMEAjAAMHsGCWCGSAGG+EIBDQRu
+FmxEZWZhdWx0IHRoaXJkIHBhcnR5IGNvZGUtc2lnbmluZyBjZXJ0aWZpY2F0ZS4gTm8gY29tbWl0
+bWVudCBpcyBtYWRlIG9uIHRoZSBjb250ZW50IHNpZ25lZCBieSB0aGUgdGhpcmQgcGFydHkwDQYJ
+KoZIhvcNAQELBQADggIBAKzYdnzoFgrRtDLSSzWtwuOrGo5+1RPoDHm/1dlbVnB7oZzUwfRGwZT5
+ser0V7OZyt9wWR8iQ2ka30fHWrNAosNtlIkF88s5YZw7OOIMxR+qYA99BnWLa79DZVIuukI2f5qJ
+Cr9nw6Oygo8CWeNMWhtXcvV4gqROhb2QMBrvWBw9QvNK1XMdtPShfWiXwyPzzRKgwqrN2meXtOY3
+S+MXu6u+RUD9EYeElp9M+9Yp+zRySl5/s+0sbvo7qz369dlsw8XhKXT+s4YQQe3Sx14Kg3SDFXKn
+QcVgycaZMOw4YUxOeP2hKOHnNuOMORfu3qlYkN/0RMGjn6r4PU4+yL276TiWI5b8J06y4leng2as
+r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
+EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
+BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
+6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_21aab275-dc95-4fca-abde-5139f9883286" Target="#_182bde30-9df2-442a-98a1-35a963c42af0"><Timestamp>2018-06-26 20:20:55</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

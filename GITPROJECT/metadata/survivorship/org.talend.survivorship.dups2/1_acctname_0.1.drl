@@ -1,0 +1,14 @@
+package org.talend.survivorship.dups2 
+
+rule "1_acctname"
+    no-loop true
+    dialect "mvel"
+    ruleflow-group "1_acctnameGroup"
+when
+    $input : RecordIn( dataset.isMostCommon( acctname, "acctName", false) )  
+then
+    dataset.survive( $input.TALEND_INTERNAL_ID, "acctName", drools.getRule().getName());
+
+end
+
+

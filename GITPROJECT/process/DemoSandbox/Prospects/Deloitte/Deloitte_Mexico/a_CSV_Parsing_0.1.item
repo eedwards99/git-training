@@ -1,0 +1,1115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default"/>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="64"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;F:/TalendPD/Talend-Studio-r110187-V5.4.1NB/workspace/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_10"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_iHHLIPuUEeeUkd5Ff1i0Lw" name="DQTechnical"/>
+    <routinesParameter id="_iGdq4PuUEeeUkd5Ff1i0Lw" name="DataMasking"/>
+    <routinesParameter id="_iFD8sPuUEeeUkd5Ff1i0Lw" name="DataOperation"/>
+    <routinesParameter id="_iGzCEPuUEeeUkd5Ff1i0Lw" name="DataQualityDependencies"/>
+    <routinesParameter id="_iGoqAPuUEeeUkd5Ff1i0Lw" name="DataQuality"/>
+    <routinesParameter id="_iG-BMPuUEeeUkd5Ff1i0Lw" name="DqStringHandling"/>
+    <routinesParameter id="_h_AYAPuUEeeUkd5Ff1i0Lw" name="MDM"/>
+    <routinesParameter id="_iFNtsPuUEeeUkd5Ff1i0Lw" name="Mathematical"/>
+    <routinesParameter id="_iFhPsPuUEeeUkd5Ff1i0Lw" name="Numeric"/>
+    <routinesParameter id="_iFokcPuUEeeUkd5Ff1i0Lw" name="Relational"/>
+    <routinesParameter id="_iE7Z0PuUEeeUkd5Ff1i0Lw" name="SQLike"/>
+    <routinesParameter id="_iFvSIPuUEeeUkd5Ff1i0Lw" name="StringHandling"/>
+    <routinesParameter id="_iF5DIPuUEeeUkd5Ff1i0Lw" name="TalendDataGenerator"/>
+    <routinesParameter id="_iGBmAPuUEeeUkd5Ff1i0Lw" name="TalendDate"/>
+    <routinesParameter id="_iGVvEPuUEeeUkd5Ff1i0Lw" name="TalendStringUtil"/>
+    <routinesParameter id="_iGNzQPuUEeeUkd5Ff1i0Lw" name="TalendString"/>
+  </parameters>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputDelimited_1"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;eedwards/denue_inegi_09.csv&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;\\&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;\&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="false"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" show="false" value="_ouXRIBs_EeieAYn4MW_ENg - metadata"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" show="false" value="&quot;C:/Talend/6.4.1/Talend-Studio-20170623_1246-V6.4.1/workspace&quot;"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="RANDOM" show="false" value="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" show="false" value="10"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="nom_estab"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="raz_social"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="codigo_act"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="nombre_act"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="per_ocu"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="tipo_vial"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="nom_vial"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="tipo_v_e_1"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="nom_v_e_1"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="tipo_v_e_2"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="nom_v_e_2"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="tipo_v_e_3"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="nom_v_e_3"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="numero_ext"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="letra_ext"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="edificio"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="edificio_e"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="numero_int"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="letra_int"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="tipo_asent"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="nomb_asent"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="tipoCenCom"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="nom_CenCom"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="num_local"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="cod_postal"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="cve_ent"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="entidad"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="cve_mun"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="municipio"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="cve_loc"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="localidad"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ageb"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="manzana"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="telefono"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="correoelec"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="www"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="tipoUniEco"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="latitud"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="longitud"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="fecha_alta"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="nom_estab"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="raz_social"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="codigo_act"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="nombre_act"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="per_ocu"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="tipo_vial"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="nom_vial"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="tipo_v_e_1"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="nom_v_e_1"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="tipo_v_e_2"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="nom_v_e_2"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="tipo_v_e_3"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="nom_v_e_3"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="numero_ext"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="letra_ext"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="edificio"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="edificio_e"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="numero_int"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="letra_int"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="tipo_asent"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="nomb_asent"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="tipoCenCom"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="nom_CenCom"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="num_local"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="cod_postal"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="cve_ent"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="entidad"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="cve_mun"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="municipio"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="cve_loc"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="localidad"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ageb"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="manzana"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="telefono"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="correoelec"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="www"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="tipoUniEco"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="latitud"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="longitud"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="fecha_alta"/>
+      <elementValue elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" show="false" value=""/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="LABEL" value="deloitte_denue_inegi_09.csv"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tFileInputDelimited_1">
+      <column comment="" key="false" length="7" name="id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="nom_estab" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="raz_social" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="codigo_act" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="nombre_act" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="per_ocu" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="tipo_vial" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="35" name="nom_vial" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="tipo_v_e_1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="31" name="nom_v_e_1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="tipo_v_e_2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="26" name="nom_v_e_2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="tipo_v_e_3" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="31" name="nom_v_e_3" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="numero_ext" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="letra_ext" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="edificio" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="edificio_e" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="numero_int" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="letra_int" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="21" name="tipo_asent" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="26" name="nomb_asent" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="33" name="tipoCenCom" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="41" name="nom_CenCom" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="num_local" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="cod_postal" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="cve_ent" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="entidad" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="cve_mun" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="22" name="municipio" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="cve_loc" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="21" name="localidad" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="ageb" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="manzana" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="telefono" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="correoelec" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="33" name="www" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="tipoUniEco" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="latitud" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="9" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="longitud" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="9" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="fecha_alta" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="metadata" name="REJECT">
+      <column comment="" key="false" length="7" name="id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="nom_estab" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="raz_social" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="codigo_act" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="nombre_act" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="per_ocu" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="tipo_vial" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="35" name="nom_vial" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="tipo_v_e_1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="31" name="nom_v_e_1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="tipo_v_e_2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="26" name="nom_v_e_2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="tipo_v_e_3" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="31" name="nom_v_e_3" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="numero_ext" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="letra_ext" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="edificio" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="edificio_e" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="numero_int" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="letra_int" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="21" name="tipo_asent" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="26" name="nomb_asent" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="33" name="tipoCenCom" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="41" name="nom_CenCom" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="num_local" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="cod_postal" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="cve_ent" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="entidad" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="cve_mun" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="22" name="municipio" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="cve_loc" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="21" name="localidad" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="ageb" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="manzana" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="telefono" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="correoelec" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="33" name="www" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="tipoUniEco" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="latitud" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="9" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="longitud" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="9" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="fecha_alta" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tReplace" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tReplace_1"/>
+    <elementParameter field="CHECK" name="SIMPLE_MODE" value="true"/>
+    <elementParameter field="LABEL" name="SIMPLEMODE_OLDLABLE" show="false" value="Simple mode works with regex expression(in last version)"/>
+    <elementParameter field="TABLE" name="SUBSTITUTIONS">
+      <elementValue elementRef="INPUT_COLUMN" value="nom_estab"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;Á&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;A&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="nom_estab"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;É&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;E&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="nom_estab"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;Í&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;I&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="nom_estab"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;Ó&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;O&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="nom_estab"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;Ú&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;U&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="nom_vial"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;Á&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;A&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="nom_vial"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;É&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;E&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="nom_vial"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;Í&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;I&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="nom_vial"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;Ó&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;O&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="nom_vial"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;Ú&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;U&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="raz_social"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;.&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="raz_social"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;,&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="STRICT_MATCH" show="false" value="true"/>
+    <elementParameter field="CHECK" name="ADVANCED_MODE" value="false"/>
+    <elementParameter field="TABLE" name="ADVANCED_SUBST" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tReplace_1">
+      <column comment="" key="false" length="7" name="id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="nom_estab" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="raz_social" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="codigo_act" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="nombre_act" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="per_ocu" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="tipo_vial" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="35" name="nom_vial" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="tipo_v_e_1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="31" name="nom_v_e_1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="tipo_v_e_2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="26" name="nom_v_e_2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="tipo_v_e_3" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="31" name="nom_v_e_3" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="numero_ext" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="letra_ext" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="edificio" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="edificio_e" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="numero_int" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="letra_int" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="21" name="tipo_asent" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="26" name="nomb_asent" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="33" name="tipoCenCom" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="41" name="nom_CenCom" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="num_local" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="cod_postal" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="cve_ent" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="entidad" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="cve_mun" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="22" name="municipio" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="cve_loc" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="21" name="localidad" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="ageb" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="manzana" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="telefono" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="correoelec" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="33" name="www" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="tipoUniEco" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="latitud" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="9" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="longitud" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="9" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="fecha_alta" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="576" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_ryja4Bs_EeieAYn4MW_ENg-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="out1">
+      <column comment="" key="false" length="7" name="id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="nom_estab" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="raz_social" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="codigo_act" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="nombre_act" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="per_ocu" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="tipo_vial" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="35" name="nom_vial" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="tipo_v_e_1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="31" name="nom_v_e_1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="tipo_v_e_2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="26" name="nom_v_e_2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="tipo_v_e_3" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="31" name="nom_v_e_3" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="numero_ext" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="letra_ext" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="edificio" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="edificio_e" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="numero_int" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="letra_int" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="21" name="tipo_asent" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="26" name="nomb_asent" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="33" name="tipoCenCom" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="41" name="nom_CenCom" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="num_local" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="cod_postal" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="cve_ent" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="entidad" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="cve_mun" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="22" name="municipio" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="cve_loc" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="21" name="localidad" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="ageb" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="manzana" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="telefono" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="correoelec" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="33" name="www" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="tipoUniEco" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="latitud" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="9" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="longitud" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="9" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="fecha_alta" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="out1" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row2.id " name="id" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row2.nom_estab " name="nom_estab" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.raz_social " name="raz_social" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.codigo_act " name="codigo_act" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row2.nombre_act " name="nombre_act" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.per_ocu " name="per_ocu" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.tipo_vial " name="tipo_vial" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.nom_vial " name="nom_vial" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.tipo_v_e_1 " name="tipo_v_e_1" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.nom_v_e_1 " name="nom_v_e_1" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.tipo_v_e_2 " name="tipo_v_e_2" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.nom_v_e_2 " name="nom_v_e_2" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.tipo_v_e_3 " name="tipo_v_e_3" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.nom_v_e_3 " name="nom_v_e_3" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.numero_ext " name="numero_ext" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.letra_ext " name="letra_ext" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.edificio " name="edificio" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.edificio_e " name="edificio_e" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.numero_int " name="numero_int" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.letra_int " name="letra_int" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.tipo_asent " name="tipo_asent" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.nomb_asent " name="nomb_asent" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.tipoCenCom " name="tipoCenCom" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.nom_CenCom " name="nom_CenCom" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.num_local " name="num_local" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.cod_postal " name="cod_postal" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.cve_ent " name="cve_ent" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.entidad " name="entidad" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.cve_mun " name="cve_mun" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.municipio " name="municipio" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.cve_loc " name="cve_loc" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.localidad " name="localidad" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.ageb " name="ageb" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.manzana " name="manzana" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.telefono " name="telefono" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.correoelec " name="correoelec" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.www " name="www" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.tipoUniEco " name="tipoUniEco" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.latitud " name="latitud" nullable="true" type="id_Float"/>
+        <mapperTableEntries expression="row2.longitud " name="longitud" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="Relational.ISNULL(row2.fecha_alta)?&quot;&quot;:row2.fecha_alta.substring(5) + &quot;-&quot; + row2.fecha_alta.substring(0,4) " name="fecha_alta" nullable="true" type="id_String"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row2" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="id" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="nom_estab" nullable="true" type="id_String"/>
+        <mapperTableEntries name="raz_social" nullable="true" type="id_String"/>
+        <mapperTableEntries name="codigo_act" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="nombre_act" nullable="true" type="id_String"/>
+        <mapperTableEntries name="per_ocu" nullable="true" type="id_String"/>
+        <mapperTableEntries name="tipo_vial" nullable="true" type="id_String"/>
+        <mapperTableEntries name="nom_vial" nullable="true" type="id_String"/>
+        <mapperTableEntries name="tipo_v_e_1" nullable="true" type="id_String"/>
+        <mapperTableEntries name="nom_v_e_1" nullable="true" type="id_String"/>
+        <mapperTableEntries name="tipo_v_e_2" nullable="true" type="id_String"/>
+        <mapperTableEntries name="nom_v_e_2" nullable="true" type="id_String"/>
+        <mapperTableEntries name="tipo_v_e_3" nullable="true" type="id_String"/>
+        <mapperTableEntries name="nom_v_e_3" nullable="true" type="id_String"/>
+        <mapperTableEntries name="numero_ext" nullable="true" type="id_String"/>
+        <mapperTableEntries name="letra_ext" nullable="true" type="id_String"/>
+        <mapperTableEntries name="edificio" nullable="true" type="id_String"/>
+        <mapperTableEntries name="edificio_e" nullable="true" type="id_String"/>
+        <mapperTableEntries name="numero_int" nullable="true" type="id_String"/>
+        <mapperTableEntries name="letra_int" nullable="true" type="id_String"/>
+        <mapperTableEntries name="tipo_asent" nullable="true" type="id_String"/>
+        <mapperTableEntries name="nomb_asent" nullable="true" type="id_String"/>
+        <mapperTableEntries name="tipoCenCom" nullable="true" type="id_String"/>
+        <mapperTableEntries name="nom_CenCom" nullable="true" type="id_String"/>
+        <mapperTableEntries name="num_local" nullable="true" type="id_String"/>
+        <mapperTableEntries name="cod_postal" nullable="true" type="id_String"/>
+        <mapperTableEntries name="cve_ent" nullable="true" type="id_String"/>
+        <mapperTableEntries name="entidad" nullable="true" type="id_String"/>
+        <mapperTableEntries name="cve_mun" nullable="true" type="id_String"/>
+        <mapperTableEntries name="municipio" nullable="true" type="id_String"/>
+        <mapperTableEntries name="cve_loc" nullable="true" type="id_String"/>
+        <mapperTableEntries name="localidad" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ageb" nullable="true" type="id_String"/>
+        <mapperTableEntries name="manzana" nullable="true" type="id_String"/>
+        <mapperTableEntries name="telefono" nullable="true" type="id_String"/>
+        <mapperTableEntries name="correoelec" nullable="true" type="id_String"/>
+        <mapperTableEntries name="www" nullable="true" type="id_String"/>
+        <mapperTableEntries name="tipoUniEco" nullable="true" type="id_String"/>
+        <mapperTableEntries name="latitud" nullable="true" type="id_Float"/>
+        <mapperTableEntries name="longitud" nullable="true" type="id_Double"/>
+        <mapperTableEntries name="fecha_alta" nullable="true" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_1"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;eedwards/denue_inegi_09_fixed&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;\\&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;\&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="1"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="90"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileOutputDelimited_1">
+      <column comment="" key="false" length="7" name="id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="nom_estab" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="raz_social" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="codigo_act" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="nombre_act" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="per_ocu" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="tipo_vial" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="35" name="nom_vial" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="tipo_v_e_1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="31" name="nom_v_e_1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="tipo_v_e_2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="26" name="nom_v_e_2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="tipo_v_e_3" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="31" name="nom_v_e_3" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="numero_ext" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="letra_ext" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="edificio" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="edificio_e" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="numero_int" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="letra_int" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="21" name="tipo_asent" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="26" name="nomb_asent" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="33" name="tipoCenCom" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="41" name="nom_CenCom" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="num_local" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="cod_postal" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="cve_ent" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="entidad" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="cve_mun" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="22" name="municipio" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="cve_loc" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="21" name="localidad" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="ageb" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="manzana" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="telefono" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="correoelec" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="33" name="www" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="tipoUniEco" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="latitud" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="9" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="longitud" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="9" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="fecha_alta" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="224" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_2"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_ryja4Bs_EeieAYn4MW_ENg-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="out2">
+      <column comment="" key="false" length="7" name="id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="nom_estab" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="raz_social" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="codigo_act" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="nombre_act" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="per_ocu" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="tipo_vial" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="35" name="nom_vial" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="tipo_v_e_1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="31" name="nom_v_e_1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="tipo_v_e_2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="26" name="nom_v_e_2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="tipo_v_e_3" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="31" name="nom_v_e_3" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="numero_ext" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="letra_ext" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="edificio" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="edificio_e" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="numero_int" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="letra_int" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="21" name="tipo_asent" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="26" name="nomb_asent" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="33" name="tipoCenCom" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="41" name="nom_CenCom" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="num_local" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="cod_postal" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="cve_ent" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="entidad" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="cve_mun" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="22" name="municipio" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="cve_loc" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="21" name="localidad" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="ageb" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="manzana" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="telefono" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="correoelec" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="33" name="www" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="tipoUniEco" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="latitud" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="9" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="longitud" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="9" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="fecha_alta" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="out2" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row3.id" name="id" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row3.nom_estab" name="nom_estab" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.raz_social" name="raz_social" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.codigo_act" name="codigo_act" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row3.nombre_act" name="nombre_act" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.per_ocu" name="per_ocu" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.tipo_vial" name="tipo_vial" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.nom_vial" name="nom_vial" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.tipo_v_e_1" name="tipo_v_e_1" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.nom_v_e_1" name="nom_v_e_1" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.tipo_v_e_2" name="tipo_v_e_2" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.nom_v_e_2" name="nom_v_e_2" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.tipo_v_e_3" name="tipo_v_e_3" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.nom_v_e_3" name="nom_v_e_3" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.numero_ext" name="numero_ext" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.letra_ext" name="letra_ext" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.edificio" name="edificio" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.edificio_e" name="edificio_e" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.numero_int" name="numero_int" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.letra_int" name="letra_int" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.tipo_asent" name="tipo_asent" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.nomb_asent" name="nomb_asent" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.tipoCenCom" name="tipoCenCom" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.nom_CenCom" name="nom_CenCom" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.num_local" name="num_local" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.cod_postal" name="cod_postal" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.cve_ent" name="cve_ent" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.entidad" name="entidad" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.cve_mun" name="cve_mun" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.municipio" name="municipio" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.cve_loc" name="cve_loc" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.localidad" name="localidad" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.ageb" name="ageb" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.manzana" name="manzana" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.telefono" name="telefono" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.correoelec" name="correoelec" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.www" name="www" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.tipoUniEco" name="tipoUniEco" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.latitud" name="latitud" nullable="true" type="id_Float"/>
+        <mapperTableEntries expression="row3.longitud" name="longitud" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row3.fecha_alta" name="fecha_alta" nullable="true" type="id_String"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row3" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="id" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="nom_estab" nullable="true" type="id_String"/>
+        <mapperTableEntries name="raz_social" nullable="true" type="id_String"/>
+        <mapperTableEntries name="codigo_act" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="nombre_act" nullable="true" type="id_String"/>
+        <mapperTableEntries name="per_ocu" nullable="true" type="id_String"/>
+        <mapperTableEntries name="tipo_vial" nullable="true" type="id_String"/>
+        <mapperTableEntries name="nom_vial" nullable="true" type="id_String"/>
+        <mapperTableEntries name="tipo_v_e_1" nullable="true" type="id_String"/>
+        <mapperTableEntries name="nom_v_e_1" nullable="true" type="id_String"/>
+        <mapperTableEntries name="tipo_v_e_2" nullable="true" type="id_String"/>
+        <mapperTableEntries name="nom_v_e_2" nullable="true" type="id_String"/>
+        <mapperTableEntries name="tipo_v_e_3" nullable="true" type="id_String"/>
+        <mapperTableEntries name="nom_v_e_3" nullable="true" type="id_String"/>
+        <mapperTableEntries name="numero_ext" nullable="true" type="id_String"/>
+        <mapperTableEntries name="letra_ext" nullable="true" type="id_String"/>
+        <mapperTableEntries name="edificio" nullable="true" type="id_String"/>
+        <mapperTableEntries name="edificio_e" nullable="true" type="id_String"/>
+        <mapperTableEntries name="numero_int" nullable="true" type="id_String"/>
+        <mapperTableEntries name="letra_int" nullable="true" type="id_String"/>
+        <mapperTableEntries name="tipo_asent" nullable="true" type="id_String"/>
+        <mapperTableEntries name="nomb_asent" nullable="true" type="id_String"/>
+        <mapperTableEntries name="tipoCenCom" nullable="true" type="id_String"/>
+        <mapperTableEntries name="nom_CenCom" nullable="true" type="id_String"/>
+        <mapperTableEntries name="num_local" nullable="true" type="id_String"/>
+        <mapperTableEntries name="cod_postal" nullable="true" type="id_String"/>
+        <mapperTableEntries name="cve_ent" nullable="true" type="id_String"/>
+        <mapperTableEntries name="entidad" nullable="true" type="id_String"/>
+        <mapperTableEntries name="cve_mun" nullable="true" type="id_String"/>
+        <mapperTableEntries name="municipio" nullable="true" type="id_String"/>
+        <mapperTableEntries name="cve_loc" nullable="true" type="id_String"/>
+        <mapperTableEntries name="localidad" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ageb" nullable="true" type="id_String"/>
+        <mapperTableEntries name="manzana" nullable="true" type="id_String"/>
+        <mapperTableEntries name="telefono" nullable="true" type="id_String"/>
+        <mapperTableEntries name="correoelec" nullable="true" type="id_String"/>
+        <mapperTableEntries name="www" nullable="true" type="id_String"/>
+        <mapperTableEntries name="tipoUniEco" nullable="true" type="id_String"/>
+        <mapperTableEntries name="latitud" nullable="true" type="id_Float"/>
+        <mapperTableEntries name="longitud" nullable="true" type="id_Double"/>
+        <mapperTableEntries name="fecha_alta" nullable="true" type="id_String"/>
+        <mapperTableEntries name="errorCode" nullable="true" type="id_String"/>
+        <mapperTableEntries name="errorMessage" nullable="true" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_3"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;eedwards/denue_inegi_09_fixed&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="true"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;\\&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;\&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="1"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" show="false" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="90"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tFileOutputDelimited_3">
+      <column comment="" key="false" length="7" name="id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="nom_estab" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="raz_social" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="codigo_act" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="nombre_act" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="per_ocu" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="tipo_vial" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="35" name="nom_vial" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="tipo_v_e_1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="31" name="nom_v_e_1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="tipo_v_e_2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="26" name="nom_v_e_2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="tipo_v_e_3" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="31" name="nom_v_e_3" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="numero_ext" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="letra_ext" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="edificio" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="edificio_e" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="numero_int" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="letra_int" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="21" name="tipo_asent" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="26" name="nomb_asent" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="33" name="tipoCenCom" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="41" name="nom_CenCom" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="num_local" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="cod_postal" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="cve_ent" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="entidad" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="cve_mun" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="22" name="municipio" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="cve_loc" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="21" name="localidad" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="ageb" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="manzana" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="telefono" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="correoelec" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="33" name="www" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="tipoUniEco" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="latitud" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="9" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="longitud" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="9" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="fecha_alta" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tDropboxGet" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDropboxGet_1"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="ACCESS_TOKEN" value="&quot;kf-BUnGFWggAAAAAAAAAL9Fhv1fNebeta8x8RNTr5Ed08gw6eGlhfXbO7oOoSjyg&quot;"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;127.0.0.1&quot;"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="8087"/>
+    <elementParameter field="TEXT" name="PATH" value="&quot;/Data/denue_inegi_09.csv&quot;"/>
+    <elementParameter field="CHECK" name="STORE_TO_LOCAL" value="true"/>
+    <elementParameter field="FILE" name="OUTPUT" value="&quot;eedwards/denue_inegi_09.csv&quot;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDropboxGet_1">
+      <column defaultValue="" key="false" length="0" name="fileName" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="content" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Object" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tHDFSPut" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="128" posY="576">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHDFSPut_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_du0fkBstEeiiu9iE6xrw8Q"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="EMR_5_0_0"/>
+    <elementParameter field="HADOOP_DISTRIBUTION" name="HDFS" value=""/>
+    <elementParameter field="HADOOP_JARS_DIALOG" name="HADOOP_CUSTOM_JARS" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="AUTHENTICATION_MODE" show="false" value="USERNAME"/>
+    <elementParameter field="TEXT" name="FS_DEFAULT_NAME" value="&quot;hdfs://ec2-54-156-53-163.compute-1.amazonaws.com:8020&quot;"/>
+    <elementParameter field="CHECK" name="USE_DATANODE_HOSTNAME" value="true"/>
+    <elementParameter field="CHECK" name="USE_KRB" show="false" value="false"/>
+    <elementParameter field="TEXT" name="NAMENODE_PRINCIPAL" show="false" value="&quot;nn/_HOST@EXAMPLE.COM&quot;"/>
+    <elementParameter field="CHECK" name="USE_KEYTAB" show="false" value="false"/>
+    <elementParameter field="TEXT" name="PRINCIPAL" show="false" value="&quot;hdfs&quot;"/>
+    <elementParameter field="FILE" name="KEYTAB_PATH" show="false" value="&quot;/tmp/hdfs.headless.keytab&quot;"/>
+    <elementParameter field="CHECK" name="USE_MAPRTICKET" show="false" value="false"/>
+    <elementParameter field="TEXT" name="USERNAME" value="&quot;hadoop&quot;"/>
+    <elementParameter field="TEXT" name="GROUP" show="false" value="&quot;supergroup&quot;"/>
+    <elementParameter field="PASSWORD" name="MAPRTICKET_PASSWORD" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="TEXT" name="MAPRTICKET_CLUSTER" show="false" value="&quot;demo.mapr.com&quot;"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_DURATION" show="false" value="86400L"/>
+    <elementParameter field="DIRECTORY" name="LOCALDIR" value="&quot;eedwards&quot;"/>
+    <elementParameter field="DIRECTORY_HADOOP" name="REMOTEDIR" value="&quot;/user/hadoop/edwards&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="OVERWRITE" value="true"/>
+    <elementParameter field="CHECK" name="PERL5_REGEX" value="false"/>
+    <elementParameter field="TABLE" name="FILES">
+      <elementValue elementRef="FILEMASK" value="&quot;denue_inegi_09_fixed&quot;"/>
+      <elementValue elementRef="NEWNAME" value="&quot;&quot;"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="TABLE" name="HADOOP_ADVANCED_PROPERTIES"/>
+    <elementParameter field="CHECK" name="SET_MAPR_HOME_DIR" show="false" value="false"/>
+    <elementParameter field="TEXT" name="MAPR_HOME_DIR" show="false" value="&quot;/opt/mapr&quot;"/>
+    <elementParameter field="CHECK" name="SET_HADOOP_LOGIN" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HADOOP_LOGIN" show="false" value="&quot;kerberos&quot;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tHDFSPut_1"/>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tFileInputDelimited_1" target="tReplace_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="REJECT" label="row3" lineStyle="0" metaname="REJECT" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tFileInputDelimited_1" target="tMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tHDFSPut_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk2"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tReplace_1" offsetLabelX="0" offsetLabelY="0" source="tReplace_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
+  </connection>
+  <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tFileOutputDelimited_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out1"/>
+  </connection>
+  <connection connectorName="FLOW" label="out2" lineStyle="0" metaname="out2" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tFileOutputDelimited_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out2"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDropboxGet_1" offsetLabelX="0" offsetLabelY="0" source="tDropboxGet_1" target="tFileInputDelimited_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputDelimited_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDropboxGet_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHDFSPut_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_2c974068-856d-4102-8ed5-82e98fda7c9d"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>tDs5XKQ/t89tgXNaoTDPozdSQVASQpH9stU0NKZEz/rxSSZWydztquF8OBS4/f6nHUc51PitJdo1
+krC0NZFhug==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_a0c551b8-c4dd-40d5-bc45-2264ac02b471"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>rgmg4bZsEJKNnSOHNbILTEpQ/phMELlDfsMRGPZz6Hl7BKNYu7P6y8IqwXoXgKKaGYXedkvzG/KL
+TiAtX3zXzA==</DigestValue></Reference></SignedInfo><SignatureValue>1QXc+0uILnucKhoE4AuUfrhA9FSLNKzaj+aUvWeukl17zgxE+P1QhT7DIbWsNCimNsJjsU9PaAns
+HtBAbiCwiqCxnKbihAjdK5j7xNHqY2WfjWXJ0booiHPm+SUC1xlC4IO4ZlUMJxhFRzkjuR9UgfSW
+m1AJIDjbBrppt4ePi2sDOdMSuVoFKnmxst/a/tiHsNwsQw4ut69BIZyfG2EadwXQddCWKbKJzUDE
+9JhV7WJqCw/AMbCAx++HuOBmsziKamZyd87hegYOz4H7L3tef+qNohV/4XnTklkna3LgnOW5xvS1
+oqQn/p2SfvGmMGcn/xiFCH7dMUh5edJLsrRs2g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
+RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
+LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
+VQQIDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1ImRDEpMCcGA1UEAwwg
+RGVmYXVsdCBjb2RlLXNpZ25pbmcgY2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw
+ggEKAoIBAQDiCz1II/o6hDUWu/ygxTCT2o/fYxVzPW23AoONQC/Vuiqh0COyLIgaMTjBPmQdTQFq
+rmM5tD64gi4TEQF+Z3iYt3daLdQUfaW9SzaMlY+XVNz5xnMBVDuiSHJSFE9lKnhgbKAHvOeoJo46
+UgWwb1za0WpRckDtjKcntwEK1orZCgrcIo1nDvFXyB5n0KfpLyktEOa0bSHde50MPbvQeB66XlEb
+lhjfs5S9WnAUja9RgqdwqZoI0ss+x/pjkQygDT8f17MktM21HOtg09lJlhMGJckhgD7jUF5tfYGM
+sv/O27g5CToFhxOnutDtsrDw7AkEQIml8KJp97bQLAFlLnh1AgMBAAGjge0wgeowHQYDVR0OBBYE
+FFzdy6ZfpUX8JwkM/SUrqkwLNqWAMB8GA1UdIwQYMBaAFOd9C3L8tYGZxoAr2SzsgnMytaj3MAsG
+A1UdDwQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzAJBgNVHRMEAjAAMHsGCWCGSAGG+EIBDQRu
+FmxEZWZhdWx0IHRoaXJkIHBhcnR5IGNvZGUtc2lnbmluZyBjZXJ0aWZpY2F0ZS4gTm8gY29tbWl0
+bWVudCBpcyBtYWRlIG9uIHRoZSBjb250ZW50IHNpZ25lZCBieSB0aGUgdGhpcmQgcGFydHkwDQYJ
+KoZIhvcNAQELBQADggIBAKzYdnzoFgrRtDLSSzWtwuOrGo5+1RPoDHm/1dlbVnB7oZzUwfRGwZT5
+ser0V7OZyt9wWR8iQ2ka30fHWrNAosNtlIkF88s5YZw7OOIMxR+qYA99BnWLa79DZVIuukI2f5qJ
+Cr9nw6Oygo8CWeNMWhtXcvV4gqROhb2QMBrvWBw9QvNK1XMdtPShfWiXwyPzzRKgwqrN2meXtOY3
+S+MXu6u+RUD9EYeElp9M+9Yp+zRySl5/s+0sbvo7qz369dlsw8XhKXT+s4YQQe3Sx14Kg3SDFXKn
+QcVgycaZMOw4YUxOeP2hKOHnNuOMORfu3qlYkN/0RMGjn6r4PU4+yL276TiWI5b8J06y4leng2as
+r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
+EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
+BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
+6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_a0c551b8-c4dd-40d5-bc45-2264ac02b471" Target="#_2c974068-856d-4102-8ed5-82e98fda7c9d"><Timestamp>2018-06-26 20:20:56</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

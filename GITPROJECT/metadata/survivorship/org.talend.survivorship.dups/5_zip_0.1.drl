@@ -1,0 +1,14 @@
+package org.talend.survivorship.dups 
+
+rule "5_zip"
+    no-loop true
+    dialect "mvel"
+    ruleflow-group "5_zipGroup"
+when
+    $input : RecordIn( dataset.isMostCommon( zip, "zip", false) )  
+then
+    dataset.survive( $input.TALEND_INTERNAL_ID, "zip" );
+
+end
+
+

@@ -1,0 +1,1355 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="BucketName" prompt="BucketName?" promptNeeded="false" type="id_String" value="tshaikh_ks"/>
+    <contextParameter comment="" name="Access_Key" prompt="Access_Key?" promptNeeded="false" type="id_String" value="GOOGWUKCNGLFGZCAXAOB"/>
+    <contextParameter comment="" name="SecretKey" prompt="SecretKey?" promptNeeded="false" type="id_Password" value="6pTbTThPQyorXSQ/iJltlC1eCBmEn7O5RC3WoRux9D+qIXExCtmFRN/Vu5XQdq6q"/>
+    <contextParameter comment="" name="CredentailPath" prompt="CredentailPath?" promptNeeded="false" type="id_String" value="C:/Users/tshaikh/Downloads/Tshaikh-6be0c562d2c8.json"/>
+    <contextParameter comment="" name="ProjectId" prompt="ProjectId?" promptNeeded="false" type="id_String" value="tshaikh-200115"/>
+    <contextParameter comment="" name="output_dir" prompt="output_dir?" promptNeeded="false" type="id_String" value="&quot;C:/Talend/output/customer.txt&quot;"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;F:/Software/TalendStudio/V60tis/Talend-Studio-20150702_1518-V6.0.0EP/workspace/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_WcNdUID0Eeavh9RYiumUJQ" name="DQTechnical"/>
+    <routinesParameter id="_WUpcwID0Eeavh9RYiumUJQ" name="DataMasking"/>
+    <routinesParameter id="_We92YID0Eeavh9RYiumUJQ" name="DataOperation"/>
+    <routinesParameter id="_WZfggID0Eeavh9RYiumUJQ" name="DataQualityDependencies"/>
+    <routinesParameter id="_WYMgAID0Eeavh9RYiumUJQ" name="DataQuality"/>
+    <routinesParameter id="_WayhAID0Eeavh9RYiumUJQ" name="DqStringHandling"/>
+    <routinesParameter id="_iibVsIFLEeaEBZgaLV1I9g" name="MDM"/>
+    <routinesParameter id="_WgdrMID0Eeavh9RYiumUJQ" name="Mathematical"/>
+    <routinesParameter id="_WhzH8ID0Eeavh9RYiumUJQ" name="Numeric"/>
+    <routinesParameter id="_WjETQID0Eeavh9RYiumUJQ" name="Relational"/>
+    <routinesParameter id="_Wdq14ID0Eeavh9RYiumUJQ" name="SQLike"/>
+    <routinesParameter id="_WkU3gID0Eeavh9RYiumUJQ" name="StringHandling"/>
+    <routinesParameter id="_WlgjQID0Eeavh9RYiumUJQ" name="TalendDataGenerator"/>
+    <routinesParameter id="_Wmy8sID0Eeavh9RYiumUJQ" name="TalendDate"/>
+    <routinesParameter id="_WoSKcID0Eeavh9RYiumUJQ" name="TalendString"/>
+    <routinesParameter id="_HX3E4OJpEeCmJNdA0HkfKA" name="A1_parisstreetindexcreationTstandardizerow_1"/>
+    <routinesParameter id="_U2GysOJpEeCmJNdA0HkfKA" name="A2_normalizeaddressTstandardizerow_1"/>
+    <routinesParameter id="_jFtsAOJpEeCmJNdA0HkfKA" name="A2_standardizeaddressTstandardizerow_1"/>
+    <routinesParameter id="_di-uoCdCEeaLNpvBEQh0uQ" name="SfObmHelper"/>
+    <routinesParameter id="_E5MYoCdGEeaLNpvBEQh0uQ" name="SfObmNotification"/>
+    <routinesParameter id="_5oT6QCdFEeaLNpvBEQh0uQ" name="SfObmObjectAttribute"/>
+    <routinesParameter id="_AUmzICdGEeaLNpvBEQh0uQ" name="SfObmObject"/>
+    <routinesParameter id="_4Dx64MZCEeaj4pdtEN3cvA" name="Loadlibrary_phoneTstandardizerow_1"/>
+    <routinesParameter id="_ddOZwGcEEeW3__dt4cWC2Q" name="Parse_log_fileTstandardizerow_1"/>
+    <routinesParameter id="_wU5qIOJpEeCmJNdA0HkfKA" name="Products_parsingTstandardizerow_1"/>
+    <routinesParameter id="_dnpOQD3HEeO7UMG_YqAtyA" name="DQ_METHODS"/>
+    <routinesParameter id="_tCAnQMeYEeSrE9pbd6oYnw" name="DataTypeUtil"/>
+    <routinesParameter id="_8qwkYFjNEdyj6eiqDt60Og" name="DemoRoutines"/>
+    <routinesParameter id="_CvTbIOkKEeK60_2jX9gBEQ" name="FileListHtmlGenerator"/>
+    <routinesParameter id="_HKXfQGIZEd26GZmhFZLTPA" name="GetRandomPhoneNum"/>
+    <routinesParameter id="_PESjcCYYEeW5gZVXtfxI4A" name="IpaasFileUtil"/>
+    <routinesParameter id="_G417gAc-EeKqOMQjhZ_0wQ" name="KeyManagementForSqoop"/>
+    <routinesParameter id="_0j_yEMHyEeSNhdip82GOWw" name="POC_DataFabrics"/>
+    <routinesParameter id="_Zf7p4ImXEeW69e_jsDsA4g" name="QueryBuilderTest"/>
+    <routinesParameter id="_T3onQGIcEeWiiLfig3Bq1Q" name="SQL_GENERATION"/>
+    <routinesParameter id="_ItS1oGOkEeWLOvx7usZkNA" name="StringCompare"/>
+    <routinesParameter id="_JsAZQHlHEeS5M-4wmV8XNg" name="Transformation"/>
+    <routinesParameter id="_6u4NAGuFEeWa2v0HnUzfJQ" name="Vectors"/>
+    <routinesParameter id="_tObsoCEoEeaze_404VPKxA" name="pattern_checks"/>
+    <routinesParameter id="_1cAIgMywEeSadJSYhJEDKA" name="tic_word_titleCase"/>
+    <routinesParameter id="_7wlPEAPsEeikHcwNaQ6wIA" name="TalendStringUtil"/>
+  </parameters>
+  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMysqlInput_1"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;pii&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="XOWw2jdQq/4="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;customer_details&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#10;  `customer_details`.`IDNumber`, &#10;  `customer_details`.`HomePhone`, &#10;  `customer_details`.`MobilePhone`, &#10;  `customer_details`.`FirstName`, &#10;  `customer_details`.`LastName`, &#10;  `customer_details`.`Email`, &#10;  `customer_details`.`SSN`, &#10;  `customer_details`.`Gender`, &#10;  `customer_details`.`EthnicityM`, &#10;  `customer_details`.`Address`, &#10;  `customer_details`.`City`, &#10;  `customer_details`.`StateProvince`, &#10;  `customer_details`.`PostalCode`&#10;FROM `customer_details`&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ENABLE_STREAM" value="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="IDNumber"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HomePhone"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MobilePhone"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FirstName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LastName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Email"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SSN"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Gender"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EthnicityM"/>
+      <elementValue elementRef="TRIM" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Address"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="City"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="StateProvince"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PostalCode"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="customer_details" name="tMysqlInput_1">
+      <column comment="" key="false" length="10" name="IDNumber" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="HomePhone" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="MobilePhone" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="FirstName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="LastName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="Email" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="SSN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="Gender" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="EthnicityM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="Address" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="City" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="StateProvince" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="PostalCode" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+    <metadata connector="VALIDATION_REJECT" label="customer_details" name="VALIDATION_REJECT">
+      <column comment="" key="false" length="10" name="IDNumber" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="HomePhone" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="MobilePhone" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="FirstName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="LastName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="Email" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="SSN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="Gender" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="EthnicityM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="Address" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="City" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="StateProvince" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="PostalCode" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tSchemaComplianceCheck" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="288" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSchemaComplianceCheck_1"/>
+    <elementParameter field="RADIO" name="CHECK_ALL" value="false"/>
+    <elementParameter field="RADIO" name="CUSTOMER" value="true"/>
+    <elementParameter field="TABLE" name="CHECKCOLS">
+      <elementValue elementRef="SCHEMA_COLUMN" value="IDNumber"/>
+      <elementValue elementRef="SELECTED_TYPE" value="Integer"/>
+      <elementValue elementRef="DATEPATTERN" value=""/>
+      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="MAX_LENGTH" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HomePhone"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String"/>
+      <elementValue elementRef="DATEPATTERN" value=""/>
+      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="MAX_LENGTH" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MobilePhone"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String"/>
+      <elementValue elementRef="DATEPATTERN" value=""/>
+      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="MAX_LENGTH" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FirstName"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String"/>
+      <elementValue elementRef="DATEPATTERN" value=""/>
+      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="MAX_LENGTH" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LastName"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String"/>
+      <elementValue elementRef="DATEPATTERN" value=""/>
+      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="MAX_LENGTH" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Email"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String"/>
+      <elementValue elementRef="DATEPATTERN" value=""/>
+      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="MAX_LENGTH" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SSN"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String"/>
+      <elementValue elementRef="DATEPATTERN" value=""/>
+      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="MAX_LENGTH" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Gender"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String"/>
+      <elementValue elementRef="DATEPATTERN" value=""/>
+      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="MAX_LENGTH" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EthnicityM"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String"/>
+      <elementValue elementRef="DATEPATTERN" value=""/>
+      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="MAX_LENGTH" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Address"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String"/>
+      <elementValue elementRef="DATEPATTERN" value=""/>
+      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="MAX_LENGTH" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="City"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String"/>
+      <elementValue elementRef="DATEPATTERN" value=""/>
+      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="MAX_LENGTH" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="StateProvince"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String"/>
+      <elementValue elementRef="DATEPATTERN" value=""/>
+      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="MAX_LENGTH" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PostalCode"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String"/>
+      <elementValue elementRef="DATEPATTERN" value=""/>
+      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="MAX_LENGTH" value="false"/>
+    </elementParameter>
+    <elementParameter field="LABEL" name="NOTE_CUSTOMER" value="Please note:&#10;(1) Nullable setting in this table is more preferential than the default schema.&#10;(2) Length checking is base on the value of the default schema."/>
+    <elementParameter field="RADIO" name="CHECK_ANOTHER" value="false"/>
+    <elementParameter field="LABEL" name="NOTE_CHECK_ANOTHER" show="false" value="Please note: only index matching, for example, the second column of checking schema is correspond to the second of input schema"/>
+    <elementParameter field="CHECK" name="SUB_STRING" value="false"/>
+    <elementParameter field="LABEL" name="NOTE_SUB_STRING" value="     If exceed, either trim the field when above option checked or reject the row."/>
+    <elementParameter field="LABEL" name="INFO" value="If only one column has error, the errCode value is a summation of all error code; else the errCode is 16:&#10;(1) Type discrepancy (include wrong date pattern): 2&#10;(2) Empty or NULL: 4&#10;(3) Length/Precision Error: 8"/>
+    <elementParameter field="CHECK" name="FAST_DATE_CHECK" value="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="(Not compatible with multi-threaded jobs)"/>
+    <elementParameter field="CHECK" name="IGNORE_TIMEZONE" value="false"/>
+    <elementParameter field="CHECK" name="EMPTY_IS_NULL" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ALL_EMPTY_ARE_NULL" value="true"/>
+    <elementParameter field="TABLE" name="EMPTY_NULL_TABLE" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="IDNumber"/>
+      <elementValue elementRef="EMPTY_NULL" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HomePhone"/>
+      <elementValue elementRef="EMPTY_NULL" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MobilePhone"/>
+      <elementValue elementRef="EMPTY_NULL" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FirstName"/>
+      <elementValue elementRef="EMPTY_NULL" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LastName"/>
+      <elementValue elementRef="EMPTY_NULL" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Email"/>
+      <elementValue elementRef="EMPTY_NULL" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SSN"/>
+      <elementValue elementRef="EMPTY_NULL" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Gender"/>
+      <elementValue elementRef="EMPTY_NULL" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EthnicityM"/>
+      <elementValue elementRef="EMPTY_NULL" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Address"/>
+      <elementValue elementRef="EMPTY_NULL" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="City"/>
+      <elementValue elementRef="EMPTY_NULL" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="StateProvince"/>
+      <elementValue elementRef="EMPTY_NULL" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PostalCode"/>
+      <elementValue elementRef="EMPTY_NULL" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="customer_details" name="tSchemaComplianceCheck_1">
+      <column comment="" key="false" length="10" name="IDNumber" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="HomePhone" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="MobilePhone" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="FirstName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="LastName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="Email" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="SSN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="Gender" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="EthnicityM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="Address" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="City" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="StateProvince" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="PostalCode" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+    <metadata connector="OTHER" name="OTHER"/>
+    <metadata connector="REJECT" label="customer_details" name="REJECT">
+      <column comment="" key="false" length="10" name="IDNumber" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="HomePhone" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="MobilePhone" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="FirstName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="LastName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="Email" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="SSN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="Gender" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="EthnicityM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="Address" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="City" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="StateProvince" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="PostalCode" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tMultiPatternCheck" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMultiPatternCheck_1"/>
+    <elementParameter field="CLOSED_LIST" name="SCHEMA_LOGICAL_OP" value="AND"/>
+    <elementParameter field="CHECK" name="NOTSHOW_P" show="false" value="false"/>
+    <elementParameter field="TABLE" name="SCHEMA_PATTERN_CHECK">
+      <elementValue elementRef="SCHEMA_COLUMN" value="IDNumber"/>
+      <elementValue elementRef="PATTERN_PROPERTY" value="BUILT_IN"/>
+      <elementValue elementRef="PATTERN_NAME" value=""/>
+      <elementValue elementRef="PATTERN_SELECT" value="\number\Numeric"/>
+      <elementValue elementRef="PATTERN_ID" value=""/>
+      <elementValue elementRef="PATTERN_REGEX" value=""/>
+      <elementValue elementRef="PATTERN_DB_TYPE" value=""/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="TOCHECK" value="false"/>
+      <elementValue elementRef="REGEX_INVALIDITY_MESSAGE" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HomePhone"/>
+      <elementValue elementRef="PATTERN_PROPERTY" value="BUILT_IN"/>
+      <elementValue elementRef="PATTERN_NAME" value=""/>
+      <elementValue elementRef="PATTERN_SELECT" value="\phone\Phone Number"/>
+      <elementValue elementRef="PATTERN_ID" value=""/>
+      <elementValue elementRef="PATTERN_REGEX" value=""/>
+      <elementValue elementRef="PATTERN_DB_TYPE" value=""/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="TOCHECK" value="false"/>
+      <elementValue elementRef="REGEX_INVALIDITY_MESSAGE" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MobilePhone"/>
+      <elementValue elementRef="PATTERN_PROPERTY" value="BUILT_IN"/>
+      <elementValue elementRef="PATTERN_NAME" value="\phone\Phone Number"/>
+      <elementValue elementRef="PATTERN_SELECT" value="\phone\Phone Number"/>
+      <elementValue elementRef="PATTERN_ID" value="_bCFrYRjvEeisCoBX7n8v1Q"/>
+      <elementValue elementRef="PATTERN_REGEX" value="&quot;^([a-zA-Z,#/ \\.\\(\\)\\-\\+\\*]*[0-9]){7}[0-9a-zA-Z,#/ \\.\\(\\)\\-\\+\\*]*$&quot;"/>
+      <elementValue elementRef="PATTERN_DB_TYPE" value="java"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="TOCHECK" value="true"/>
+      <elementValue elementRef="REGEX_INVALIDITY_MESSAGE" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FirstName"/>
+      <elementValue elementRef="PATTERN_PROPERTY" value="BUILT_IN"/>
+      <elementValue elementRef="PATTERN_NAME" value=""/>
+      <elementValue elementRef="PATTERN_SELECT" value=""/>
+      <elementValue elementRef="PATTERN_ID" value=""/>
+      <elementValue elementRef="PATTERN_REGEX" value=""/>
+      <elementValue elementRef="PATTERN_DB_TYPE" value=""/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="TOCHECK" value="false"/>
+      <elementValue elementRef="REGEX_INVALIDITY_MESSAGE" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LastName"/>
+      <elementValue elementRef="PATTERN_PROPERTY" value="BUILT_IN"/>
+      <elementValue elementRef="PATTERN_NAME" value=""/>
+      <elementValue elementRef="PATTERN_SELECT" value=""/>
+      <elementValue elementRef="PATTERN_ID" value=""/>
+      <elementValue elementRef="PATTERN_REGEX" value=""/>
+      <elementValue elementRef="PATTERN_DB_TYPE" value=""/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="TOCHECK" value="false"/>
+      <elementValue elementRef="REGEX_INVALIDITY_MESSAGE" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Email"/>
+      <elementValue elementRef="PATTERN_PROPERTY" value="BUILT_IN"/>
+      <elementValue elementRef="PATTERN_NAME" value=""/>
+      <elementValue elementRef="PATTERN_SELECT" value="\internet\Email Address"/>
+      <elementValue elementRef="PATTERN_ID" value=""/>
+      <elementValue elementRef="PATTERN_REGEX" value=""/>
+      <elementValue elementRef="PATTERN_DB_TYPE" value=""/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="TOCHECK" value="false"/>
+      <elementValue elementRef="REGEX_INVALIDITY_MESSAGE" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SSN"/>
+      <elementValue elementRef="PATTERN_PROPERTY" value="BUILT_IN"/>
+      <elementValue elementRef="PATTERN_NAME" value=""/>
+      <elementValue elementRef="PATTERN_SELECT" value="\number\US SSN"/>
+      <elementValue elementRef="PATTERN_ID" value=""/>
+      <elementValue elementRef="PATTERN_REGEX" value=""/>
+      <elementValue elementRef="PATTERN_DB_TYPE" value=""/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="TOCHECK" value="false"/>
+      <elementValue elementRef="REGEX_INVALIDITY_MESSAGE" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Gender"/>
+      <elementValue elementRef="PATTERN_PROPERTY" value="BUILT_IN"/>
+      <elementValue elementRef="PATTERN_NAME" value=""/>
+      <elementValue elementRef="PATTERN_SELECT" value=""/>
+      <elementValue elementRef="PATTERN_ID" value=""/>
+      <elementValue elementRef="PATTERN_REGEX" value="&quot;^(m|M|male|Male|f|F|female|Female)$&quot;"/>
+      <elementValue elementRef="PATTERN_DB_TYPE" value=""/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="TOCHECK" value="true"/>
+      <elementValue elementRef="REGEX_INVALIDITY_MESSAGE" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EthnicityM"/>
+      <elementValue elementRef="PATTERN_PROPERTY" value="BUILT_IN"/>
+      <elementValue elementRef="PATTERN_NAME" value=""/>
+      <elementValue elementRef="PATTERN_SELECT" value="\customer\Gender"/>
+      <elementValue elementRef="PATTERN_ID" value=""/>
+      <elementValue elementRef="PATTERN_REGEX" value=""/>
+      <elementValue elementRef="PATTERN_DB_TYPE" value="java"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="TOCHECK" value="false"/>
+      <elementValue elementRef="REGEX_INVALIDITY_MESSAGE" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Address"/>
+      <elementValue elementRef="PATTERN_PROPERTY" value="BUILT_IN"/>
+      <elementValue elementRef="PATTERN_NAME" value=""/>
+      <elementValue elementRef="PATTERN_SELECT" value=""/>
+      <elementValue elementRef="PATTERN_ID" value=""/>
+      <elementValue elementRef="PATTERN_REGEX" value=""/>
+      <elementValue elementRef="PATTERN_DB_TYPE" value=""/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="TOCHECK" value="false"/>
+      <elementValue elementRef="REGEX_INVALIDITY_MESSAGE" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="City"/>
+      <elementValue elementRef="PATTERN_PROPERTY" value="BUILT_IN"/>
+      <elementValue elementRef="PATTERN_NAME" value=""/>
+      <elementValue elementRef="PATTERN_SELECT" value=""/>
+      <elementValue elementRef="PATTERN_ID" value=""/>
+      <elementValue elementRef="PATTERN_REGEX" value=""/>
+      <elementValue elementRef="PATTERN_DB_TYPE" value=""/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="TOCHECK" value="false"/>
+      <elementValue elementRef="REGEX_INVALIDITY_MESSAGE" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="StateProvince"/>
+      <elementValue elementRef="PATTERN_PROPERTY" value="BUILT_IN"/>
+      <elementValue elementRef="PATTERN_NAME" value="\address\US State Codes"/>
+      <elementValue elementRef="PATTERN_SELECT" value="\address\US State Codes"/>
+      <elementValue elementRef="PATTERN_ID" value="_bcsjwBjvEeisCoBX7n8v1Q"/>
+      <elementValue elementRef="PATTERN_REGEX" value="&quot;^(A[KLRZ]|C[AOT]|DE|FL|GA|HI|I[ADLN]|K[SY]|LA|M[ADEINOST]|N[CDEHJMVY]|O[HKR]|PA|RI|S[CD]|T[NX]|UT|V[AT]|W[AIVY])$&quot;"/>
+      <elementValue elementRef="PATTERN_DB_TYPE" value="java"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="TOCHECK" value="true"/>
+      <elementValue elementRef="REGEX_INVALIDITY_MESSAGE" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PostalCode"/>
+      <elementValue elementRef="PATTERN_PROPERTY" value="BUILT_IN"/>
+      <elementValue elementRef="PATTERN_NAME" value="\address\US Zipcode Validation"/>
+      <elementValue elementRef="PATTERN_SELECT" value="\address\US Zipcode Validation"/>
+      <elementValue elementRef="PATTERN_ID" value="_ba2JoBjvEeisCoBX7n8v1Q"/>
+      <elementValue elementRef="PATTERN_REGEX" value="&quot;^[0-9]{5}$&quot;"/>
+      <elementValue elementRef="PATTERN_DB_TYPE" value="java"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="TOCHECK" value="true"/>
+      <elementValue elementRef="REGEX_INVALIDITY_MESSAGE" value=""/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="customer_details" name="tMultiPatternCheck_1">
+      <column comment="" key="false" length="10" name="IDNumber" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="HomePhone" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="MobilePhone" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="FirstName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="LastName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="Email" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="SSN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="Gender" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="EthnicityM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="Address" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="City" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="StateProvince" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="PostalCode" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+    <metadata connector="ROW_PATTERN_OK" label="customer_details" name="ROW_PATTERN_OK">
+      <column comment="" key="false" length="10" name="IDNumber" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="HomePhone" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="MobilePhone" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="FirstName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="LastName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="Email" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="SSN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="Gender" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="EthnicityM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="Address" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="City" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="StateProvince" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="PostalCode" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+    <metadata connector="ROW_PATTERN_KO" label="customer_details" name="ROW_PATTERN_KO">
+      <column comment="" key="false" length="10" name="IDNumber" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="HomePhone" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="MobilePhone" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="FirstName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="LastName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="Email" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="SSN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="Gender" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="EthnicityM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="Address" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="City" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="StateProvince" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="PostalCode" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="0" name="REGEX_INVALIDITY_MESSAGE" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="800" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_u2BucDKiEeiz6aFGmN0-gg-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="test" name="test">
+      <column comment="" key="false" length="10" name="IDNumber" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="HomePhone" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="MobilePhone" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="FirstName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="LastName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="Email" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="SSN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="Gender" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="EthnicityM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="Address" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="City" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="StateProvince" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="PostalCode" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="14" name="State" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="test" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row2.IDNumber " name="IDNumber" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row2.HomePhone " name="HomePhone" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.MobilePhone " name="MobilePhone" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.FirstName " name="FirstName" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.LastName " name="LastName" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Email " name="Email" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.SSN " name="SSN" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Gender " name="Gender" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.EthnicityM " name="EthnicityM" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Address " name="Address" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.City " name="City" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.StateProvince " name="StateProvince" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.PostalCode " name="PostalCode" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row6.State " name="State" nullable="true" type="id_String"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row2" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="IDNumber" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="HomePhone" nullable="true" type="id_String"/>
+        <mapperTableEntries name="MobilePhone" nullable="true" type="id_String"/>
+        <mapperTableEntries name="FirstName" nullable="true" type="id_String"/>
+        <mapperTableEntries name="LastName" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Email" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SSN" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Gender" nullable="true" type="id_String"/>
+        <mapperTableEntries name="EthnicityM" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Address" nullable="true" type="id_String"/>
+        <mapperTableEntries name="City" nullable="true" type="id_String"/>
+        <mapperTableEntries name="StateProvince" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PostalCode" nullable="true" type="id_String"/>
+      </inputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row6" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row2.StateProvince " name="Postal" nullable="true" operator="=" type="id_String"/>
+        <mapperTableEntries name="State" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Capital" nullable="true" type="id_String"/>
+        <mapperTableEntries name="MostPopulousCity" nullable="true" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" show="false" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" show="false" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="IDNumber"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HomePhone"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MobilePhone"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FirstName"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LastName"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Email"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SSN"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Gender"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EthnicityM"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Address"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="City"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="StateProvince"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PostalCode"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="errorCode"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="errorMessage"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="customer_details" name="tLogRow_1">
+      <column comment="" key="false" length="10" name="IDNumber" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="HomePhone" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="MobilePhone" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="FirstName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="LastName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="Email" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="SSN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="Gender" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="EthnicityM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="Address" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="City" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="StateProvince" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="PostalCode" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_1"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
+    <elementParameter field="FILE" name="FILENAME" value="D:/Talend/Pre Sales/Demos/DQ/Output/customer.txt"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" show="false" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="1"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="90"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="test" name="tFileOutputDelimited_1">
+      <column comment="" key="false" length="10" name="IDNumber" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="HomePhone" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="MobilePhone" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="FirstName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="LastName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="Email" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="SSN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="Gender" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="EthnicityM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="Address" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="City" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="StateProvince" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="PostalCode" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="14" name="State" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputDelimited_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_dXYVADxgEeiznqwcLi5CqA"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;D:/Talend/Pre Sales/Demos/DI/Data/us_state.csv&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="false"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_dXYVADxgEeiznqwcLi5CqA - metadata"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" show="false" value="_dXYVADxgEeiznqwcLi5CqA - metadata"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" show="false" value="&quot;C:/Users/tshaikh/workspace&quot;"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" show="false" value="10"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Postal"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="State"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Capital"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MostPopulousCity"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;US-ASCII&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Postal"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="State"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Capital"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MostPopulousCity"/>
+      <elementValue elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" show="false" value=""/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="LABEL" value="state"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tFileInputDelimited_1">
+      <column comment="" key="false" length="2" name="Postal" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="State" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="Capital" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="MostPopulousCity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="metadata" name="REJECT">
+      <column comment="" key="false" length="2" name="Postal" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="State" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="Capital" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="MostPopulousCity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="608" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_2"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_u2BucDKiEeiz6aFGmN0-gg-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="lod_DS"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="customer_details" name="out">
+      <column comment="integer" key="false" length="-1" name="IDNumber" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="text" key="false" length="-1" name="HomePhone" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="text" key="false" length="-1" name="MobilePhone" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="text" key="false" length="-1" name="FirstName" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="text" key="false" length="-1" name="LastName" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="text" key="false" length="-1" name="Email" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="text" key="false" length="-1" name="SSN" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="text" key="false" length="-1" name="Gender" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="text" key="false" length="-1" name="EthnicityM" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="text" key="false" length="-1" name="Address" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="text" key="false" length="-1" name="City" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="text" key="false" length="-1" name="StateProvince" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="text" key="false" length="-1" name="PostalCode" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="text" key="false" length="-1" name="Error_MESSAGE" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TDS_DUE_DATE" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TDS_EXTERNAL_ID" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="out" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row3.IDNumber.toString() " name="IDNumber" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.HomePhone" name="HomePhone" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.MobilePhone" name="MobilePhone" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.FirstName" name="FirstName" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.LastName" name="LastName" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.Email" name="Email" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.SSN" name="SSN" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.Gender" name="Gender" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.EthnicityM" name="EthnicityM" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.Address" name="Address" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.City" name="City" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.StateProvince" name="StateProvince" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.PostalCode" name="PostalCode" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.REGEX_INVALIDITY_MESSAGE " name="Error_MESSAGE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="TDS_DUE_DATE" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="TDS_EXTERNAL_ID" nullable="true" type="id_String"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row3" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="IDNumber" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="HomePhone" nullable="true" type="id_String"/>
+        <mapperTableEntries name="MobilePhone" nullable="true" type="id_String"/>
+        <mapperTableEntries name="FirstName" nullable="true" type="id_String"/>
+        <mapperTableEntries name="LastName" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Email" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SSN" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Gender" nullable="true" type="id_String"/>
+        <mapperTableEntries name="EthnicityM" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Address" nullable="true" type="id_String"/>
+        <mapperTableEntries name="City" nullable="true" type="id_String"/>
+        <mapperTableEntries name="StateProvince" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PostalCode" nullable="true" type="id_String"/>
+        <mapperTableEntries name="REGEX_INVALIDITY_MESSAGE" nullable="true" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tDataStewardshipTaskOutput" componentVersion="0.19.9" offsetLabelX="0" offsetLabelY="0" posX="768" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDataStewardshipTaskOutput_1"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter name="PROPERTIES" value="{&quot;@id&quot;:2,&quot;@type&quot;:&quot;org.talend.components.datastewardship.tdatastewardshiptaskoutput.TDataStewardshipTaskOutputProperties&quot;,&quot;batchSize&quot;:{&quot;flags&quot;:null,&quot;storedValue&quot;:{&quot;@type&quot;:&quot;int&quot;,&quot;value&quot;:50},&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.Integer&quot;,&quot;name&quot;:&quot;batchSize&quot;,&quot;tags&quot;:null},&quot;taskComment&quot;:{&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;taskComment&quot;,&quot;tags&quot;:null},&quot;taskCommentsTable&quot;:{&quot;fieldName&quot;:{&quot;flags&quot;:null,&quot;storedValue&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;,&quot;@items&quot;:[&quot;IDNumber&quot;,&quot;HomePhone&quot;,&quot;MobilePhone&quot;,&quot;FirstName&quot;,&quot;LastName&quot;,&quot;Email&quot;,&quot;SSN&quot;,&quot;Gender&quot;,&quot;EthnicityM&quot;,&quot;Address&quot;,&quot;City&quot;,&quot;StateProvince&quot;,&quot;PostalCode&quot;,&quot;Error_MESSAGE&quot;]},&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:false,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;,&quot;@items&quot;:[&quot;IDNumber&quot;,&quot;HomePhone&quot;,&quot;MobilePhone&quot;,&quot;FirstName&quot;,&quot;LastName&quot;,&quot;Email&quot;,&quot;SSN&quot;,&quot;Gender&quot;,&quot;EthnicityM&quot;,&quot;Address&quot;,&quot;City&quot;,&quot;StateProvince&quot;,&quot;PostalCode&quot;,&quot;Error_MESSAGE&quot;,&quot;TDS_DUE_DATE&quot;,&quot;TDS_EXTERNAL_ID&quot;]},&quot;currentType&quot;:&quot;java.util.List&lt;java.lang.String&gt;&quot;,&quot;name&quot;:&quot;fieldName&quot;,&quot;tags&quot;:null},&quot;fieldComment&quot;:{&quot;flags&quot;:null,&quot;storedValue&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;,&quot;@items&quot;:[&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;]},&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.util.List&lt;java.lang.String&gt;&quot;,&quot;name&quot;:&quot;fieldComment&quot;,&quot;tags&quot;:null},&quot;name&quot;:&quot;taskCommentsTable&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null},&quot;campaignName&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;\&quot;cd3ba3f39fa51cce9eb9b1b71f38da146\&quot;&quot;,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;campaignName&quot;,&quot;tags&quot;:null},&quot;campaignLabel&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;\&quot;Customer_DataQuality\&quot;&quot;,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;campaignLabel&quot;,&quot;tags&quot;:null},&quot;campaignType&quot;:{&quot;flags&quot;:null,&quot;storedValue&quot;:{&quot;@type&quot;:&quot;org.talend.components.datastewardship.common.CampaignType&quot;,&quot;name&quot;:&quot;RESOLUTION&quot;},&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:false,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.components.datastewardship.common.CampaignType&quot;,&quot;name&quot;:&quot;ARBITRATION&quot;},{&quot;@type&quot;:&quot;org.talend.components.datastewardship.common.CampaignType&quot;,&quot;name&quot;:&quot;RESOLUTION&quot;},{&quot;@type&quot;:&quot;org.talend.components.datastewardship.common.CampaignType&quot;,&quot;name&quot;:&quot;MERGING&quot;},{&quot;@type&quot;:&quot;org.talend.components.datastewardship.common.CampaignType&quot;,&quot;name&quot;:&quot;GROUPING&quot;}]},&quot;currentType&quot;:&quot;org.talend.components.datastewardship.common.CampaignType&quot;,&quot;name&quot;:&quot;campaignType&quot;,&quot;tags&quot;:null},&quot;laxSchema&quot;:{&quot;flags&quot;:null,&quot;storedValue&quot;:{&quot;@type&quot;:&quot;boolean&quot;,&quot;value&quot;:true},&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:false,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.Boolean&quot;,&quot;name&quot;:&quot;laxSchema&quot;,&quot;tags&quot;:null},&quot;taskPriority&quot;:{&quot;possibleValues2&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;NO_PRIORITY&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;0&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;1&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;2&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;3&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;4&quot;,&quot;tags&quot;:null},{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;Custom&quot;,&quot;tags&quot;:null}]},&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;NO_PRIORITY&quot;,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:false,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;,&quot;@items&quot;:[&quot;NO_PRIORITY&quot;,&quot;0&quot;,&quot;1&quot;,&quot;2&quot;,&quot;3&quot;,&quot;4&quot;,&quot;Custom&quot;]},&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;taskPriority&quot;,&quot;tags&quot;:null},&quot;taskTags&quot;:{&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;\&quot;Customer_DQ\&quot;&quot;,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;taskTags&quot;,&quot;tags&quot;:null},&quot;taskState&quot;:{&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;New&quot;,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:false,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;,&quot;@items&quot;:[&quot;New&quot;,&quot;To validate&quot;,&quot;Resolved&quot;,&quot;Custom&quot;]},&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;taskState&quot;,&quot;tags&quot;:null},&quot;taskAssignee&quot;:{&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;No Assignee&quot;,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:false,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;,&quot;@items&quot;:[&quot;No Assignee&quot;,&quot;tshaikh@jan.talend.com&quot;,&quot;Custom&quot;]},&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;taskAssignee&quot;,&quot;tags&quot;:null},&quot;arbitrationChoice&quot;:{&quot;possibleValues2&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.daikon.SimpleNamedThing&quot;,&quot;name&quot;:&quot;NO_CHOICE&quot;,&quot;tags&quot;:null}]},&quot;flags&quot;:{&quot;@type&quot;:&quot;java.util.RegularEnumSet&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;HIDDEN&quot;}]},&quot;storedValue&quot;:&quot;NO_CHOICE&quot;,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:false,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;,&quot;@items&quot;:[&quot;NO_CHOICE&quot;]},&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;arbitrationChoice&quot;,&quot;tags&quot;:null},&quot;customState&quot;:{&quot;possibleValues2&quot;:null,&quot;flags&quot;:{&quot;@type&quot;:&quot;java.util.RegularEnumSet&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;HIDDEN&quot;}]},&quot;storedValue&quot;:&quot;\&quot;\&quot;&quot;,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;customState&quot;,&quot;tags&quot;:null},&quot;customAssignee&quot;:{&quot;possibleValues2&quot;:null,&quot;flags&quot;:{&quot;@type&quot;:&quot;java.util.RegularEnumSet&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;HIDDEN&quot;}]},&quot;storedValue&quot;:&quot;\&quot;\&quot;&quot;,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;customAssignee&quot;,&quot;tags&quot;:null},&quot;customPriority&quot;:{&quot;possibleValues2&quot;:null,&quot;flags&quot;:{&quot;@type&quot;:&quot;java.util.RegularEnumSet&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;HIDDEN&quot;}]},&quot;storedValue&quot;:&quot;\&quot;\&quot;&quot;,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;customPriority&quot;,&quot;tags&quot;:null},&quot;schemaListener&quot;:{&quot;@type&quot;:&quot;org.talend.components.datastewardship.tdatastewardshiptaskoutput.TDataStewardshipTaskOutputProperties$1&quot;,&quot;this$0&quot;:{&quot;@ref&quot;:2}},&quot;schema&quot;:{&quot;@type&quot;:&quot;org.talend.components.datastewardship.TdsProperties$1&quot;,&quot;this$0&quot;:{&quot;@ref&quot;:2},&quot;schema&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.SchemaProperty&quot;,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;{\&quot;type\&quot;:\&quot;record\&quot;,\&quot;name\&quot;:\&quot;main\&quot;,\&quot;fields\&quot;:[{\&quot;name\&quot;:\&quot;IDNumber\&quot;,\&quot;type\&quot;:\&quot;string\&quot;,\&quot;di.table.comment\&quot;:\&quot;integer\&quot;,\&quot;talend.isLocked\&quot;:\&quot;true\&quot;,\&quot;talend.field.generated\&quot;:\&quot;true\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;},{\&quot;name\&quot;:\&quot;HomePhone\&quot;,\&quot;type\&quot;:\&quot;string\&quot;,\&quot;di.table.comment\&quot;:\&quot;text\&quot;,\&quot;talend.isLocked\&quot;:\&quot;true\&quot;,\&quot;talend.field.generated\&quot;:\&quot;true\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;},{\&quot;name\&quot;:\&quot;MobilePhone\&quot;,\&quot;type\&quot;:\&quot;string\&quot;,\&quot;di.table.comment\&quot;:\&quot;text\&quot;,\&quot;talend.isLocked\&quot;:\&quot;true\&quot;,\&quot;talend.field.generated\&quot;:\&quot;true\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;},{\&quot;name\&quot;:\&quot;FirstName\&quot;,\&quot;type\&quot;:\&quot;string\&quot;,\&quot;di.table.comment\&quot;:\&quot;text\&quot;,\&quot;talend.isLocked\&quot;:\&quot;true\&quot;,\&quot;talend.field.generated\&quot;:\&quot;true\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;},{\&quot;name\&quot;:\&quot;LastName\&quot;,\&quot;type\&quot;:\&quot;string\&quot;,\&quot;di.table.comment\&quot;:\&quot;text\&quot;,\&quot;talend.isLocked\&quot;:\&quot;true\&quot;,\&quot;talend.field.generated\&quot;:\&quot;true\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;},{\&quot;name\&quot;:\&quot;Email\&quot;,\&quot;type\&quot;:\&quot;string\&quot;,\&quot;di.table.comment\&quot;:\&quot;text\&quot;,\&quot;talend.isLocked\&quot;:\&quot;true\&quot;,\&quot;talend.field.generated\&quot;:\&quot;true\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;},{\&quot;name\&quot;:\&quot;SSN\&quot;,\&quot;type\&quot;:\&quot;string\&quot;,\&quot;di.table.comment\&quot;:\&quot;text\&quot;,\&quot;talend.isLocked\&quot;:\&quot;true\&quot;,\&quot;talend.field.generated\&quot;:\&quot;true\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;},{\&quot;name\&quot;:\&quot;Gender\&quot;,\&quot;type\&quot;:\&quot;string\&quot;,\&quot;di.table.comment\&quot;:\&quot;text\&quot;,\&quot;talend.isLocked\&quot;:\&quot;true\&quot;,\&quot;talend.field.generated\&quot;:\&quot;true\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;},{\&quot;name\&quot;:\&quot;EthnicityM\&quot;,\&quot;type\&quot;:\&quot;string\&quot;,\&quot;di.table.comment\&quot;:\&quot;text\&quot;,\&quot;talend.isLocked\&quot;:\&quot;true\&quot;,\&quot;talend.field.generated\&quot;:\&quot;true\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;},{\&quot;name\&quot;:\&quot;Address\&quot;,\&quot;type\&quot;:\&quot;string\&quot;,\&quot;di.table.comment\&quot;:\&quot;text\&quot;,\&quot;talend.isLocked\&quot;:\&quot;true\&quot;,\&quot;talend.field.generated\&quot;:\&quot;true\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;},{\&quot;name\&quot;:\&quot;City\&quot;,\&quot;type\&quot;:\&quot;string\&quot;,\&quot;di.table.comment\&quot;:\&quot;text\&quot;,\&quot;talend.isLocked\&quot;:\&quot;true\&quot;,\&quot;talend.field.generated\&quot;:\&quot;true\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;},{\&quot;name\&quot;:\&quot;StateProvince\&quot;,\&quot;type\&quot;:\&quot;string\&quot;,\&quot;di.table.comment\&quot;:\&quot;text\&quot;,\&quot;talend.isLocked\&quot;:\&quot;true\&quot;,\&quot;talend.field.generated\&quot;:\&quot;true\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;},{\&quot;name\&quot;:\&quot;PostalCode\&quot;,\&quot;type\&quot;:\&quot;string\&quot;,\&quot;di.table.comment\&quot;:\&quot;text\&quot;,\&quot;talend.isLocked\&quot;:\&quot;true\&quot;,\&quot;talend.field.generated\&quot;:\&quot;true\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;},{\&quot;name\&quot;:\&quot;Error_MESSAGE\&quot;,\&quot;type\&quot;:\&quot;string\&quot;,\&quot;di.table.comment\&quot;:\&quot;text\&quot;,\&quot;talend.isLocked\&quot;:\&quot;true\&quot;,\&quot;talend.field.generated\&quot;:\&quot;true\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;},{\&quot;name\&quot;:\&quot;TDS_DUE_DATE\&quot;,\&quot;type\&quot;:\&quot;long\&quot;,\&quot;talend.isLocked\&quot;:\&quot;true\&quot;,\&quot;talend.field.generated\&quot;:\&quot;true\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;},{\&quot;name\&quot;:\&quot;TDS_EXTERNAL_ID\&quot;,\&quot;type\&quot;:\&quot;string\&quot;,\&quot;talend.isLocked\&quot;:\&quot;true\&quot;,\&quot;talend.field.generated\&quot;:\&quot;true\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;}]}&quot;,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:false,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;org.apache.avro.Schema&quot;,&quot;name&quot;:&quot;schema&quot;,&quot;tags&quot;:null},&quot;name&quot;:&quot;schema&quot;,&quot;validationResult&quot;:{&quot;@id&quot;:1,&quot;status&quot;:{&quot;name&quot;:&quot;OK&quot;},&quot;message&quot;:null,&quot;number&quot;:0},&quot;tags&quot;:null},&quot;connection&quot;:{&quot;url&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;\&quot;https://tds.integrationcloud.talend.com/data-stewardship/\&quot;&quot;,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;url&quot;,&quot;tags&quot;:null},&quot;username&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;\&quot;tshaikh@jan.talend.com\&quot;&quot;,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;username&quot;,&quot;tags&quot;:null},&quot;password&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:{&quot;@type&quot;:&quot;java.util.RegularEnumSet&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;ENCRYPT&quot;},{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;SUPPRESS_LOGGING&quot;}]},&quot;storedValue&quot;:&quot;n+Ul4JyM6l7jtzsmyn0j9Q==&quot;,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;password&quot;,&quot;tags&quot;:null},&quot;refConnection&quot;:{&quot;referenceType&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.EnumProperty&quot;,&quot;flags&quot;:null,&quot;storedValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.components.api.properties.ComponentReferenceProperties$ReferenceType&quot;,&quot;name&quot;:&quot;THIS_COMPONENT&quot;},{&quot;@type&quot;:&quot;org.talend.components.api.properties.ComponentReferenceProperties$ReferenceType&quot;,&quot;name&quot;:&quot;COMPONENT_TYPE&quot;},{&quot;@type&quot;:&quot;org.talend.components.api.properties.ComponentReferenceProperties$ReferenceType&quot;,&quot;name&quot;:&quot;COMPONENT_INSTANCE&quot;}]},&quot;currentType&quot;:&quot;org.talend.components.api.properties.ComponentReferenceProperties&lt;P extends org.talend.daikon.properties.Properties&gt;.ReferenceType&quot;,&quot;name&quot;:&quot;referenceType&quot;,&quot;tags&quot;:null},&quot;componentInstanceId&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;componentInstanceId&quot;,&quot;tags&quot;:null},&quot;referenceDefinitionName&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;datastewardship&quot;,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;referenceDefinitionName&quot;,&quot;tags&quot;:null},&quot;reference&quot;:null,&quot;name&quot;:&quot;refConnection&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null},&quot;name&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;name&quot;,&quot;tags&quot;:null},&quot;testConnection&quot;:{&quot;formtoShow&quot;:null,&quot;name&quot;:&quot;testConnection&quot;,&quot;tags&quot;:null},&quot;repositoryLocation&quot;:null,&quot;org.talend.daikon.properties.PropertiesImpl.name&quot;:&quot;connection&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null},&quot;name&quot;:&quot;root&quot;,&quot;validationResult&quot;:{&quot;@ref&quot;:1},&quot;tags&quot;:null}"/>
+    <metadata connector="FLOW" label="customer_details" name="tDataStewardshipTaskOutput_1">
+      <column comment="integer" key="false" length="-1" name="IDNumber" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="text" key="false" length="-1" name="HomePhone" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="text" key="false" length="-1" name="MobilePhone" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="text" key="false" length="-1" name="FirstName" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="text" key="false" length="-1" name="LastName" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="text" key="false" length="-1" name="Email" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="text" key="false" length="-1" name="SSN" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="text" key="false" length="-1" name="Gender" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="text" key="false" length="-1" name="EthnicityM" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="text" key="false" length="-1" name="Address" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="text" key="false" length="-1" name="City" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="text" key="false" length="-1" name="StateProvince" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="text" key="false" length="-1" name="PostalCode" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="text" key="false" length="-1" name="Error_MESSAGE" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TDS_DUE_DATE" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TDS_EXTERNAL_ID" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSendMail_1"/>
+    <elementParameter field="TEXT" name="TO" value="&quot;tshaikh@talend.com&quot;"/>
+    <elementParameter field="TEXT" name="FROM" value="&quot;talenddemos@talend.com&quot;"/>
+    <elementParameter field="CHECK" name="NEED_PERSONAL_NAME" value="true"/>
+    <elementParameter field="TEXT" name="PERSONAL_NAME" value="&quot;JOB NOTIFICATION&quot;"/>
+    <elementParameter field="TEXT" name="CC" value=""/>
+    <elementParameter field="TEXT" name="BCC" value=""/>
+    <elementParameter field="TEXT" name="SUBJECT" value="&quot;Talend Job notification&quot;"/>
+    <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="&quot;Hello&#13;&#10;&#13;&#10;Please login to https://tds.integrationcloud.talend.com/#/mytasks to correct records.&#13;&#10;&#13;&#10;Thanks&#13;&#10;Support Team&quot;"/>
+    <elementParameter field="CHECK" name="CHECK_ATTACHMENT" value="true"/>
+    <elementParameter field="TABLE" name="ATTACHMENTS"/>
+    <elementParameter field="TABLE" name="HEADERS"/>
+    <elementParameter field="TEXT" name="SMTP_HOST" value="&quot;smtp.office365.com&quot;"/>
+    <elementParameter field="TEXT" name="SMTP_PORT" value="587"/>
+    <elementParameter field="CHECK" name="SSL" value="false"/>
+    <elementParameter field="CHECK" name="STARTTLS" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="IMPORTANCE" value="Normal"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="true"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" value="&quot;talenddemos@talend.com&quot;"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="D0VI79244IFr2Uj7DcEeDA=="/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="TEXT_SUBTYPE" value="plain"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SET_LOCALHOST" value="false"/>
+    <elementParameter field="TEXT" name="LOCALHOST" show="false" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Email Notification"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSendMail_1">
+      <column comment="" key="false" length="2" name="id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="First_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="Last_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="Adress" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="id_State" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="State" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tMysqlInput_1" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_1" target="tSchemaComplianceCheck_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tSchemaComplianceCheck_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tSchemaComplianceCheck_1" target="tMultiPatternCheck_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row4"/>
+  </connection>
+  <connection connectorName="REJECT" label="row5" lineStyle="0" metaname="REJECT" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tSchemaComplianceCheck_1" target="tLogRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row5"/>
+  </connection>
+  <connection connectorName="ROW_PATTERN_OK" label="row2" lineStyle="0" metaname="ROW_PATTERN_OK" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMultiPatternCheck_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
+  </connection>
+  <connection connectorName="ROW_PATTERN_KO" label="row3" lineStyle="0" metaname="ROW_PATTERN_KO" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMultiPatternCheck_1" target="tMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
+  </connection>
+  <connection connectorName="FLOW" label="test" lineStyle="0" metaname="test" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tFileOutputDelimited_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="State"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="test"/>
+  </connection>
+  <connection connectorName="FLOW" label="row6" lineStyle="8" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row6"/>
+  </connection>
+  <connection connectorName="FLOW" label="out" lineStyle="0" metaname="out" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tDataStewardshipTaskOutput_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="Email"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Address"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="FirstName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="StateProvince"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="EthnicityM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PostalCode"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Gender"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="City"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Error_MESSAGE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TDS_DUE_DATE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MobilePhone"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SSN"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="HomePhone"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TDS_EXTERNAL_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LastName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="IDNumber"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tDataStewardshipTaskOutput_1" offsetLabelX="0" offsetLabelY="0" source="tDataStewardshipTaskOutput_1" target="tSendMail_1">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Integer)globalMap.get(&quot;tDataStewardshipTaskOutput_1_NB_LINE&quot;)) &gt;0"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If1"/>
+  </connection>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMysqlInput_1"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="                                                                                                                              Schema Validatin Checks"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="128;128;128"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="192;192;192"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSendMail_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e049d6fe-877f-4048-a22d-dfbcea4a249b"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>rIn6c6aCZn9wm+2neu1RScJmxjd9KtJJVe9z2tFvRBozbpEPPf6QX4kZixrKNIp3MoWTqfOsy694
+EmC4cg0f9A==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_ca868c3e-3262-4bd5-8169-c13aa6486da7"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Si41uBfqdmpAKDaz3RJ9ZGaTpecaOwfjaPvXHh1YpIaHuMbcvJsw5PGr3bQdxFwHNhqpoCB8o0P5
+AasGUT5MOw==</DigestValue></Reference></SignedInfo><SignatureValue>bo34+kGVxH6T30UfkQnlHPxYLNgZBJP9m4rhOCLVP2/z/nihZX4K3h0dF8GaYv8NyRBFCFja8/5A
+NhsZvXVoJcZiojW3FgIKNY2H0QClllfJ1a8f2OQhP988oxLOfIbVS3c8m1dltVNpyH4qQMnh/V5M
+jZ2K2eyS2iRp1LsC5ZRUqmN2HghZJF5l8imiNk/myPwv2saQbxFlPb3SWJD0nQvCEnooGjo1CnG1
+fUWdnw5LZr4h5Ilc5w5Hf7hOc1CFPi0toLCusnoN2VxT3Q07hnxa44jl28FaPaFpZxEFLOJcG7Si
+I8S59CGU5qKAp2LYxihY1KuEoUcD/8HjZb21Cg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
+RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
+LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
+VQQIDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1ImRDEpMCcGA1UEAwwg
+RGVmYXVsdCBjb2RlLXNpZ25pbmcgY2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw
+ggEKAoIBAQDiCz1II/o6hDUWu/ygxTCT2o/fYxVzPW23AoONQC/Vuiqh0COyLIgaMTjBPmQdTQFq
+rmM5tD64gi4TEQF+Z3iYt3daLdQUfaW9SzaMlY+XVNz5xnMBVDuiSHJSFE9lKnhgbKAHvOeoJo46
+UgWwb1za0WpRckDtjKcntwEK1orZCgrcIo1nDvFXyB5n0KfpLyktEOa0bSHde50MPbvQeB66XlEb
+lhjfs5S9WnAUja9RgqdwqZoI0ss+x/pjkQygDT8f17MktM21HOtg09lJlhMGJckhgD7jUF5tfYGM
+sv/O27g5CToFhxOnutDtsrDw7AkEQIml8KJp97bQLAFlLnh1AgMBAAGjge0wgeowHQYDVR0OBBYE
+FFzdy6ZfpUX8JwkM/SUrqkwLNqWAMB8GA1UdIwQYMBaAFOd9C3L8tYGZxoAr2SzsgnMytaj3MAsG
+A1UdDwQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzAJBgNVHRMEAjAAMHsGCWCGSAGG+EIBDQRu
+FmxEZWZhdWx0IHRoaXJkIHBhcnR5IGNvZGUtc2lnbmluZyBjZXJ0aWZpY2F0ZS4gTm8gY29tbWl0
+bWVudCBpcyBtYWRlIG9uIHRoZSBjb250ZW50IHNpZ25lZCBieSB0aGUgdGhpcmQgcGFydHkwDQYJ
+KoZIhvcNAQELBQADggIBAKzYdnzoFgrRtDLSSzWtwuOrGo5+1RPoDHm/1dlbVnB7oZzUwfRGwZT5
+ser0V7OZyt9wWR8iQ2ka30fHWrNAosNtlIkF88s5YZw7OOIMxR+qYA99BnWLa79DZVIuukI2f5qJ
+Cr9nw6Oygo8CWeNMWhtXcvV4gqROhb2QMBrvWBw9QvNK1XMdtPShfWiXwyPzzRKgwqrN2meXtOY3
+S+MXu6u+RUD9EYeElp9M+9Yp+zRySl5/s+0sbvo7qz369dlsw8XhKXT+s4YQQe3Sx14Kg3SDFXKn
+QcVgycaZMOw4YUxOeP2hKOHnNuOMORfu3qlYkN/0RMGjn6r4PU4+yL276TiWI5b8J06y4leng2as
+r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
+EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
+BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
+6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_ca868c3e-3262-4bd5-8169-c13aa6486da7" Target="#_e049d6fe-877f-4048-a22d-dfbcea4a249b"><Timestamp>2018-06-26 20:20:56</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

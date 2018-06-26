@@ -1,0 +1,1800 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:tdqmatching="http://www.talend.org/tdqmatching" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="prospect" prompt="prospect?" promptNeeded="false" type="id_String" value="FirstAmerican"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="96"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Users/ericp/workspace/Version7/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_LDeeAHfnEeO2WK07eWbimQ" name="DQTechnical"/>
+    <routinesParameter id="_LDkkoHfnEeO2WK07eWbimQ" name="DataOperation"/>
+    <routinesParameter id="_LAIPEnfnEeO2WK07eWbimQ" name="DataQuality"/>
+    <routinesParameter id="_LDYXYHfnEeO2WK07eWbimQ" name="DqStringHandling"/>
+    <routinesParameter id="_LEz6wHfnEeO2WK07eWbimQ" name="MDM"/>
+    <routinesParameter id="_LDqrQHfnEeO2WK07eWbimQ" name="Mathematical"/>
+    <routinesParameter id="_LDwx4HfnEeO2WK07eWbimQ" name="Numeric"/>
+    <routinesParameter id="_LD24gHfnEeO2WK07eWbimQ" name="Relational"/>
+    <routinesParameter id="_LE6BYHfnEeO2WK07eWbimQ" name="SQLike"/>
+    <routinesParameter id="_LEVZoHfnEeO2WK07eWbimQ" name="StringHandling"/>
+    <routinesParameter id="_LEbgQ3fnEeO2WK07eWbimQ" name="TalendDataGenerator"/>
+    <routinesParameter id="_LEhm43fnEeO2WK07eWbimQ" name="TalendDate"/>
+    <routinesParameter id="_LEt0IHfnEeO2WK07eWbimQ" name="TalendString"/>
+    <routinesParameter id="_JovzwF1uEeWCg-skhC5-Mg" name="DataQualityDependencies"/>
+    <routinesParameter id="_HxqysIa3Eee-mtU1mh8Drg" name="DataMasking"/>
+    <routinesParameter id="_HxkFAIa3Eee-mtU1mh8Drg" name="TalendStringUtil"/>
+  </parameters>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="0" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputDelimited_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_zR7DADB_EeC4L-b_UPshXw"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_zR7DADB_EeC4L-b_UPshXw - metadata"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;D:/Talend/Pre Sales/Demos/Data/AccountsForDupe.csv&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="false"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" show="false" value="_zR7DADB_EeC4L-b_UPshXw - metadata"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" show="false" value="&quot;C:/Talend/Talend-Studio-20170623_1246-V6.4.1/workspace&quot;"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" show="false" value="10"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="recNum"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="acctName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="addr"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="city"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="state"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="zip"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="country"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="phone"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;windows-1252&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="recNum"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="acctName"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="addr"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="city"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="state"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="zip"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="country"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="phone"/>
+      <elementValue elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" show="false" value=""/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="LABEL" value="AccountDataForDeDuplication"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tFileInputDelimited_1">
+      <column comment="" key="false" length="7" name="recNum" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true">
+        <additionalField key="Content Type" value="Nominal"/>
+      </column>
+      <column comment="" key="false" length="33" name="acctName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true">
+        <additionalField key="Content Type" value="Nominal"/>
+      </column>
+      <column comment="" key="false" length="25" name="addr" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true">
+        <additionalField key="Content Type" value="Nominal"/>
+      </column>
+      <column comment="" key="false" length="23" name="city" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true">
+        <additionalField key="Content Type" value="Nominal"/>
+      </column>
+      <column comment="" key="false" length="13" name="state" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true">
+        <additionalField key="Content Type" value="Nominal"/>
+      </column>
+      <column comment="" key="false" length="10" name="zip" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true">
+        <additionalField key="Content Type" value="Nominal"/>
+      </column>
+      <column comment="" key="false" length="10" name="country" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true">
+        <additionalField key="Content Type" value="Nominal"/>
+      </column>
+      <column comment="" key="false" length="14" name="phone" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true">
+        <additionalField key="Content Type" value="Nominal"/>
+      </column>
+    </metadata>
+    <metadata connector="REJECT" label="metadata" name="REJECT">
+      <column comment="" key="false" length="7" name="recNum" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true">
+        <additionalField key="Content Type" value="Nominal"/>
+      </column>
+      <column comment="" key="false" length="33" name="acctName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true">
+        <additionalField key="Content Type" value="Nominal"/>
+      </column>
+      <column comment="" key="false" length="25" name="addr" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true">
+        <additionalField key="Content Type" value="Nominal"/>
+      </column>
+      <column comment="" key="false" length="23" name="city" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true">
+        <additionalField key="Content Type" value="Nominal"/>
+      </column>
+      <column comment="" key="false" length="13" name="state" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true">
+        <additionalField key="Content Type" value="Nominal"/>
+      </column>
+      <column comment="" key="false" length="10" name="zip" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true">
+        <additionalField key="Content Type" value="Nominal"/>
+      </column>
+      <column comment="" key="false" length="10" name="country" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true">
+        <additionalField key="Content Type" value="Nominal"/>
+      </column>
+      <column comment="" key="false" length="14" name="phone" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true">
+        <additionalField key="Content Type" value="Nominal"/>
+      </column>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="192" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_3"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_ico18CfYEeipA86QosOsSw-tMap_3-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="account_for_dups" name="acctsmysql">
+      <column comment="" key="false" length="7" name="recNum" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="70" name="acctName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="addr" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="city" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="state" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="zip" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="country" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="phone" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="Source" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="acctsmysql" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="input.recNum " name="recNum" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="input.acctName " name="acctName" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="input.addr" name="addr" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="input.city" name="city" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="input.state" name="state" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="input.zip" name="zip" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="input.country" name="country" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="input.phone" name="phone" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="&quot;CRM&quot;" name="Source" nullable="true" type="id_String"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="input" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="recNum" nullable="true" type="id_String"/>
+        <mapperTableEntries name="acctName" nullable="true" type="id_String"/>
+        <mapperTableEntries name="addr" nullable="true" type="id_String"/>
+        <mapperTableEntries name="city" nullable="true" type="id_String"/>
+        <mapperTableEntries name="state" nullable="true" type="id_String"/>
+        <mapperTableEntries name="zip" nullable="true" type="id_String"/>
+        <mapperTableEntries name="country" nullable="true" type="id_String"/>
+        <mapperTableEntries name="phone" nullable="true" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tGenKey" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGenKey_1"/>
+    <elementParameter field="MATCH_RULE_IMEX_CONTROLLER" name="MATCH_RULE_IMEX" value="false"/>
+    <elementParameter field="TABLE" name="ALGO">
+      <elementValue elementRef="PRECOLUMN" value="state"/>
+      <elementValue elementRef="PRE_ALGO" value="NON_ALGO"/>
+      <elementValue elementRef="PRE_VALUE" value=""/>
+      <elementValue elementRef="KEY_ALGO" value="exact"/>
+      <elementValue elementRef="KEY_VALUE" value=""/>
+      <elementValue elementRef="POST_ALGO" value="NON_ALGO"/>
+      <elementValue elementRef="POST_VALUE" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SHOW_HELP_KEY" value="false"/>
+    <elementParameter field="LABEL" name="HELP_KEY" show="false" value="Notice that how to fill algorithm parameter:&#10;(1) N first characters of each word: fill in a digit number, like 2 or 12, etc.&#10;(2) first N characters of the string: fill in a digit number&#10;(3) last N characters of the string: fill in a digit number&#10;(4) first N consonants of the string: fill in a digit number&#10;(5) first N vowels of the string: fill in a digit number&#10;(6) substring(a, b): fill a String like &quot;2;4&quot;, for example, &quot;abcdef&quot; returns &quot;cd&quot; on impact&#10;(7) pick characters: fill a String like &quot;1;2-4;5&quot;, for example, &quot;abcdef&quot; returns &quot;acdf&quot; on impact&#10;(8) use default value: any String you want.(it is to replace empty value after key algorithm)&#10;(9) add left position character: about usual separators like parenthesis and so on, applied after &quot;use default value&quot;&#10;(10) add right position character: about usual separators like parenthesis and so on, applied after &quot;use default value&quot;&#10;"/>
+    <elementParameter field="CHECK" name="IS_SHADOW_JOB" show="false" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="account_for_dups" name="tGenKey_1">
+      <column comment="" key="false" length="7" name="recNum" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="70" name="acctName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="addr" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="city" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="state" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="zip" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="country" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="phone" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="Source" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="T_GEN_KEY" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMatchGroup" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMatchGroup_1"/>
+    <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
+    <elementParameter field="EXTERNAL" name="PREVIEW" value=""/>
+    <elementParameter field="CHECK" name="GID_USE_STRING" show="false" value="false"/>
+    <elementParameter field="CHECK" name="COMPUTE_GRP_QUALITY" show="false" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="MATCHING_ALGORITHM" value="Simple VSR Matcher"/>
+    <elementParameter field="TABLE" name="SURVIVORSHIP_JOIN_KEY" show="false"/>
+    <elementParameter field="TABLE" name="JOIN_KEY" show="false"/>
+    <elementParameter field="TEXT" name="INTERVAL_RULE" show="false" value="0.85"/>
+    <elementParameter field="TABLE" name="PARTICULAR_SURVIVORSHIP" show="false"/>
+    <elementParameter field="TABLE" name="SURVIVORSHIP" show="false"/>
+    <elementParameter field="TABLE" name="BLOCKING_DEFINITION" show="false">
+      <elementValue elementRef="INPUT_COLUMN" value="T_GEN_KEY"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SHOW_BASIC_PARAMETER" show="false" value="false"/>
+    <elementParameter field="CHECK" name="IS_SHADOW_JOB" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PARTICULAR_SURVIVORSHIP_FILTER_PARAMETER" show="false" value="true"/>
+    <elementParameter field="CHECK" name="SURVIVORSHIP_JOIN_KEY_FILTER_PARAMETER" show="false" value="true"/>
+    <elementParameter field="TEXT" name="INTERVAL" show="false" value="0.85"/>
+    <elementParameter field="CHECK" name="STORE_ON_DISK" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" show="false" value="200000"/>
+    <elementParameter field="DIRECTORY" name="TMP_DIRECTORY" show="false" value="&quot;C:/Talend/5.4.1-2/studio/workspace&quot;"/>
+    <elementParameter field="CHECK" name="SEPARATE_OUTPUT" value="true"/>
+    <elementParameter field="TEXT" name="CONFIDENCE_THRESHOLD" value="0.9"/>
+    <elementParameter field="CHECK" name="LINK_WITH_PREVIOUS" value="false"/>
+    <elementParameter field="CHECK" name="PROPAGATE_ORIGINAL" show="false" value="false"/>
+    <elementParameter field="CHECK" name="SORT_DATA" value="true"/>
+    <elementParameter field="CHECK" name="OUTPUTDD" value="false"/>
+    <elementParameter field="CHECK" name="DISPLAY_ATTR_LABELS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DEACTIVATE_MATCHING_COMPUTATION" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="account_for_dups" name="tMatchGroup_1">
+      <column comment="" key="false" length="7" name="recNum" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="70" name="acctName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="addr" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="city" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="state" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="zip" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="country" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="phone" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="Source" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="T_GEN_KEY" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="GID" nullable="true" precision="0" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="GRP_SIZE" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="MASTER" nullable="true" precision="0" sourceType="" type="id_Boolean" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="SCORE" nullable="true" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="GRP_QUALITY" nullable="true" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="UNIQUE_ROWS" label="account_for_dups" name="UNIQUE_ROWS">
+      <column comment="" key="false" length="7" name="recNum" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="70" name="acctName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="addr" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="city" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="state" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="zip" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="country" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="phone" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="Source" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="T_GEN_KEY" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="GID" nullable="true" precision="0" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="GRP_SIZE" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="MASTER" nullable="true" precision="0" sourceType="" type="id_Boolean" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="SCORE" nullable="true" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="GRP_QUALITY" nullable="true" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="CONFIDENT_GROUPS" label="account_for_dups" name="CONFIDENT_GROUPS">
+      <column comment="" key="false" length="7" name="recNum" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="70" name="acctName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="addr" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="city" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="state" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="zip" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="country" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="phone" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="Source" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="T_GEN_KEY" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="GID" nullable="true" precision="0" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="GRP_SIZE" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="MASTER" nullable="true" precision="0" sourceType="" type="id_Boolean" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="SCORE" nullable="true" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="GRP_QUALITY" nullable="true" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="UNCERTAIN_GROUPS" label="account_for_dups" name="UNCERTAIN_GROUPS">
+      <column comment="" key="false" length="7" name="recNum" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="70" name="acctName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="addr" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="city" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="state" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="zip" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="country" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="phone" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="Source" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="T_GEN_KEY" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="GID" nullable="true" precision="0" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="GRP_SIZE" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="MASTER" nullable="true" precision="0" sourceType="" type="id_Boolean" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="SCORE" nullable="true" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="GRP_QUALITY" nullable="true" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW_OUTPUT" label="account_for_dups" name="FLOW_OUTPUT">
+      <column comment="" key="false" length="7" name="recNum" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="70" name="acctName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="addr" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="city" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="state" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="zip" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="country" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="phone" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="Source" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="T_GEN_KEY" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="GID" nullable="true" precision="0" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="GRP_SIZE" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="MASTER" nullable="true" precision="0" sourceType="" type="id_Boolean" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="SCORE" nullable="true" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="GRP_QUALITY" nullable="true" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="tdqmatching:MatchingData">
+      <ruleMatchers>
+        <joinkeys>
+          <columnMap key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap key="HANDLE_NULL" value="nullMatchNull"/>
+          <columnMap key="CONFIDENCE_WEIGHT" value="3"/>
+          <columnMap key="MATCHING_TYPE" value="Levenshtein"/>
+          <columnMap key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+          <columnMap key="TOKENIZATION_TYPE" value="No"/>
+          <columnMap key="CUSTOM_MATCHER" value=""/>
+          <columnMap key="INPUT_COLUMN" value="acctName"/>
+        </joinkeys>
+        <joinkeys>
+          <columnMap key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap key="HANDLE_NULL" value="nullMatchNull"/>
+          <columnMap key="CONFIDENCE_WEIGHT" value="5"/>
+          <columnMap key="MATCHING_TYPE" value="Levenshtein"/>
+          <columnMap key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+          <columnMap key="TOKENIZATION_TYPE" value="No"/>
+          <columnMap key="CUSTOM_MATCHER" value=""/>
+          <columnMap key="INPUT_COLUMN" value="addr"/>
+        </joinkeys>
+        <joinkeys>
+          <columnMap key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap key="HANDLE_NULL" value="nullMatchNull"/>
+          <columnMap key="CONFIDENCE_WEIGHT" value="1"/>
+          <columnMap key="MATCHING_TYPE" value="Exact"/>
+          <columnMap key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+          <columnMap key="TOKENIZATION_TYPE" value="No"/>
+          <columnMap key="CUSTOM_MATCHER" value=""/>
+          <columnMap key="INPUT_COLUMN" value="city"/>
+        </joinkeys>
+        <joinkeys>
+          <columnMap key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap key="HANDLE_NULL" value="nullMatchNull"/>
+          <columnMap key="CONFIDENCE_WEIGHT" value="1"/>
+          <columnMap key="MATCHING_TYPE" value="Exact"/>
+          <columnMap key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+          <columnMap key="TOKENIZATION_TYPE" value="No"/>
+          <columnMap key="CUSTOM_MATCHER" value=""/>
+          <columnMap key="INPUT_COLUMN" value="state"/>
+        </joinkeys>
+        <matchParamMap key="INTERVAL_RULE" value="0.85"/>
+        <matchParamMap key="MATCHING_ALGORITHM" value="Simple VSR Matcher"/>
+      </ruleMatchers>
+      <ruleMatchers>
+        <joinkeys>
+          <columnMap key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap key="HANDLE_NULL" value="nullMatchNull"/>
+          <columnMap key="CONFIDENCE_WEIGHT" value="3"/>
+          <columnMap key="MATCHING_TYPE" value="Levenshtein"/>
+          <columnMap key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+          <columnMap key="TOKENIZATION_TYPE" value="No"/>
+          <columnMap key="CUSTOM_MATCHER" value=""/>
+          <columnMap key="INPUT_COLUMN" value="acctName"/>
+        </joinkeys>
+        <joinkeys>
+          <columnMap key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap key="HANDLE_NULL" value="nullMatchNull"/>
+          <columnMap key="CONFIDENCE_WEIGHT" value="5"/>
+          <columnMap key="MATCHING_TYPE" value="Levenshtein"/>
+          <columnMap key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+          <columnMap key="TOKENIZATION_TYPE" value="No"/>
+          <columnMap key="CUSTOM_MATCHER" value=""/>
+          <columnMap key="INPUT_COLUMN" value="addr"/>
+        </joinkeys>
+        <joinkeys>
+          <columnMap key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap key="HANDLE_NULL" value="nullMatchNull"/>
+          <columnMap key="CONFIDENCE_WEIGHT" value="1"/>
+          <columnMap key="MATCHING_TYPE" value="Exact"/>
+          <columnMap key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+          <columnMap key="TOKENIZATION_TYPE" value="No"/>
+          <columnMap key="CUSTOM_MATCHER" value=""/>
+          <columnMap key="INPUT_COLUMN" value="city"/>
+        </joinkeys>
+        <joinkeys>
+          <columnMap key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap key="HANDLE_NULL" value="nullMatchNull"/>
+          <columnMap key="CONFIDENCE_WEIGHT" value="1"/>
+          <columnMap key="MATCHING_TYPE" value="Exact"/>
+          <columnMap key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+          <columnMap key="TOKENIZATION_TYPE" value="No"/>
+          <columnMap key="CUSTOM_MATCHER" value=""/>
+          <columnMap key="INPUT_COLUMN" value="state"/>
+        </joinkeys>
+        <matchParamMap key="INTERVAL_RULE" value="0.8"/>
+        <matchParamMap key="MATCHING_ALGORITHM" value="Simple VSR Matcher"/>
+      </ruleMatchers>
+      <ruleMatchers>
+        <joinkeys>
+          <columnMap key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap key="HANDLE_NULL" value="nullMatchNull"/>
+          <columnMap key="CONFIDENCE_WEIGHT" value="3"/>
+          <columnMap key="MATCHING_TYPE" value="Levenshtein"/>
+          <columnMap key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+          <columnMap key="TOKENIZATION_TYPE" value="No"/>
+          <columnMap key="CUSTOM_MATCHER" value=""/>
+          <columnMap key="INPUT_COLUMN" value="acctName"/>
+        </joinkeys>
+        <joinkeys>
+          <columnMap key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap key="HANDLE_NULL" value="nullMatchNull"/>
+          <columnMap key="CONFIDENCE_WEIGHT" value="5"/>
+          <columnMap key="MATCHING_TYPE" value="Levenshtein"/>
+          <columnMap key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+          <columnMap key="TOKENIZATION_TYPE" value="No"/>
+          <columnMap key="CUSTOM_MATCHER" value=""/>
+          <columnMap key="INPUT_COLUMN" value="addr"/>
+        </joinkeys>
+        <joinkeys>
+          <columnMap key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap key="HANDLE_NULL" value="nullMatchNull"/>
+          <columnMap key="CONFIDENCE_WEIGHT" value="1"/>
+          <columnMap key="MATCHING_TYPE" value="Exact"/>
+          <columnMap key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+          <columnMap key="TOKENIZATION_TYPE" value="No"/>
+          <columnMap key="CUSTOM_MATCHER" value=""/>
+          <columnMap key="INPUT_COLUMN" value="city"/>
+        </joinkeys>
+        <joinkeys>
+          <columnMap key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap key="HANDLE_NULL" value="nullMatchNull"/>
+          <columnMap key="CONFIDENCE_WEIGHT" value="1"/>
+          <columnMap key="MATCHING_TYPE" value="Exact"/>
+          <columnMap key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+          <columnMap key="TOKENIZATION_TYPE" value="No"/>
+          <columnMap key="CUSTOM_MATCHER" value=""/>
+          <columnMap key="INPUT_COLUMN" value="state"/>
+        </joinkeys>
+        <matchParamMap key="INTERVAL_RULE" value="0.85"/>
+        <matchParamMap key="MATCHING_ALGORITHM" value="Simple VSR Matcher"/>
+      </ruleMatchers>
+      <ruleMatchers>
+        <joinkeys>
+          <columnMap key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap key="HANDLE_NULL" value="nullMatchNull"/>
+          <columnMap key="CONFIDENCE_WEIGHT" value="3"/>
+          <columnMap key="MATCHING_TYPE" value="Levenshtein"/>
+          <columnMap key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+          <columnMap key="TOKENIZATION_TYPE" value="No"/>
+          <columnMap key="CUSTOM_MATCHER" value=""/>
+          <columnMap key="INPUT_COLUMN" value="acctName"/>
+        </joinkeys>
+        <joinkeys>
+          <columnMap key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap key="HANDLE_NULL" value="nullMatchNull"/>
+          <columnMap key="CONFIDENCE_WEIGHT" value="5"/>
+          <columnMap key="MATCHING_TYPE" value="Levenshtein"/>
+          <columnMap key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+          <columnMap key="TOKENIZATION_TYPE" value="No"/>
+          <columnMap key="CUSTOM_MATCHER" value=""/>
+          <columnMap key="INPUT_COLUMN" value="addr"/>
+        </joinkeys>
+        <joinkeys>
+          <columnMap key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap key="HANDLE_NULL" value="nullMatchNull"/>
+          <columnMap key="CONFIDENCE_WEIGHT" value="1"/>
+          <columnMap key="MATCHING_TYPE" value="Exact"/>
+          <columnMap key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+          <columnMap key="TOKENIZATION_TYPE" value="No"/>
+          <columnMap key="CUSTOM_MATCHER" value=""/>
+          <columnMap key="INPUT_COLUMN" value="city"/>
+        </joinkeys>
+        <joinkeys>
+          <columnMap key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap key="HANDLE_NULL" value="nullMatchNull"/>
+          <columnMap key="CONFIDENCE_WEIGHT" value="1"/>
+          <columnMap key="MATCHING_TYPE" value="Exact"/>
+          <columnMap key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+          <columnMap key="TOKENIZATION_TYPE" value="No"/>
+          <columnMap key="CUSTOM_MATCHER" value=""/>
+          <columnMap key="INPUT_COLUMN" value="state"/>
+        </joinkeys>
+        <matchParamMap key="INTERVAL_RULE" value="0.85"/>
+        <matchParamMap key="MATCHING_ALGORITHM" value="Simple VSR Matcher"/>
+      </ruleMatchers>
+      <ruleMatchers>
+        <joinkeys>
+          <columnMap key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap key="HANDLE_NULL" value="nullMatchNull"/>
+          <columnMap key="CONFIDENCE_WEIGHT" value="3"/>
+          <columnMap key="MATCHING_TYPE" value="Levenshtein"/>
+          <columnMap key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+          <columnMap key="TOKENIZATION_TYPE" value="No"/>
+          <columnMap key="CUSTOM_MATCHER" value=""/>
+          <columnMap key="INPUT_COLUMN" value="acctName"/>
+        </joinkeys>
+        <joinkeys>
+          <columnMap key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap key="HANDLE_NULL" value="nullMatchNull"/>
+          <columnMap key="CONFIDENCE_WEIGHT" value="5"/>
+          <columnMap key="MATCHING_TYPE" value="Levenshtein"/>
+          <columnMap key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+          <columnMap key="TOKENIZATION_TYPE" value="No"/>
+          <columnMap key="CUSTOM_MATCHER" value=""/>
+          <columnMap key="INPUT_COLUMN" value="addr"/>
+        </joinkeys>
+        <joinkeys>
+          <columnMap key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap key="HANDLE_NULL" value="nullMatchNull"/>
+          <columnMap key="CONFIDENCE_WEIGHT" value="1"/>
+          <columnMap key="MATCHING_TYPE" value="Exact"/>
+          <columnMap key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+          <columnMap key="TOKENIZATION_TYPE" value="No"/>
+          <columnMap key="CUSTOM_MATCHER" value=""/>
+          <columnMap key="INPUT_COLUMN" value="city"/>
+        </joinkeys>
+        <joinkeys>
+          <columnMap key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap key="HANDLE_NULL" value="nullMatchNull"/>
+          <columnMap key="CONFIDENCE_WEIGHT" value="1"/>
+          <columnMap key="MATCHING_TYPE" value="Exact"/>
+          <columnMap key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+          <columnMap key="TOKENIZATION_TYPE" value="No"/>
+          <columnMap key="CUSTOM_MATCHER" value=""/>
+          <columnMap key="INPUT_COLUMN" value="state"/>
+        </joinkeys>
+        <matchParamMap key="INTERVAL_RULE" value="0.85"/>
+        <matchParamMap key="MATCHING_ALGORITHM" value="Simple VSR Matcher"/>
+      </ruleMatchers>
+      <ruleMatchers>
+        <joinkeys>
+          <columnMap key="MATCHING_TYPE" value="Levenshtein"/>
+          <columnMap key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap key="HANDLE_NULL" value="nullMatchNull"/>
+          <columnMap key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+          <columnMap key="CONFIDENCE_WEIGHT" value="3"/>
+          <columnMap key="INPUT_COLUMN" value="acctName"/>
+          <columnMap key="CUSTOM_MATCHER" value=""/>
+          <columnMap key="TOKENIZATION_TYPE" value="No"/>
+        </joinkeys>
+        <joinkeys>
+          <columnMap key="MATCHING_TYPE" value="Levenshtein"/>
+          <columnMap key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap key="HANDLE_NULL" value="nullMatchNull"/>
+          <columnMap key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+          <columnMap key="CONFIDENCE_WEIGHT" value="5"/>
+          <columnMap key="INPUT_COLUMN" value="addr"/>
+          <columnMap key="CUSTOM_MATCHER" value=""/>
+          <columnMap key="TOKENIZATION_TYPE" value="No"/>
+        </joinkeys>
+        <joinkeys>
+          <columnMap key="MATCHING_TYPE" value="Exact"/>
+          <columnMap key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap key="HANDLE_NULL" value="nullMatchNull"/>
+          <columnMap key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+          <columnMap key="CONFIDENCE_WEIGHT" value="1"/>
+          <columnMap key="INPUT_COLUMN" value="city"/>
+          <columnMap key="CUSTOM_MATCHER" value=""/>
+          <columnMap key="TOKENIZATION_TYPE" value="No"/>
+        </joinkeys>
+        <joinkeys>
+          <columnMap key="MATCHING_TYPE" value="Exact"/>
+          <columnMap key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap key="HANDLE_NULL" value="nullMatchNull"/>
+          <columnMap key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+          <columnMap key="CONFIDENCE_WEIGHT" value="1"/>
+          <columnMap key="INPUT_COLUMN" value="state"/>
+          <columnMap key="CUSTOM_MATCHER" value=""/>
+          <columnMap key="TOKENIZATION_TYPE" value="No"/>
+        </joinkeys>
+        <matchParamMap key="INTERVAL_RULE" value="0.8"/>
+        <matchParamMap key="MATCHING_ALGORITHM" value="Simple VSR Matcher"/>
+      </ruleMatchers>
+    </nodeData>
+  </node>
+  <node componentName="tRuleSurvivorship" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRuleSurvivorship_1"/>
+    <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
+    <elementParameter field="TEXT" name="PACKAGE_NAME" value="&quot;org.talend.survivorship.dups2&quot;"/>
+    <elementParameter field="GENERATE_SURVIVORSHIP_RULES_CONTROLLER" name="GEN_SURVIVORSHIP_RULES" value="false"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="GRP_ID" value="GID"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="GRP_SIZE" value="GRP_SIZE"/>
+    <elementParameter field="TABLE" name="OPERATIONS">
+      <elementValue elementRef="RELATION" value="SEQ"/>
+      <elementValue elementRef="RULE_NAME" value="&quot;1_acctname&quot;"/>
+      <elementValue elementRef="INPUT_COLUMN" value="acctName"/>
+      <elementValue elementRef="FUNCTION" value="MostCommon"/>
+      <elementValue elementRef="VALUE" value="&quot;&quot;"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="acctName"/>
+      <elementValue elementRef="IGNORE_NULL" value="false"/>
+      <elementValue elementRef="RELATION" value="SEQ"/>
+      <elementValue elementRef="RULE_NAME" value="&quot;2_addr&quot;"/>
+      <elementValue elementRef="INPUT_COLUMN" value="addr"/>
+      <elementValue elementRef="FUNCTION" value="Longest"/>
+      <elementValue elementRef="VALUE" value="&quot;&quot;"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="addr"/>
+      <elementValue elementRef="IGNORE_NULL" value="false"/>
+      <elementValue elementRef="RELATION" value="SEQ"/>
+      <elementValue elementRef="RULE_NAME" value="&quot;3_city&quot;"/>
+      <elementValue elementRef="INPUT_COLUMN" value="city"/>
+      <elementValue elementRef="FUNCTION" value="MostCommon"/>
+      <elementValue elementRef="VALUE" value="&quot;&quot;"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="city"/>
+      <elementValue elementRef="IGNORE_NULL" value="false"/>
+      <elementValue elementRef="RELATION" value="SEQ"/>
+      <elementValue elementRef="RULE_NAME" value="&quot;4_state&quot;"/>
+      <elementValue elementRef="INPUT_COLUMN" value="state"/>
+      <elementValue elementRef="FUNCTION" value="MostCommon"/>
+      <elementValue elementRef="VALUE" value="&quot;&quot;"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="state"/>
+      <elementValue elementRef="IGNORE_NULL" value="false"/>
+      <elementValue elementRef="RELATION" value="SEQ"/>
+      <elementValue elementRef="RULE_NAME" value="&quot;5_zip&quot;"/>
+      <elementValue elementRef="INPUT_COLUMN" value="zip"/>
+      <elementValue elementRef="FUNCTION" value="MostCommon"/>
+      <elementValue elementRef="VALUE" value="&quot;&quot;"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="zip"/>
+      <elementValue elementRef="IGNORE_NULL" value="false"/>
+      <elementValue elementRef="RELATION" value="SEQ"/>
+      <elementValue elementRef="RULE_NAME" value="&quot;6_country&quot;"/>
+      <elementValue elementRef="INPUT_COLUMN" value="country"/>
+      <elementValue elementRef="FUNCTION" value="MostCommon"/>
+      <elementValue elementRef="VALUE" value="&quot;&quot;"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="country"/>
+      <elementValue elementRef="IGNORE_NULL" value="false"/>
+      <elementValue elementRef="RELATION" value="SEQ"/>
+      <elementValue elementRef="RULE_NAME" value="&quot;7_phone&quot;"/>
+      <elementValue elementRef="INPUT_COLUMN" value="phone"/>
+      <elementValue elementRef="FUNCTION" value="MostCommon"/>
+      <elementValue elementRef="VALUE" value="&quot;^\([0-9][0-9][0-9]\) [0-9][0-9][0-9]-[0-9][0-9][0-9][0-9]$&quot;"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="phone"/>
+      <elementValue elementRef="IGNORE_NULL" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="DEFINE_CONFLICT" value="false"/>
+    <elementParameter field="TABLE" name="CONFLICT_TABLE" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="SURVIVOR_RELATION" name="drools" show="false" value="_Pz1boD59Eeixpd-QgZvA9w"/>
+    <elementParameter field="SURVIVOR_RELATION" name="5_zip" show="false" value="_Pz9-gD59Eeixpd-QgZvA9w"/>
+    <elementParameter field="SURVIVOR_RELATION" name="2_addr" show="false" value="_P0C3AD59Eeixpd-QgZvA9w"/>
+    <elementParameter field="SURVIVOR_RELATION" name="3_city" show="false" value="_P0HIcD59Eeixpd-QgZvA9w"/>
+    <elementParameter field="SURVIVOR_RELATION" name="1_acctname" show="false" value="_P0MA8D59Eeixpd-QgZvA9w"/>
+    <elementParameter field="SURVIVOR_RELATION" name="7_phone" show="false" value="_P0RggD59Eeixpd-QgZvA9w"/>
+    <elementParameter field="SURVIVOR_RELATION" name="6_country" show="false" value="_P0WZAD59Eeixpd-QgZvA9w"/>
+    <elementParameter field="SURVIVOR_RELATION" name="4_state" show="false" value="_P0bRgD59Eeixpd-QgZvA9w"/>
+    <elementParameter field="SURVIVOR_RELATION" name="SurvivorFlow" show="false" value="_P0fi8D59Eeixpd-QgZvA9w"/>
+    <metadata connector="FLOW" label="account_for_dups" name="tRuleSurvivorship_1">
+      <column comment="" key="false" length="7" name="recNum" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="70" name="acctName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="addr" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="city" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="state" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="zip" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="country" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="phone" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="Source" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="T_GEN_KEY" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="GID" nullable="true" precision="0" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="GRP_SIZE" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="MASTER" nullable="true" precision="0" sourceType="" type="id_Boolean" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="SCORE" nullable="true" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="GRP_QUALITY" nullable="true" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="SURVIVOR" nullable="true" precision="0" sourceType="" type="id_Boolean" usefulColumn="true"/>
+      <column key="false" length="0" name="CONFLICT" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" show="false" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" show="false" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="recNum"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="acctName"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="addr"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="city"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="state"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="zip"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="country"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="phone"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Source"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="T_GEN_KEY"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GRP_SIZE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MASTER"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SCORE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GRP_QUALITY"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SURVIVOR"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CONFLICT"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="LABEL" value="Survivors"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="account_for_dups" name="tLogRow_1">
+      <column comment="" key="false" length="7" name="recNum" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="70" name="acctName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="addr" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="city" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="state" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="zip" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="country" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="phone" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="Source" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="T_GEN_KEY" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="GID" nullable="true" precision="0" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="GRP_SIZE" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="MASTER" nullable="true" precision="0" sourceType="" type="id_Boolean" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="SCORE" nullable="true" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="GRP_QUALITY" nullable="true" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="SURVIVOR" nullable="true" precision="0" sourceType="" type="id_Boolean" usefulColumn="true"/>
+      <column key="false" length="0" name="CONFLICT" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="928" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_ico18CfYEeipA86QosOsSw-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="address_standard">
+      <column defaultValue="" key="false" length="0" name="GID" nullable="true" precision="0" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="70" name="ACCTNAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ADDRESS" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="COUNTRY" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="PHONE" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="not just postal addresses, but any way to geographically name a location" key="false" length="0" name="formatted_address" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" name="REFTable">
+      <column comment="" key="false" length="7" name="recNum" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="GID" nullable="true" precision="0" sourceType="" type="id_Long" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables activateExpressionFilter="true" expressionFilter="row7.SURVIVOR " name="address_standard" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row7.GID " name="GID" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row7.acctName " name="ACCTNAME" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row7.addr " name="ADDRESS" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row7.country " name="COUNTRY" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row7.phone " name="PHONE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row7.addr + &quot; &quot; + row7.city + &quot; &quot; +  row7.state  + &quot; &quot; + row7.zip + &quot; &quot; +  row7.country  " name="formatted_address" nullable="true" type="id_String"/>
+      </outputTables>
+      <outputTables activateCondensedTool="true" activateExpressionFilter="true" name="REFTable" reject="true" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row7.recNum" name="recNum" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row7.GID" name="GID" nullable="true" type="id_Long"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row7" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="recNum" nullable="true" type="id_String"/>
+        <mapperTableEntries name="acctName" nullable="true" type="id_String"/>
+        <mapperTableEntries name="addr" nullable="true" type="id_String"/>
+        <mapperTableEntries name="city" nullable="true" type="id_String"/>
+        <mapperTableEntries name="state" nullable="true" type="id_String"/>
+        <mapperTableEntries name="zip" nullable="true" type="id_String"/>
+        <mapperTableEntries name="country" nullable="true" type="id_String"/>
+        <mapperTableEntries name="phone" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Source" nullable="true" type="id_String"/>
+        <mapperTableEntries name="T_GEN_KEY" nullable="true" type="id_String"/>
+        <mapperTableEntries name="GID" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="GRP_SIZE" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="MASTER" nullable="true" type="id_Boolean"/>
+        <mapperTableEntries name="SCORE" nullable="true" type="id_Double"/>
+        <mapperTableEntries name="GRP_QUALITY" nullable="true" type="id_Double"/>
+        <mapperTableEntries name="SURVIVOR" nullable="true" type="id_Boolean"/>
+        <mapperTableEntries name="CONFLICT" nullable="true" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1216" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_3"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;D:/Talend/Pre Sales/Demos/DQ/Output/reftable.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" show="false" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="1"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="90"/>
+    <elementParameter field="TEXT" name="LABEL" value="Ref Table"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileOutputDelimited_3">
+      <column comment="" key="false" length="7" name="recNum" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="GID" nullable="true" precision="0" sourceType="" type="id_Long" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="736" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_2"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_ico18CfYEeipA86QosOsSw-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="account_for_dups" name="suspect">
+      <column comment="" key="false" length="7" name="recNum" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="70" name="acctName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="addr" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="city" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="state" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="zip" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="country" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="phone" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="255" name="T_GEN_KEY" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="GID" nullable="true" precision="0" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="GRP_SIZE" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="MASTER" nullable="true" precision="0" sourceType="" type="id_Boolean" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="SCORE" nullable="true" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="GRP_QUALITY" nullable="true" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="istarget" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="weights" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="taskname" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Source" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="suspect" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row5.recNum" name="recNum" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row5.acctName" name="acctName" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row5.addr" name="addr" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row5.city" name="city" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row5.state" name="state" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row5.zip" name="zip" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row5.country" name="country" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row5.phone" name="phone" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row5.T_GEN_KEY" name="T_GEN_KEY" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row5.GID" name="GID" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row5.GRP_SIZE" name="GRP_SIZE" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row5.MASTER" name="MASTER" nullable="true" type="id_Boolean"/>
+        <mapperTableEntries expression="row5.SCORE" name="SCORE" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row5.GRP_QUALITY" name="GRP_QUALITY" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="false" name="istarget" nullable="true" type="id_Boolean"/>
+        <mapperTableEntries expression="&quot;0&quot;" name="weights" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row5.acctName " name="taskname" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row5.Source " name="Source" nullable="true" type="id_String"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row5" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="recNum" nullable="true" type="id_String"/>
+        <mapperTableEntries name="acctName" nullable="true" type="id_String"/>
+        <mapperTableEntries name="addr" nullable="true" type="id_String"/>
+        <mapperTableEntries name="city" nullable="true" type="id_String"/>
+        <mapperTableEntries name="state" nullable="true" type="id_String"/>
+        <mapperTableEntries name="zip" nullable="true" type="id_String"/>
+        <mapperTableEntries name="country" nullable="true" type="id_String"/>
+        <mapperTableEntries name="phone" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Source" nullable="true" type="id_String"/>
+        <mapperTableEntries name="T_GEN_KEY" nullable="true" type="id_String"/>
+        <mapperTableEntries name="GID" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="GRP_SIZE" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="MASTER" nullable="true" type="id_Boolean"/>
+        <mapperTableEntries name="SCORE" nullable="true" type="id_Double"/>
+        <mapperTableEntries name="GRP_QUALITY" nullable="true" type="id_Double"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1216" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_1"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;D:/Talend/Pre Sales/Demos/DQ/Output/survivors.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" show="false" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="1"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="90"/>
+    <elementParameter field="TEXT" name="LABEL" value="Match_Cleansed"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileOutputDelimited_1">
+      <column defaultValue="" key="false" length="0" name="GID" nullable="true" precision="0" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="70" name="ACCTNAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ADDRESS" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="COUNTRY" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="PHONE" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="not just postal addresses, but any way to geographically name a location" key="false" length="0" name="formatted_address" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="736" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_4"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_ico18CfYEeipA86QosOsSw-tMap_4-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="account_for_dups" name="uniques">
+      <column defaultValue="" key="false" length="0" name="GID" nullable="true" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="ShippingStreet" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="ShippingCity" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="ShippingState" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="ShippingPostalCode" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="ShippingCountry" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="Phone" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="uniques" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row3.GID" name="GID" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row3.acctName " name="Name" type="id_String"/>
+        <mapperTableEntries expression="row3.addr " name="ShippingStreet" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.city " name="ShippingCity" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.state " name="ShippingState" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.zip " name="ShippingPostalCode" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.country " name="ShippingCountry" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.phone" name="Phone" nullable="true" type="id_String"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row3" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="recNum" nullable="true" type="id_String"/>
+        <mapperTableEntries name="acctName" nullable="true" type="id_String"/>
+        <mapperTableEntries name="addr" nullable="true" type="id_String"/>
+        <mapperTableEntries name="city" nullable="true" type="id_String"/>
+        <mapperTableEntries name="state" nullable="true" type="id_String"/>
+        <mapperTableEntries name="zip" nullable="true" type="id_String"/>
+        <mapperTableEntries name="country" nullable="true" type="id_String"/>
+        <mapperTableEntries name="phone" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Source" nullable="true" type="id_String"/>
+        <mapperTableEntries name="T_GEN_KEY" nullable="true" type="id_String"/>
+        <mapperTableEntries name="GID" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="GRP_SIZE" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="MASTER" nullable="true" type="id_Boolean"/>
+        <mapperTableEntries name="SCORE" nullable="true" type="id_Double"/>
+        <mapperTableEntries name="GRP_QUALITY" nullable="true" type="id_Double"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1184" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_2"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;D:/Talend/Pre Sales/Demos/DQ/Outputuniques.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" show="false" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="1"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="90"/>
+    <elementParameter field="TEXT" name="LABEL" value="Unique Records"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="account_for_dups" name="tFileOutputDelimited_2">
+      <column defaultValue="" key="false" length="0" name="GID" nullable="true" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="ShippingStreet" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="ShippingCity" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="ShippingState" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="ShippingPostalCode" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="ShippingCountry" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="Phone" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="992" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_4"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;D:/Talend/Pre Sales/Demos/DQ/Output/suspect.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" show="false" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="1"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="90"/>
+    <elementParameter field="TEXT" name="LABEL" value="Suspect"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="account_for_dups" name="tFileOutputDelimited_4">
+      <column comment="" key="false" length="7" name="recNum" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="70" name="acctName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="addr" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="city" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="state" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="zip" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="country" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="phone" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="255" name="T_GEN_KEY" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="GID" nullable="true" precision="0" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="GRP_SIZE" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="MASTER" nullable="true" precision="0" sourceType="" type="id_Boolean" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="SCORE" nullable="true" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="GRP_QUALITY" nullable="true" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="istarget" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="weights" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="taskname" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Source" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="input" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tMap_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="input"/>
+  </connection>
+  <connection connectorName="FLOW" label="acctsmysql" lineStyle="0" metaname="acctsmysql" offsetLabelX="0" offsetLabelY="0" source="tMap_3" target="tGenKey_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="recNum"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="acctName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="addr"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="city"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="state"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="zip"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="country"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="phone"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Source"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="acctsmysql"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tGenKey_1" offsetLabelX="0" offsetLabelY="0" source="tGenKey_1" target="tMatchGroup_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="recNum"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="acctName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="addr"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="city"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="state"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="zip"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="country"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="phone"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="T_GEN_KEY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
+  </connection>
+  <connection connectorName="UNIQUE_ROWS" label="row3" lineStyle="0" metaname="UNIQUE_ROWS" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMatchGroup_1" target="tMap_4">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
+  </connection>
+  <connection connectorName="CONFIDENT_GROUPS" label="confident" lineStyle="0" metaname="CONFIDENT_GROUPS" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMatchGroup_1" target="tRuleSurvivorship_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="recNum"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="acctName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="addr"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="city"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="state"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="zip"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="country"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="phone"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="T_GEN_KEY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="GID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="GRP_SIZE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MASTER"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SCORE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="GRP_QUALITY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="confident"/>
+  </connection>
+  <connection connectorName="UNCERTAIN_GROUPS" label="row5" lineStyle="0" metaname="UNCERTAIN_GROUPS" offsetLabelX="0" offsetLabelY="0" outputId="3" source="tMatchGroup_1" target="tMap_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="recNum"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="acctName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="addr"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="city"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="state"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="zip"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="country"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="phone"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Source"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="T_GEN_KEY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="GID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="GRP_SIZE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MASTER"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SCORE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="GRP_QUALITY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row5"/>
+  </connection>
+  <connection connectorName="FLOW" label="row6" lineStyle="0" metaname="tRuleSurvivorship_1" offsetLabelX="0" offsetLabelY="0" source="tRuleSurvivorship_1" target="tLogRow_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="recNum"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="acctName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="addr"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="city"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="state"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="zip"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="country"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="phone"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="T_GEN_KEY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="GID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="GRP_SIZE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MASTER"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SCORE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="GRP_QUALITY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SURVIVOR"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CONFLICT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row6"/>
+  </connection>
+  <connection connectorName="FLOW" label="row7" lineStyle="0" metaname="tLogRow_1" offsetLabelX="0" offsetLabelY="0" source="tLogRow_1" target="tMap_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="recNum"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="acctName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="addr"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="city"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="state"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="zip"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="country"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="phone"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="T_GEN_KEY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="GID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="GRP_SIZE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MASTER"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SCORE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="GRP_QUALITY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SURVIVOR"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CONFLICT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row7"/>
+  </connection>
+  <connection connectorName="FLOW" label="address_standard" lineStyle="0" metaname="address_standard" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_1" target="tFileOutputDelimited_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="GID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ACCTNAME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ADDRESS"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COUNTRY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PHONE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="formatted_address"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="address_standard"/>
+  </connection>
+  <connection connectorName="FLOW" label="REFTable" lineStyle="0" metaname="REFTable" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_1" target="tFileOutputDelimited_3">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="recNum"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="GID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="REFTable"/>
+  </connection>
+  <connection connectorName="FLOW" label="suspect" lineStyle="0" metaname="suspect" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tFileOutputDelimited_4">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="suspect"/>
+  </connection>
+  <connection connectorName="FLOW" label="uniques" lineStyle="0" metaname="uniques" offsetLabelX="0" offsetLabelY="0" source="tMap_4" target="tFileOutputDelimited_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="GID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Name"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ShippingStreet"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ShippingCity"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ShippingState"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ShippingPostalCode"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ShippingCountry"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Phone"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="uniques"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputDelimited_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_3fd2124e-cca2-4f76-b3bb-69552be2183d"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>eNG2mKObjMgxlRo1M3dLlKvTkilOA5ZG+rZ99o1ZohZLY7lWDyYv8Gox9gHvh2sV3qsOqyN1hOFg
+d1yJX25Yow==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b95b1532-dcc6-407b-8e81-91fa9b6e082d"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>L4AeDFplWwg3H1ISN7cucsRdZl+XwpTvNVsPzmJQ1lIx9/EQQjKaqGCxJCBHb3CDeQ6lyuhKRAbu
+HC5mjC9B5g==</DigestValue></Reference></SignedInfo><SignatureValue>k8URbYqeg9Rkk8QBo5mC00pWWsUY4UCvRltp/8mplJ09CDbcVC7JsuaAcg8UDAwqi+IrsUxO2O0F
+VTErfa3ndkXcDeH7yXE/RHCXFMwn6L43S/Xr8oo9MHXrisvAWqM3nIadPftGP7Sghs3v+sUmnKLA
+BgtEbgAdMPQYRHqVeZM1j8h6qMnMWK1WxT4lCDUMyRQ6204DFau/DT3Q0G2cCTioVWXR5WuaraVO
+ZoT3fBofEVuKCGQ8pz/VE3RIj3nACcvuQfso/RXzFh0ONfWsI9FMLCDo9UXSVVVNDja/7nSs8r2M
+j4CdbEabMpPQL6sXuMObEd0woq5l7R9n/pEMDg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
+RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
+LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
+VQQIDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1ImRDEpMCcGA1UEAwwg
+RGVmYXVsdCBjb2RlLXNpZ25pbmcgY2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw
+ggEKAoIBAQDiCz1II/o6hDUWu/ygxTCT2o/fYxVzPW23AoONQC/Vuiqh0COyLIgaMTjBPmQdTQFq
+rmM5tD64gi4TEQF+Z3iYt3daLdQUfaW9SzaMlY+XVNz5xnMBVDuiSHJSFE9lKnhgbKAHvOeoJo46
+UgWwb1za0WpRckDtjKcntwEK1orZCgrcIo1nDvFXyB5n0KfpLyktEOa0bSHde50MPbvQeB66XlEb
+lhjfs5S9WnAUja9RgqdwqZoI0ss+x/pjkQygDT8f17MktM21HOtg09lJlhMGJckhgD7jUF5tfYGM
+sv/O27g5CToFhxOnutDtsrDw7AkEQIml8KJp97bQLAFlLnh1AgMBAAGjge0wgeowHQYDVR0OBBYE
+FFzdy6ZfpUX8JwkM/SUrqkwLNqWAMB8GA1UdIwQYMBaAFOd9C3L8tYGZxoAr2SzsgnMytaj3MAsG
+A1UdDwQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzAJBgNVHRMEAjAAMHsGCWCGSAGG+EIBDQRu
+FmxEZWZhdWx0IHRoaXJkIHBhcnR5IGNvZGUtc2lnbmluZyBjZXJ0aWZpY2F0ZS4gTm8gY29tbWl0
+bWVudCBpcyBtYWRlIG9uIHRoZSBjb250ZW50IHNpZ25lZCBieSB0aGUgdGhpcmQgcGFydHkwDQYJ
+KoZIhvcNAQELBQADggIBAKzYdnzoFgrRtDLSSzWtwuOrGo5+1RPoDHm/1dlbVnB7oZzUwfRGwZT5
+ser0V7OZyt9wWR8iQ2ka30fHWrNAosNtlIkF88s5YZw7OOIMxR+qYA99BnWLa79DZVIuukI2f5qJ
+Cr9nw6Oygo8CWeNMWhtXcvV4gqROhb2QMBrvWBw9QvNK1XMdtPShfWiXwyPzzRKgwqrN2meXtOY3
+S+MXu6u+RUD9EYeElp9M+9Yp+zRySl5/s+0sbvo7qz369dlsw8XhKXT+s4YQQe3Sx14Kg3SDFXKn
+QcVgycaZMOw4YUxOeP2hKOHnNuOMORfu3qlYkN/0RMGjn6r4PU4+yL276TiWI5b8J06y4leng2as
+r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
+EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
+BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
+6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b95b1532-dcc6-407b-8e81-91fa9b6e082d" Target="#_3fd2124e-cca2-4f76-b3bb-69552be2183d"><Timestamp>2018-06-26 20:20:56</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

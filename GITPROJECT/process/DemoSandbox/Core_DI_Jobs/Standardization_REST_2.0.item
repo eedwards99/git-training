@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="StudioPath" prompt="StudioPath?" promptNeeded="false" type="id_String" value="C:/Talend/6.0.1/studio/"/>
+    <contextParameter comment="" name="REST_ENDPOINT" prompt="REST_ENDPOINT?" promptNeeded="false" type="id_String" value="http://localhost:8042/standardize/"/>
+    <contextParameter comment="" name="Google_Api" prompt="Google_Api?" promptNeeded="false" type="id_String" value="AIzaSyC0LAboJnSPPdijX6aoovCVcPsFPpH0l0o"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;F:/Software/TalendStudio/V60tis/Talend-Studio-20150702_1518-V6.0.0EP/workspace/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_8vLwIETiEeClKfPLQUgLJQ" name="DQStandardization"/>
+    <routinesParameter id="_8vcO0ETiEeClKfPLQUgLJQ" name="DQTechnical"/>
+    <routinesParameter id="_8wq94ETiEeClKfPLQUgLJQ" name="DataOperation"/>
+    <routinesParameter id="_8u5cQETiEeClKfPLQUgLJQ" name="DataQuality"/>
+    <routinesParameter id="_8tbcoETiEeClKfPLQUgLJQ" name="DqStringHandling"/>
+    <routinesParameter id="_8v6I4ETiEeClKfPLQUgLJQ" name="GetNbDay"/>
+    <routinesParameter id="_8xEmgETiEeClKfPLQUgLJQ" name="Mathematical"/>
+    <routinesParameter id="_8wILUETiEeClKfPLQUgLJQ" name="Numeric"/>
+    <routinesParameter id="_8wgl0ETiEeClKfPLQUgLJQ" name="Relational"/>
+    <routinesParameter id="_8vrfYETiEeClKfPLQUgLJQ" name="SQLike"/>
+    <routinesParameter id="_8w1V8ETiEeClKfPLQUgLJQ" name="StringHandling"/>
+    <routinesParameter id="_8wWNwETiEeClKfPLQUgLJQ" name="TalendDataGenerator"/>
+    <routinesParameter id="_8w-f4ETiEeClKfPLQUgLJQ" name="TalendDate"/>
+    <routinesParameter id="_8vxmAETiEeClKfPLQUgLJQ" name="TalendString"/>
+    <routinesParameter id="_eCG4cOOLEeCQKYXY1k29Sw" name="MDM"/>
+    <routinesParameter id="_fuIxsMVlEeWHdbLgN3lPDQ" name="DataQualityDependencies"/>
+    <routinesParameter id="_9nddkBjnEeisCoBX7n8v1Q" name="DataMasking"/>
+    <routinesParameter id="_9k8VEBjnEeisCoBX7n8v1Q" name="TalendStringUtil"/>
+  </parameters>
+  <node componentName="tRESTRequest" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="96" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRESTRequest_1"/>
+    <elementParameter field="TEXT" name="REST_ENDPOINT" value="context.REST_ENDPOINT"/>
+    <elementParameter field="TABLE" name="SCHEMAS">
+      <elementValue elementRef="SCHEMA" value="phone"/>
+      <elementValue elementRef="HTTP_VERB" value="GET"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/phone/{phone}/&quot;"/>
+      <elementValue elementRef="CONSUMES" value="NONE"/>
+      <elementValue elementRef="PRODUCES" value="JSON"/>
+      <elementValue elementRef="STREAMING" value="false"/>
+      <elementValue elementRef="SCHEMA" value="address"/>
+      <elementValue elementRef="HTTP_VERB" value="POST"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/address/&quot;"/>
+      <elementValue elementRef="CONSUMES" value="ANY"/>
+      <elementValue elementRef="PRODUCES" value="JSON"/>
+      <elementValue elementRef="STREAMING" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false"/>
+    <elementParameter field="TEXT" name="SERVICE_NAMESPACE" show="false" value="&quot;http://www.talend.org/rest/&quot;"/>
+    <elementParameter field="TEXT" name="SERVICE_NAME" show="false" value="&quot;Standardization_REST&quot;"/>
+    <elementParameter field="CHECK" name="SERVICE_ACTIVITY_MONITOR" value="false"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" show="false" value="BASIC"/>
+    <elementParameter field="CHECK" name="NEED_AUTHORIZATION" show="false" value="false"/>
+    <elementParameter field="CHECK" name="USE_BUSINESS_CORRELATION" value="false"/>
+    <elementParameter field="CHECK" name="LOG_MESSAGES" value="true"/>
+    <elementParameter field="CHECK" name="WRAP_JSON_REQUEST" value="true"/>
+    <elementParameter field="TABLE" name="SERVICE_LOCATOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="TABLE" name="SERVICE_ACTIVITY_MONITOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="CHECK" name="CONVERT_JSON_VALUES_TO_STRING" value="false"/>
+    <elementParameter field="CHECK" name="EXPOSE_SWAGGER_SPEC" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDE_DOC_INTO_SWAGGER_SPEC" show="false" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="WRONG_CALLS" name="WRONG_CALLS">
+      <column defaultValue="" key="false" length="255" name="uri" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="method" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="status" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="1024" name="error" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" label="get" name="phone">
+      <column comment="" key="false" length="-1" name="phone" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="query" key="false" length="-1" name="country_iso2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" label="address" name="address">
+      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tGoogleAddressRow" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="352" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGoogleAddressRow_1"/>
+    <elementParameter field="TEXT" name="PAUSE" value="1"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="ADDRESS_COLUMN" value="body"/>
+    <elementParameter field="TEXT" name="API_KEY" value="context.Google_Api"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="address" name="tGoogleAddressRow_1">
+      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="not just postal addresses, but any way to geographically name a location" key="false" length="0" name="formatted_address" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="short street number" key="false" length="0" name="street_number_short" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="long street number" key="false" length="0" name="street_number_long" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="short route" key="false" length="0" name="route_short" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="long route" key="false" length="0" name="route_long" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="short locality" key="false" length="0" name="locality_short" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="long locality" key="false" length="0" name="locality_long" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="short sub locality" key="false" length="0" name="sublocality_short" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="long sub locality" key="false" length="0" name="sublocality_long" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="short admin area level 1" key="false" length="0" name="adm_area1_short" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="long admin area level 1" key="false" length="0" name="adm_area1_long" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="short admin area level 2" key="false" length="0" name="adm_area2_short" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="long admin area level 2" key="false" length="0" name="adm_area2_long" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="short admin area level 3" key="false" length="0" name="adm_area3_short" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="long admin area level 3" key="false" length="0" name="adm_area3_long" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="short country name" key="false" length="0" name="country_short" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="long country name" key="false" length="0" name="country_long" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="short postal code" key="false" length="0" name="postal_code_short" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="long postal code" key="false" length="0" name="postal_code_long" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="location type" key="false" length="0" name="location_type" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="partial match type" key="false" length="0" name="partial_match" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="latitude" defaultValue="" key="false" length="20" name="lat" nullable="true" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="longitude" defaultValue="" key="false" length="20" name="lng" nullable="true" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="status" key="false" length="0" name="status" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="608" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tXMLMap_2"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="standard_address" name="standard_address">
+      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="address_fields">
+        <nodes name="body" type="id_String" xpath="address_fields/body"/>
+        <nodes name="formatted_address" type="id_String" xpath="address_fields/formatted_address"/>
+        <nodes name="street_number_short" type="id_String" xpath="address_fields/street_number_short"/>
+        <nodes name="street_number_long" outgoingConnections="//@node.2/@nodeData/@connections.0" type="id_String" xpath="address_fields/street_number_long"/>
+        <nodes name="route_short" outgoingConnections="//@node.2/@nodeData/@connections.2" type="id_String" xpath="address_fields/route_short"/>
+        <nodes name="route_long" type="id_String" xpath="address_fields/route_long"/>
+        <nodes name="locality_short" type="id_String" xpath="address_fields/locality_short"/>
+        <nodes name="locality_long" outgoingConnections="//@node.2/@nodeData/@connections.3" type="id_String" xpath="address_fields/locality_long"/>
+        <nodes name="sublocality_short" type="id_String" xpath="address_fields/sublocality_short"/>
+        <nodes name="sublocality_long" type="id_String" xpath="address_fields/sublocality_long"/>
+        <nodes name="adm_area1_short" outgoingConnections="//@node.2/@nodeData/@connections.8" type="id_String" xpath="address_fields/adm_area1_short"/>
+        <nodes name="adm_area1_long" type="id_String" xpath="address_fields/adm_area1_long"/>
+        <nodes name="adm_area2_short" outgoingConnections="//@node.2/@nodeData/@connections.7" type="id_String" xpath="address_fields/adm_area2_short"/>
+        <nodes name="adm_area2_long" type="id_String" xpath="address_fields/adm_area2_long"/>
+        <nodes name="adm_area3_short" type="id_String" xpath="address_fields/adm_area3_short"/>
+        <nodes name="adm_area3_long" type="id_String" xpath="address_fields/adm_area3_long"/>
+        <nodes name="country_short" type="id_String" xpath="address_fields/country_short"/>
+        <nodes name="country_long" outgoingConnections="//@node.2/@nodeData/@connections.4" type="id_String" xpath="address_fields/country_long"/>
+        <nodes name="postal_code_short" type="id_String" xpath="address_fields/postal_code_short"/>
+        <nodes name="postal_code_long" outgoingConnections="//@node.2/@nodeData/@connections.1" type="id_String" xpath="address_fields/postal_code_long"/>
+        <nodes name="location_type" outgoingConnections="//@node.2/@nodeData/@connections.9" type="id_String" xpath="address_fields/location_type"/>
+        <nodes name="partial_match" type="id_String" xpath="address_fields/partial_match"/>
+        <nodes name="lat" outgoingConnections="//@node.2/@nodeData/@connections.5" type="id_Double" xpath="address_fields/lat"/>
+        <nodes name="lng" outgoingConnections="//@node.2/@nodeData/@connections.6" type="id_Double" xpath="address_fields/lng"/>
+        <nodes name="status" type="id_String" xpath="address_fields/status"/>
+      </inputTrees>
+      <outputTrees activateCondensedTool="true" enableEmptyElement="false" name="standard_address">
+        <nodes expression="" name="body" pattern="" type="id_Document" xpath="standard_address/body">
+          <children expression="" main="true" name="root" type="id_String" xpath="standard_address.body:/root" xsi:type="TalendXMLMap:OutputTreeNode">
+            <children expression="" loop="true" main="true" name="address" type="id_String" xpath="standard_address.body:/root/address" xsi:type="TalendXMLMap:OutputTreeNode">
+              <children expression="address_fields.street_number_long + &quot; &quot; + address_fields.route_short" incomingConnections="//@node.2/@nodeData/@connections.0 //@node.2/@nodeData/@connections.2" name="street" type="id_String" xpath="standard_address.body:/root/address/street" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="address_fields.locality_long" incomingConnections="//@node.2/@nodeData/@connections.3" name="city" type="id_String" xpath="standard_address.body:/root/address/city" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression=" address_fields.adm_area1_short" incomingConnections="//@node.2/@nodeData/@connections.8" name="state" type="id_String" xpath="standard_address.body:/root/address/state" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="address_fields.postal_code_long" incomingConnections="//@node.2/@nodeData/@connections.1" name="postal_code" type="id_String" xpath="standard_address.body:/root/address/postal_code" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression=" address_fields.adm_area2_short" incomingConnections="//@node.2/@nodeData/@connections.7" name="county" type="id_String" xpath="standard_address.body:/root/address/county" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="address_fields.country_long" incomingConnections="//@node.2/@nodeData/@connections.4" name="country" type="id_String" xpath="standard_address.body:/root/address/country" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="address_fields.lat" incomingConnections="//@node.2/@nodeData/@connections.5" name="lat" type="id_Double" xpath="standard_address.body:/root/address/lat" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="address_fields.lng" incomingConnections="//@node.2/@nodeData/@connections.6" name="lng" type="id_Double" xpath="standard_address.body:/root/address/lng" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="address_fields.location_type" incomingConnections="//@node.2/@nodeData/@connections.9" name="location_type" type="id_String" xpath="standard_address.body:/root/address/location_type" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            </children>
+          </children>
+        </nodes>
+      </outputTrees>
+      <varTables minimized="true" name="Var"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.3" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.0" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.19" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.3" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.4" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.0" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.7" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.17" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.5" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.22" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.6" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.23" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.7" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.12" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.4" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.10" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.2" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.20" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.8" xsi:type="TalendXMLMap:Connection"/>
+    </nodeData>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_3"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="body"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="standard_address" name="tLogRow_3">
+      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1056" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRESTResponse_3"/>
+    <elementParameter field="REST_RESPONSE_SCHEMA_TYPE" name="RESPONSE_TYPE" value="id_Document"/>
+    <elementParameter field="CLOSED_LIST" name="STATUS_CODE" value="200"/>
+    <elementParameter field="TEXT" name="CUSTOM_STATUS_CODE" show="false" value="200"/>
+    <elementParameter field="TABLE" name="RESPONSE_HEADERS">
+      <elementValue elementRef="NAME" value="&quot;Access-Control-Allow-Origin&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;null&quot;"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="UNWRAP_JSON_RESPONSE" value="true"/>
+    <elementParameter field="TEXT" name="JSON_ARRAY_KEYS" value=""/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRESTResponse_3">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="address" lineStyle="0" metaname="address" offsetLabelX="0" offsetLabelY="0" source="tRESTRequest_1" target="tGoogleAddressRow_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="body"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="address"/>
+  </connection>
+  <connection connectorName="FLOW" label="address_fields" lineStyle="0" metaname="tGoogleAddressRow_1" offsetLabelX="0" offsetLabelY="0" source="tGoogleAddressRow_1" target="tXMLMap_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="body"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="formatted_address"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="street_number_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="street_number_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="route_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="route_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="locality_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="locality_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="sublocality_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="sublocality_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="adm_area1_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="adm_area1_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="adm_area2_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="adm_area2_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="adm_area3_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="adm_area3_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="country_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="country_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="postal_code_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="postal_code_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="location_type"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="partial_match"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="lat"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="lng"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="status"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="address_fields"/>
+  </connection>
+  <connection connectorName="FLOW" label="standard_address" lineStyle="0" metaname="standard_address" offsetLabelX="-3" offsetLabelY="0" source="tXMLMap_2" target="tLogRow_3">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="body"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="standard_address"/>
+  </connection>
+  <connection connectorName="FLOW" label="row6" lineStyle="0" metaname="tLogRow_3" offsetLabelX="0" offsetLabelY="0" source="tLogRow_3" target="tRESTResponse_3">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="body"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row6"/>
+  </connection>
+  <note opaque="true" posX="256" posY="32" sizeHeight="65" sizeWidth="577" text="This service supports standardization of phone numbers and addresses">
+    <elementParameter field="COLOR" name="NOTE_COLOR" value="128;128;128"/>
+    <elementParameter field="COLOR" name="NOTETXT_COLOR" value="255;255;255"/>
+    <elementParameter field="RADIO" name="NOTETXT_LEFT" value="true"/>
+    <elementParameter field="RADIO" name="NOTETXT_CENTER" value="false"/>
+    <elementParameter field="COLOR" name="NOTE_LINECOLOR" value="255;255;255"/>
+  </note>
+  <note opaque="true" posX="192" posY="320" sizeHeight="129" sizeWidth="897" text="Standardize Address">
+    <elementParameter field="COLOR" name="NOTE_COLOR" value="225;255;255"/>
+    <elementParameter field="RADIO" name="NOTETXT_LEFT" value="true"/>
+    <elementParameter field="RADIO" name="NOTETXT_CENTER" value="false"/>
+    <elementParameter field="RADIO" name="NOTELABEL_CENTER" value="false"/>
+    <elementParameter field="RADIO" name="NOTETXT_TOP" value="true"/>
+    <elementParameter field="CHECK" name="FONT_BOLD" value="true"/>
+    <elementParameter field="COLOR" name="NOTE_LINECOLOR" value="255;255;255"/>
+  </note>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRESTRequest_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_0eb8c7de-0cd3-42a5-af11-56b549d8dc3e"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>XRqaidHi6JAIMgCRHCM1wLDszL69wnWBQLBBKk4MsgQVVTiknvGEw2hEiklKxF5tjTFo6oqctPQ9
+YrewbZNN/A==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_229fa8c8-6c7a-4583-a9e5-dc1723dc54a2"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Zf3MYvhA+QbDEW11Z/dPXt//77ZL/UOIm/v+mT1NwNVbdqJLJ2RIMjlErL2+SZ5soAXFz+OFyJ7M
+tU0p4hjaNA==</DigestValue></Reference></SignedInfo><SignatureValue>t0rOseTjQqlvpmjPIjzSAlzYyLfNwlyGbiVVHTrQiuqlZ5VkcamCkLIxnaoZ3LaHlmrFyksRuT2H
+7zV6PaVtev0+rDZKOQN3bRfnWlrBziGAjqPdpcCxNs97j+78I56TSe6xt/r/qBWusgXG/hnmlSqD
+KiG37gjYT41rEu+ffemBONcTYQxIJ3RmSrp3jNosfor9HbdRdQw5nqm6rh2dV4jS8OxGnGFH+5J4
+2D0YlA2WlR1v7tOBuKImW4igtJ43GZs5gM1M1OLQcaB+hd4ZCvs1uaZKXbLURydJDxUoazFN6jpv
+SrcalDY0Nc8Jo8WSw0rcVEM0yB1TZc+c5aagEg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
+RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
+LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
+VQQIDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1ImRDEpMCcGA1UEAwwg
+RGVmYXVsdCBjb2RlLXNpZ25pbmcgY2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw
+ggEKAoIBAQDiCz1II/o6hDUWu/ygxTCT2o/fYxVzPW23AoONQC/Vuiqh0COyLIgaMTjBPmQdTQFq
+rmM5tD64gi4TEQF+Z3iYt3daLdQUfaW9SzaMlY+XVNz5xnMBVDuiSHJSFE9lKnhgbKAHvOeoJo46
+UgWwb1za0WpRckDtjKcntwEK1orZCgrcIo1nDvFXyB5n0KfpLyktEOa0bSHde50MPbvQeB66XlEb
+lhjfs5S9WnAUja9RgqdwqZoI0ss+x/pjkQygDT8f17MktM21HOtg09lJlhMGJckhgD7jUF5tfYGM
+sv/O27g5CToFhxOnutDtsrDw7AkEQIml8KJp97bQLAFlLnh1AgMBAAGjge0wgeowHQYDVR0OBBYE
+FFzdy6ZfpUX8JwkM/SUrqkwLNqWAMB8GA1UdIwQYMBaAFOd9C3L8tYGZxoAr2SzsgnMytaj3MAsG
+A1UdDwQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzAJBgNVHRMEAjAAMHsGCWCGSAGG+EIBDQRu
+FmxEZWZhdWx0IHRoaXJkIHBhcnR5IGNvZGUtc2lnbmluZyBjZXJ0aWZpY2F0ZS4gTm8gY29tbWl0
+bWVudCBpcyBtYWRlIG9uIHRoZSBjb250ZW50IHNpZ25lZCBieSB0aGUgdGhpcmQgcGFydHkwDQYJ
+KoZIhvcNAQELBQADggIBAKzYdnzoFgrRtDLSSzWtwuOrGo5+1RPoDHm/1dlbVnB7oZzUwfRGwZT5
+ser0V7OZyt9wWR8iQ2ka30fHWrNAosNtlIkF88s5YZw7OOIMxR+qYA99BnWLa79DZVIuukI2f5qJ
+Cr9nw6Oygo8CWeNMWhtXcvV4gqROhb2QMBrvWBw9QvNK1XMdtPShfWiXwyPzzRKgwqrN2meXtOY3
+S+MXu6u+RUD9EYeElp9M+9Yp+zRySl5/s+0sbvo7qz369dlsw8XhKXT+s4YQQe3Sx14Kg3SDFXKn
+QcVgycaZMOw4YUxOeP2hKOHnNuOMORfu3qlYkN/0RMGjn6r4PU4+yL276TiWI5b8J06y4leng2as
+r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
+EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
+BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
+6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_229fa8c8-6c7a-4583-a9e5-dc1723dc54a2" Target="#_0eb8c7de-0cd3-42a5-af11-56b549d8dc3e"><Timestamp>2018-06-26 20:20:55</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

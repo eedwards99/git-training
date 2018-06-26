@@ -1,0 +1,14 @@
+package org.talend.survivorship.dups2 
+
+rule "2_addr"
+    no-loop true
+    dialect "mvel"
+    ruleflow-group "2_addrGroup"
+when
+    $input : RecordIn( dataset.isLongest( addr, "addr", false) )  
+then
+    dataset.survive( $input.TALEND_INTERNAL_ID, "addr", drools.getRule().getName());
+
+end
+
+
