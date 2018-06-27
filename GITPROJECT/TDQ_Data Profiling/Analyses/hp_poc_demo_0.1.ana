@@ -23,11 +23,30 @@
     <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/AccountDataForDeDuplication_0.1.item#_hByvmE5EEeC6C_Ea9tcYyg"/>
   </context>
   <results xmi:id="_8R4cGHoeEeimzMRAzuUHOw">
-    <resultMetadata xmi:id="_8R4cGXoeEeimzMRAzuUHOw"/>
-    <indicators xsi:type="dataquality.indicators.columnset:BlockKeyIndicator" xmi:id="_8R5DIHoeEeimzMRAzuUHOw"/>
-    <indicators xsi:type="dataquality.indicators.columnset:RecordMatchingIndicator" xmi:id="_8R5DIXoeEeimzMRAzuUHOw">
+    <resultMetadata xmi:id="_8R4cGXoeEeimzMRAzuUHOw" executionDate="2018-06-27T08:32:54.253-0700" executionDuration="124" executionNumber="1" lastRunOk="true" lastExecutionNumberOk="1"/>
+    <indicators xsi:type="dataquality.indicators.columnset:BlockKeyIndicator" xmi:id="_8R5DIHoeEeimzMRAzuUHOw" blockSize2frequency="ACED0005737200116A6176612E7574696C2E547265654D61700CC1F63E2D256AE60300014C000A636F6D70617261746F727400164C6A6176612F7574696C2F436F6D70617261746F723B78707077040000001A7372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B020000787000000000000000017371007E000300000000000000077371007E000300000000000000027371007E000300000000000000047371007E0003000000000000000371007E000771007E000871007E00087371007E000300000000000000057371007E000300000000000000087371007E0003000000000000000671007E000571007E000671007E000871007E000B71007E00057371007E0003000000000000000971007E00077371007E0003000000000000000A71007E00057371007E0003000000000000000B71007E00077371007E0003000000000000000D71007E00057371007E0003000000000000000F71007E00057371007E0003000000000000001271007E00077371007E0003000000000000001371007E00057371007E0003000000000000001571007E00057371007E0003000000000000001671007E00057371007E0003000000000000001771007E00077371007E0003000000000000002471007E00057371007E0003000000000000002571007E00057371007E0003000000000000002971007E00057371007E0003000000000000002B71007E00077371007E0003000000000000003471007E00057371007E0003000000000000003571007E00057371007E0003000000000000005371007E00077371007E000300000000000000A271007E000578"/>
+    <indicators xsi:type="dataquality.indicators.columnset:RecordMatchingIndicator" xmi:id="_8R5DIXoeEeimzMRAzuUHOw" count="974" groupSize2groupFrequency="ACED0005737200116A6176612E7574696C2E547265654D61700CC1F63E2D256AE60300014C000A636F6D70617261746F727400164C6A6176612F7574696C2F436F6D70617261746F723B787070770400000009740001317372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B020000787000000000000002CB74000231307371007E0004000000000000000274000231387371007E00040000000000000001740001327371007E00040000000000000048740001337371007E000400000000000000117400013471007E00087400013571007E000A7400013671007E000A7400013771007E000A78" matchedRecordCount="158" suspectRecordCount="101">
       <builtInMatchRuleDefinition xmi:id="_8R5DInoeEeimzMRAzuUHOw">
-        <matchRules xmi:id="_8mVpIHoeEeimzMRAzuUHOw" name="Match Rule 1"/>
+        <blockKeys xmi:id="__dWSgHoeEeimzMRAzuUHOw" name="state" column="state">
+          <preAlgorithm xmi:id="__dWSgXoeEeimzMRAzuUHOw" algorithmType="NON_ALGO" algorithmParameters=""/>
+          <algorithm xmi:id="__dWSgnoeEeimzMRAzuUHOw" algorithmType="exact" algorithmParameters=""/>
+          <postAlgorithm xmi:id="__dWSg3oeEeimzMRAzuUHOw" algorithmType="NON_ALGO" algorithmParameters=""/>
+        </blockKeys>
+        <matchRules xmi:id="_8mVpIHoeEeimzMRAzuUHOw" name="Match Rule 1">
+          <matchKeys xmi:id="_JrceMHofEeimzMRAzuUHOw" name="acctName" column="acctName" confidenceWeight="3" handleNull="nullMatchNull" threshold="1.0" tokenizationType="No">
+            <algorithm xmi:id="_JrdFQHofEeimzMRAzuUHOw" algorithmType="LEVENSHTEIN" algorithmParameters=""/>
+          </matchKeys>
+          <matchKeys xmi:id="_J2FA4HofEeimzMRAzuUHOw" name="addr" column="addr" confidenceWeight="2" handleNull="nullMatchNull" threshold="1.0" tokenizationType="No">
+            <algorithm xmi:id="_J2FA4XofEeimzMRAzuUHOw" algorithmType="LEVENSHTEIN" algorithmParameters=""/>
+          </matchKeys>
+          <matchKeys xmi:id="_J_O84HofEeimzMRAzuUHOw" name="city" column="city" confidenceWeight="1" handleNull="nullMatchNull" threshold="1.0" tokenizationType="No">
+            <algorithm xmi:id="_J_O84XofEeimzMRAzuUHOw" algorithmType="EXACT" algorithmParameters=""/>
+          </matchKeys>
+          <matchKeys xmi:id="_KtiNUHofEeimzMRAzuUHOw" name="state" column="state" confidenceWeight="1" handleNull="nullMatchNull" threshold="1.0" tokenizationType="No">
+            <algorithm xmi:id="_KtiNUXofEeimzMRAzuUHOw" algorithmType="EXACT" algorithmParameters=""/>
+          </matchKeys>
+        </matchRules>
+        <appliedBlockKeys xmi:id="_XBn1IHofEeimzMRAzuUHOw" name="BLOCK_KEY" column="BLOCK_KEY"/>
       </builtInMatchRuleDefinition>
     </indicators>
   </results>
