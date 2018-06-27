@@ -105,7 +105,6 @@
     <module>jobs/process/DI/t01_Compo/Orchestration/tWaitForSQL/twaitforsqldata_0.1</module>
     <module>jobs/process/DI/t01_Compo/File/Management/tfilearchive_0.1</module>
     <module>jobs/process/DI/DIExamples/Training/trainingv1_0.1</module>
-    <module>jobs/process/DI/DIExamples/Client_State/load_client_into_db_0.1</module>
     <module>jobs/process/DI/readme_0.1</module>
     <module>jobs/process/DI/t01_Compo/DataQuality/taddcrc_0.2</module>
     <module>jobs/process/DemoSandbox/Core_DI_Jobs/standardization_rest_2.0</module>
@@ -297,6 +296,7 @@
     <module>jobs/process/HPE_POC/matching_with_survivorship_v1_0.1</module>
     <module>jobs/process/HPE_POC/job1_0.1</module>
     <module>jobs/process/HPE_POC/job2_0.1</module>
+    <module>jobs/process/DI/DIExamples/Client_State/load_data_v1_0.1</module>
   </modules>
   <properties>
     <talend.project.name>GITPROJECT</talend.project.name>
