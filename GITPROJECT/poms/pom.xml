@@ -294,7 +294,7 @@
     <module>jobs/process/DemoSandbox/BigData/NoSQL_Examples/MongoDB/demo_bigdatamongo_0.1</module>
     <module>jobs/process/DI/t01_Compo/Internet/tpop_0.1</module>
     <module>jobs/process/DI/t01_Compo/System_/tRunJob/tRunJobAndContext/jobandcontext_0.1</module>
-    <module>jobs/process/HPE_POC/matching_with_survivorship_copy_0.1</module>
+    <module>jobs/process/HPE_POC/matching_with_survivorship_v1_0.1</module>
   </modules>
   <properties>
     <talend.project.name>GITPROJECT</talend.project.name>
