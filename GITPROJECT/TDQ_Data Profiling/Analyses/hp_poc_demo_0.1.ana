@@ -1,18 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.indicators.columnset="http://dataquality.indicators.columnset" xmi:id="_8R4cEHoeEeimzMRAzuUHOw" name="hp_poc_demo" creationDate="2018-06-27T08:29:54.747-0700">
+<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.indicators.columnset="http://dataquality.indicators.columnset" xmi:id="_8R4cEHoeEeimzMRAzuUHOw" name="hp_poc_demo" creationDate="2018-06-27T08:29:54.747-0700" defaultContext="Default">
+  <clientDependency href="../../metadata/fileDelimited/AccountDataForDeDuplication_0.1.item#_HrG3cD5xEeixpd-QgZvA9w"/>
   <taggedValue xmi:id="_8R4cEXoeEeimzMRAzuUHOw" tag="PREVIEW_ROW_NUMBER" value="10000"/>
   <taggedValue xmi:id="_8R4cEnoeEeimzMRAzuUHOw" tag="Status" value="development"/>
   <taggedValue xmi:id="_8R4cE3oeEeimzMRAzuUHOw" tag="Author" value="admin@company.com"/>
-  <taggedValue xmi:id="_8R4cFHoeEeimzMRAzuUHOw" tag="Purpose"/>
-  <taggedValue xmi:id="_8R4cFXoeEeimzMRAzuUHOw" tag="Description"/>
+  <taggedValue xmi:id="_8R4cFHoeEeimzMRAzuUHOw" tag="Purpose" value=""/>
+  <taggedValue xmi:id="_8R4cFXoeEeimzMRAzuUHOw" tag="Description" value=""/>
   <taggedValue xmi:id="_8R4cFnoeEeimzMRAzuUHOw" tag="Version" value="0.1"/>
-  <context xmi:id="_8R4cF3oeEeimzMRAzuUHOw"/>
+  <taggedValue xmi:id="_8qg-gHoeEeimzMRAzuUHOw" tag="TEMP_DATA_DIR" value=""/>
+  <taggedValue xmi:id="_8qg-gXoeEeimzMRAzuUHOw" tag="MAX_BUFFER_SIZE" value="200000"/>
+  <taggedValue xmi:id="_8qg-gnoeEeimzMRAzuUHOw" tag="STORE_ON_DISK" value="false"/>
+  <taggedValue xmi:id="_8vGjkXoeEeimzMRAzuUHOw" tag="ANA_LAST_RUN_CONTEXT" value="Default"/>
+  <context xmi:id="_8R4cF3oeEeimzMRAzuUHOw">
+    <connection href="../../metadata/fileDelimited/AccountDataForDeDuplication_0.1.item#_hBo_-k5EEeC6C_Ea9tcYyg"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/AccountDataForDeDuplication_0.1.item#_hByvkU5EEeC6C_Ea9tcYyg"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/AccountDataForDeDuplication_0.1.item#_hByvkk5EEeC6C_Ea9tcYyg"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/AccountDataForDeDuplication_0.1.item#_hByvk05EEeC6C_Ea9tcYyg"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/AccountDataForDeDuplication_0.1.item#_hByvlE5EEeC6C_Ea9tcYyg"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/AccountDataForDeDuplication_0.1.item#_hByvlU5EEeC6C_Ea9tcYyg"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/AccountDataForDeDuplication_0.1.item#_hByvlk5EEeC6C_Ea9tcYyg"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/AccountDataForDeDuplication_0.1.item#_hByvl05EEeC6C_Ea9tcYyg"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/AccountDataForDeDuplication_0.1.item#_hByvmE5EEeC6C_Ea9tcYyg"/>
+  </context>
   <results xmi:id="_8R4cGHoeEeimzMRAzuUHOw">
     <resultMetadata xmi:id="_8R4cGXoeEeimzMRAzuUHOw"/>
     <indicators xsi:type="dataquality.indicators.columnset:BlockKeyIndicator" xmi:id="_8R5DIHoeEeimzMRAzuUHOw"/>
     <indicators xsi:type="dataquality.indicators.columnset:RecordMatchingIndicator" xmi:id="_8R5DIXoeEeimzMRAzuUHOw">
-      <builtInMatchRuleDefinition xmi:id="_8R5DInoeEeimzMRAzuUHOw"/>
+      <builtInMatchRuleDefinition xmi:id="_8R5DInoeEeimzMRAzuUHOw">
+        <matchRules xmi:id="_8mVpIHoeEeimzMRAzuUHOw" name="Match Rule 1"/>
+      </builtInMatchRuleDefinition>
     </indicators>
   </results>
   <parameters xmi:id="_8R5DI3oeEeimzMRAzuUHOw" analysisType="Match Analysis"/>
+  <contextType xmi:id="_8vGjkHoeEeimzMRAzuUHOw" confirmationNeeded="false" name="Default"/>
 </dataquality.analysis:Analysis>
