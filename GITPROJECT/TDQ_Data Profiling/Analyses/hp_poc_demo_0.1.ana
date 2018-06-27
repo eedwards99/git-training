@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.indicators.columnset="http://dataquality.indicators.columnset" xmi:id="_8R4cEHoeEeimzMRAzuUHOw" name="hp_poc_demo" creationDate="2018-06-27T08:29:54.747-0700">
+  <taggedValue xmi:id="_8R4cEXoeEeimzMRAzuUHOw" tag="PREVIEW_ROW_NUMBER" value="10000"/>
+  <taggedValue xmi:id="_8R4cEnoeEeimzMRAzuUHOw" tag="Status" value="development"/>
+  <taggedValue xmi:id="_8R4cE3oeEeimzMRAzuUHOw" tag="Author" value="admin@company.com"/>
+  <taggedValue xmi:id="_8R4cFHoeEeimzMRAzuUHOw" tag="Purpose"/>
+  <taggedValue xmi:id="_8R4cFXoeEeimzMRAzuUHOw" tag="Description"/>
+  <taggedValue xmi:id="_8R4cFnoeEeimzMRAzuUHOw" tag="Version" value="0.1"/>
+  <context xmi:id="_8R4cF3oeEeimzMRAzuUHOw"/>
+  <results xmi:id="_8R4cGHoeEeimzMRAzuUHOw">
+    <resultMetadata xmi:id="_8R4cGXoeEeimzMRAzuUHOw"/>
+    <indicators xsi:type="dataquality.indicators.columnset:BlockKeyIndicator" xmi:id="_8R5DIHoeEeimzMRAzuUHOw"/>
+    <indicators xsi:type="dataquality.indicators.columnset:RecordMatchingIndicator" xmi:id="_8R5DIXoeEeimzMRAzuUHOw">
+      <builtInMatchRuleDefinition xmi:id="_8R5DInoeEeimzMRAzuUHOw"/>
+    </indicators>
+  </results>
+  <parameters xmi:id="_8R5DI3oeEeimzMRAzuUHOw" analysisType="Match Analysis"/>
+</dataquality.analysis:Analysis>
