@@ -4952,6 +4952,8 @@
       <relatedItems xmi:id="_b-oNcHl-EeimzMRAzuUHOw" id="A2_standardizeaddressTstandardizerow_1" version="Latest" type="routine"/>
       <relatedItems xmi:id="_b-oNcXl-EeimzMRAzuUHOw" id="_LY80wC2xEeaDD9-f3gM6Ag - client" version="Latest" type="schema"/>
       <relatedItems xmi:id="_b-oNcnl-EeimzMRAzuUHOw" id="_hGBskC2uEeaDD9-f3gM6Ag - client" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_yPvqYHm-EeimzMRAzuUHOw" id="_kjvn4GPaEeizSen2PLbnEA" version="Latest" type="property"/>
+      <relatedItems xmi:id="_yPvqYXm-EeimzMRAzuUHOw" id="_kjvn4GPaEeizSen2PLbnEA - metadata" version="Latest" type="schema"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_b-oNc3l-EeimzMRAzuUHOw">
       <baseItem xmi:id="_b-oNdHl-EeimzMRAzuUHOw" id="_IWZeEOdtEdu08_wAFUaozw" version="0.1" type="job"/>
