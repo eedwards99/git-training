@@ -297,6 +297,7 @@
     <module>jobs/process/HPE_POC/job1_0.1</module>
     <module>jobs/process/HPE_POC/job2_0.1</module>
     <module>jobs/process/DI/DIExamples/Client_State/load_data_v1_0.1</module>
+    <module>jobs/process/HPE_POC/load_data_v1_copy_0.1</module>
   </modules>
   <properties>
     <talend.project.name>GITPROJECT</talend.project.name>

@@ -5102,6 +5102,55 @@
       <relatedItems xmi:id="_0xcDw3nBEeimzMRAzuUHOw" id="_-C0aYHm_EeimzMRAzuUHOw - metadata" version="Latest" type="schema"/>
       <relatedItems xmi:id="_0xcDxHnBEeimzMRAzuUHOw" id="_J4fn4HnAEeimzMRAzuUHOw - metadata" version="Latest" type="schema"/>
     </ItemsRelations>
+    <ItemsRelations xmi:id="_prIWQHnEEeimzMRAzuUHOw">
+      <baseItem xmi:id="_prIWQXnEEeimzMRAzuUHOw" id="_pq00QHnEEeimzMRAzuUHOw" version="0.1" type="job"/>
+      <relatedItems xmi:id="_prIWQnnEEeimzMRAzuUHOw" id="_-C0aYHm_EeimzMRAzuUHOw" version="Latest" type="property"/>
+      <relatedItems xmi:id="_prIWQ3nEEeimzMRAzuUHOw" id="_uIiVYAhoEeirK_JhLb2duw" version="Latest" type="property"/>
+      <relatedItems xmi:id="_prIWRHnEEeimzMRAzuUHOw" id="SQLike" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_prIWRXnEEeimzMRAzuUHOw" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_prIWRnnEEeimzMRAzuUHOw" id="ImporttweetsTstandardizerow_1" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_prIWR3nEEeimzMRAzuUHOw" id="DataMasking" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_prIWSHnEEeimzMRAzuUHOw" id="ImporttweetsTstandardizerow_2" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_prIWSXnEEeimzMRAzuUHOw" id="DemoRoutines" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_prIWSnnEEeimzMRAzuUHOw" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_prIWS3nEEeimzMRAzuUHOw" id="DqStringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_prIWTHnEEeimzMRAzuUHOw" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_prIWTXnEEeimzMRAzuUHOw" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_prIWTnnEEeimzMRAzuUHOw" id="Load_ndc_to_awsTstandardizerow_1" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_prIWT3nEEeimzMRAzuUHOw" id="A2_normalizeaddressTstandardizerow_1" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_prIWUHnEEeimzMRAzuUHOw" id="Products_parsingTstandardizerow_1" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_prIWUXnEEeimzMRAzuUHOw" id="DQTechnical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_prIWUnnEEeimzMRAzuUHOw" id="Test_tweetTstandardizerow_1" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_prIWU3nEEeimzMRAzuUHOw" id="Import_tweetsTstandardizerow_1" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_prIWVHnEEeimzMRAzuUHOw" id="Test_tweetTstandardizerow_2" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_prIWVXnEEeimzMRAzuUHOw" id="FilterWords" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_prIWVnnEEeimzMRAzuUHOw" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_prIWV3nEEeimzMRAzuUHOw" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_prIWWHnEEeimzMRAzuUHOw" id="MDMRoutines" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_prIWWXnEEeimzMRAzuUHOw" id="A1_parisstreetindexcreationTstandardizerow_1" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_prIWWnnEEeimzMRAzuUHOw" id="GenerateCompanyData" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_prIWW3nEEeimzMRAzuUHOw" id="DataQuality" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_prIWXHnEEeimzMRAzuUHOw" id="Standardize_and_word_analysisTstandardizerow_1" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_prIWXXnEEeimzMRAzuUHOw" id="Fibonacci" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_prIWXnnEEeimzMRAzuUHOw" id="Step1_import_tweets_emrTstandardizerow_2" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_prIWX3nEEeimzMRAzuUHOw" id="Tweets_Generator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_prIWYHnEEeimzMRAzuUHOw" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_prIWYXnEEeimzMRAzuUHOw" id="Step1_import_tweetsTstandardizerow_2" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_prIWYnnEEeimzMRAzuUHOw" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_prIWY3nEEeimzMRAzuUHOw" id="Thumbnail" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_prIWZHnEEeimzMRAzuUHOw" id="KeyManagementForSqoop" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_prIWZXnEEeimzMRAzuUHOw" id="DataQualityDependencies" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_prIWZnnEEeimzMRAzuUHOw" id="MDM" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_prIWZ3nEEeimzMRAzuUHOw" id="GetRandomPhoneNum" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_prIWaHnEEeimzMRAzuUHOw" id="TalendStringUtil" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_prIWaXnEEeimzMRAzuUHOw" id="ESBProperties" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_prIWannEEeimzMRAzuUHOw" id="DEMO_BIGDATA" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_prIWa3nEEeimzMRAzuUHOw" id="Convert" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_prIWbHnEEeimzMRAzuUHOw" id="A2_standardizeaddressTstandardizerow_1" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_prIWbXnEEeimzMRAzuUHOw" id="_-C0aYHm_EeimzMRAzuUHOw - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_prIWbnnEEeimzMRAzuUHOw" id="_LY80wC2xEeaDD9-f3gM6Ag - client" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_prIWb3nEEeimzMRAzuUHOw" id="_hGBskC2uEeaDD9-f3gM6Ag - client" version="Latest" type="schema"/>
+    </ItemsRelations>
     <migrationTask xmi:id="_o-wFYHjoEeitFvMb6IAzVw" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_o-wFYXjoEeitFvMb6IAzVw" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_o-wFYnjoEeitFvMb6IAzVw" id="org.talend.repository.model.migration.CleanFoldersMigrationTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
