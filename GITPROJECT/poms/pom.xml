@@ -10,8 +10,6 @@
   <url>http://www.talend.org/</url>
   <modules>
     <module>code/routines</module>
-    <module>jobs/process/job_1_0.1</module>
-    <module>jobs/process/job_2_0.1</module>
     <module>code/beans</module>
     <module>jobs/process/DQ_Examples/synonym_usage/demo_iata_0.1</module>
     <module>jobs/process/DI/t01_Compo/Databases/InOut/DBGeneric/tdbinput_0.1</module>
@@ -67,7 +65,6 @@
     <module>jobs/process/DI/t01_Compo/LogError/tflowmeter1_0.1</module>
     <module>jobs/process/DI/t01_Compo/Internet/tfilefetch_0.1</module>
     <module>jobs/process/DI/t01_Compo/Databases/SCD/tmysqlscd_0.1</module>
-    <module>jobs/process/ee_test_0.1</module>
     <module>jobs/process/DI/t01_Compo/Databases/SCD/step2modifydata_0.1</module>
     <module>jobs/process/DI/DIExamples/Online_Training_Data_Management_Platform/ex2_matching_final_0.1</module>
     <module>jobs/process/DI/t01_Compo/CustomCode/tgroovyfile_0.1</module>
