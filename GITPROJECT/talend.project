@@ -5050,6 +5050,36 @@
       <relatedItems xmi:id="_b-oN73l-EeimzMRAzuUHOw" id="AzureADAuth" version="Latest" type="routine"/>
       <relatedItems xmi:id="_b-oN8Hl-EeimzMRAzuUHOw" id="_KsrToG4_EeevedvaM7bgIA - metadata" version="Latest" type="schema"/>
     </ItemsRelations>
+    <ItemsRelations xmi:id="_A3z1EHnBEeimzMRAzuUHOw">
+      <baseItem xmi:id="_A3z1EXnBEeimzMRAzuUHOw" id="_A3DnIHnBEeimzMRAzuUHOw" version="0.1" type="job"/>
+      <relatedItems xmi:id="_A3z1EnnBEeimzMRAzuUHOw" id="_zR7DADB_EeC4L-b_UPshXw" version="Latest" type="property"/>
+      <relatedItems xmi:id="_A3z1E3nBEeimzMRAzuUHOw" id="SQLike" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_A3z1FHnBEeimzMRAzuUHOw" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_A3z1FXnBEeimzMRAzuUHOw" id="DataMasking" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_A3z1FnnBEeimzMRAzuUHOw" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_A3z1F3nBEeimzMRAzuUHOw" id="DqStringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_A3z1GHnBEeimzMRAzuUHOw" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_A3z1GXnBEeimzMRAzuUHOw" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_A3z1GnnBEeimzMRAzuUHOw" id="DQTechnical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_A3z1G3nBEeimzMRAzuUHOw" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_A3z1HHnBEeimzMRAzuUHOw" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_A3z1HXnBEeimzMRAzuUHOw" id="DataQuality" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_A3z1HnnBEeimzMRAzuUHOw" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_A3z1H3nBEeimzMRAzuUHOw" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_A3z1IHnBEeimzMRAzuUHOw" id="MDM" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_A3z1IXnBEeimzMRAzuUHOw" id="DataQualityDependencies" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_A3z1InnBEeimzMRAzuUHOw" id="TalendStringUtil" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_A3z1I3nBEeimzMRAzuUHOw" id="_zR7DADB_EeC4L-b_UPshXw - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_A3z1JHnBEeimzMRAzuUHOw" id="_P0RggD59Eeixpd-QgZvA9w" version="Latest" type="survivorshipRuleRelation"/>
+      <relatedItems xmi:id="_A3z1JXnBEeimzMRAzuUHOw" id="_P0bRgD59Eeixpd-QgZvA9w" version="Latest" type="survivorshipRuleRelation"/>
+      <relatedItems xmi:id="_A3z1JnnBEeimzMRAzuUHOw" id="_P0C3AD59Eeixpd-QgZvA9w" version="Latest" type="survivorshipRuleRelation"/>
+      <relatedItems xmi:id="_A3z1J3nBEeimzMRAzuUHOw" id="_P0fi8D59Eeixpd-QgZvA9w" version="Latest" type="survivorshipRuleRelation"/>
+      <relatedItems xmi:id="_A3z1KHnBEeimzMRAzuUHOw" id="_P0HIcD59Eeixpd-QgZvA9w" version="Latest" type="survivorshipRuleRelation"/>
+      <relatedItems xmi:id="_A3z1KXnBEeimzMRAzuUHOw" id="_Pz1boD59Eeixpd-QgZvA9w" version="Latest" type="survivorshipRuleRelation"/>
+      <relatedItems xmi:id="_A3z1KnnBEeimzMRAzuUHOw" id="_Pz9-gD59Eeixpd-QgZvA9w" version="Latest" type="survivorshipRuleRelation"/>
+      <relatedItems xmi:id="_A3z1K3nBEeimzMRAzuUHOw" id="_P0MA8D59Eeixpd-QgZvA9w" version="Latest" type="survivorshipRuleRelation"/>
+      <relatedItems xmi:id="_A3z1LHnBEeimzMRAzuUHOw" id="_P0WZAD59Eeixpd-QgZvA9w" version="Latest" type="survivorshipRuleRelation"/>
+    </ItemsRelations>
     <migrationTask xmi:id="_o-wFYHjoEeitFvMb6IAzVw" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_o-wFYXjoEeitFvMb6IAzVw" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_o-wFYnjoEeitFvMb6IAzVw" id="org.talend.repository.model.migration.CleanFoldersMigrationTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
